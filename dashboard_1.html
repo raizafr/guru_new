@@ -1,0 +1,2203 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html id="ctl00_ctl00_html_tag" class="" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+
+<head id="ctl00_ctl00_Head1">
+<link href="https://res.cloudinary.com" rel="preconnect" crossorigin="" /><link rel="manifest" href="/manifest.json" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4c83c3" /><link rel="shortcut icon" href="/favicon.ico" /><meta name="msapplication-config" content="/browserconfig.xml" /><meta name="theme-color" content="#ffffff" /><link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/appshell/core.a6707739139be53b.css" />
+
+    
+    <meta charset="utf-8">
+    <meta name="description" content="Update your professional profile on Guru from start to finish.">
+    <meta name="author" content="">
+
+    <style>
+        .greyButton {
+            text-shadow: none !important;
+        }
+
+        body {
+            background: none repeat scroll 0 0 #F5F5F5 !important;
+            color: #333333;
+            font: 400 13px/18px 'Open Sans', sans-serif;
+            margin: 0;
+            transition: none !important;
+        }
+
+        /*bootstrap fixes*/
+        .dropdown-menu .divider {
+            border-bottom: none;
+        }
+
+        .module_list .email {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*bootstrap fixes*/
+
+        .main {
+            margin-top: 21px !important;
+            min-height: inherit !important;
+        }
+
+        .fleft {
+            float: left;
+        }
+
+        .clearfix {
+            overflow: visible !important;
+        }
+
+        .count {
+            padding-top: 3px !important;
+            border: 0px !important;
+            width: 35px !important;
+            font-size: 11px !important;
+            color: #999 !important;
+        }
+
+        .backgroundCover {
+            background-image: url('');
+        }
+
+            .backgroundCover.templateRepeat {
+                background-repeat: repeat;
+                -webkit-background-size: inherit;
+                -moz-background-size: inherit;
+                -ms-background-size: inherit;
+                -o-background-size: inherit;
+                background-size: inherit;
+                background-position: initial;
+            }
+
+        .controls {
+            margin-left: 160px;
+            width: calc(100% - 160px);
+        }
+
+        .control-group.smaller-input .controls input,
+        .control-group.smaller-input .controls select {
+            width: auto !important;
+        }
+
+        .form-horizontal .controls.full {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .control-group {
+            margin: 3px 0 0 0 !important;
+        }
+
+            .control-group input,
+            .control-group textarea,
+            .control-group select,
+            .control-group .token-input-list {
+                margin-bottom: 9px !important;
+            }
+
+                .control-group .token-input-list input {
+                    margin: 0 !important;
+                }
+
+        .placeHolder,
+        .placeHolderBad {
+            margin: 8px 0 0 5px !important;
+            font-size: 14px !important;
+        }
+
+        select.txtInput {
+            background-image: url(/images/ddIcon.png) !important;
+            background-position: right center !important;
+            background-repeat: no-repeat !important;
+            background-color: #fff;
+            padding-right: 36px;
+        }
+
+            select.txtInput:focus {
+                background-image: url(/images/ddIcon.png);
+            }
+
+        label.control-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            width: 120px;
+            float: left;
+            padding-top: 5px;
+            text-align: right;
+        }
+
+        input[type="file"] {
+            height: 28px !important;
+            padding: 4px !important;
+            font-weight: normal !important;
+        }
+
+        header.subHead {
+            position: fixed;
+            z-index: 99;
+            top: 59px;
+        }
+
+        #divR5SIn {
+            height: 97px;
+        }
+
+        .clearfix {
+            overflow: visible !important;
+        }
+
+        ul.token-input-list {
+            padding: 2px !important;
+            margin: 1px !important;
+            font-size: 12px !important;
+            width: 66.5% !important;
+        }
+
+        li.token-input-token {
+            padding: 2px !important;
+        }
+
+        ul.token-input-list li input {
+            padding: 6px !important;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            box-shadow: none;
+            margin: 0;
+        }
+
+        .buildProfile div.token-input-dropdown {
+            width: 400px !important;
+        }
+
+        .progressContainer {
+            text-align: center !important;
+            background: none !important;
+            width: 100% !important;
+            height: 100% !important;
+            position: fixed !important;
+            z-index: 999999999999999999999 !important;
+            left: 0 !important;
+            top: 0 !important;
+        }
+
+        .progress {
+            position: relative !important;
+            background: transparent !important;
+        }
+
+        li.hiddenLink {
+            display: none;
+            border: 1px solid red;
+        }
+
+        .primaryBt input {
+            margin: 0 5px 0 0 !important;
+            width: auto !important;
+        }
+
+        .controls .loading {
+            margin-top: 6px !important;
+        }
+
+        .controls .txtInput {
+            padding: 6px !important;
+            font-size: 14px !important;
+        }
+
+        .controls .txtInput {
+            padding: 6px !important;
+            font-size: 14px !important;
+        }
+
+        div.token-input-dropdown p {
+            width: auto !important;
+            text-align: left !important;
+            font-weight: 400 !important;
+        }
+
+        form legend {
+            margin-bottom: 9px !important;
+            padding-top: 15px !important;
+        }
+
+        /*overrides responsive for services*/
+        ul.services li.serviceItem .workWrapper,
+        li.droppableServiceItem .workWrapper {
+            width: 30% !important;
+            margin: 0 !important;
+            float: left !important;
+        }
+
+            ul.services li.serviceItem .workWrapper + .serviceMeta,
+            li.droppableServiceItem .workWrapper + .serviceMeta {
+                float: left !important;
+                width: 51% !important;
+                margin: 0 2% 0 2% !important;
+            }
+
+        ul.services li.serviceItem .serviceMeta,
+        li.droppableServiceItem .serviceMeta {
+            width: 83% !important;
+            margin: 0 2% 0 0% !important;
+            float: left !important;
+        }
+
+        ul.services li.serviceItem .extras,
+        li.droppableServiceItem .extras {
+            display: none !important;
+        }
+
+        ul.services li.serviceItem .extras2,
+        li.droppableServiceItem .extras2 {
+            display: block !important;
+        }
+
+        .extras .price,
+        .extras .fb {
+            margin: 0 0px 10px 0 !important;
+            float: none !important;
+        }
+
+            .extras .price strong {
+                font-size: 14px;
+                color: #333 !important;
+                font-weight: 600;
+            }
+
+            .extras .price span {
+                display: block !important;
+                font-weight: normal;
+                color: #999 !important;
+                font-size: 11px !important;
+            }
+
+            .extras .fb a {
+                display: block !important;
+                color: #999 !important;
+                font-size: 12px !important;
+            }
+
+        .primaryBt input {
+            padding: 10px !important;
+            font-size: 14px !important;
+            float: none !important;
+        }
+
+        /*overrides responsive for portfolio*/
+        ul.respGrid li.item {
+            display: block !important;
+            float: left !important;
+            width: 31.3333% !important;
+            margin: 0 2% 2% 0% !important;
+            position: relative !important;
+        }
+
+        .progressPopup {
+            z-index: 99;
+            position: relative;
+            top: -50px;
+        }
+
+        .noservice {
+            width: 99%;
+            text-align: center;
+            color: #999999;
+            font-size: 14px;
+        }
+
+        /*register table*/
+        .memTableContainerDiv {
+            float: left;
+            padding: 15px 0 0 0;
+        }
+
+            .memTableContainerDiv table {
+                border: 1px solid #ededed;
+                width: 100%;
+                background-color: #FFFFFF;
+            }
+
+                .memTableContainerDiv table tr {
+                    border-bottom: 1px solid #ECECEC;
+                }
+
+                .memTableContainerDiv table td {
+                    padding: 18px 8px;
+                    text-align: center;
+                    width: 13%;
+                }
+
+        .memCellParent {
+            float: left;
+            text-align: center;
+            border: 0px solid black;
+            width: 100%;
+            padding: 3px 0px;
+        }
+
+            .memCellParent p {
+                display: inline;
+            }
+
+            .memCellParent .bold {
+                font-weight: 600;
+            }
+
+            .memCellParent .childBold {
+                border: 0px solid green;
+                font-weight: 600;
+                width: 99%;
+                float: left;
+                color: #444;
+                font-size: 14px;
+            }
+
+            .memCellParent .childRed {
+                width: 99%;
+                border: 0px solid red;
+                font-size: 16px;
+                color: #D65C34;
+                font-weight: 500;
+                font-family: 'MuseoSlab-500' !important;
+            }
+
+                .memCellParent .childRed p {
+                    color: #999;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+
+                .memCellParent .childRed .iconCheck {
+                    color: #c1db64;
+                    font-size: 18px;
+                }
+
+        .childLight {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .memCellFirstCol {
+            width: 14% !important;
+            text-align: left !important;
+            background: #FAFAFA;
+            border-right: 1px solid #EFEFEF;
+        }
+
+        .memFirstColText {
+            float: left;
+            width: 90%;
+            border: 0px solid yellow;
+            font-weight: 600;
+            padding: 0 0 0 5px;
+            font-size: 14px;
+        }
+
+        .noborder {
+            border-bottom: none;
+        }
+
+        .bottom {
+            border-bottom: 1px solid #ededed !important;
+        }
+
+        .specialChkRdio input {
+            display: none;
+        }
+
+        .specialChkRdio div {
+            padding: 0 0 0 10px;
+            float: left;
+        }
+
+        label.radio {
+            font-size: 13px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .radio.inline,
+        .checkbox.inline {
+            display: inline-block;
+            padding-top: 5px;
+            margin-bottom: 0;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .inline {
+            display: inline-block;
+            color: black;
+            margin: 5px;
+        }
+        /*override old bootstrap style*/
+        .feedbackJobPopup.modals {
+            top: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            width: initial !important;
+            margin: initial !important;
+            overflow: auto !important;
+            background-color: transparent !important;
+        }
+
+        .skillsList li {
+            list-style: none;
+        }
+
+        .margin-top-3 {
+            margin-top: 3px;
+        }
+
+        .align-self-end {
+            align-self: flex-end;
+        }
+
+        .panelHold.whiteBox {
+            /* 1200px (container size) minus 205px (margin left) */
+            width: 995px;
+        }
+    </style>
+    <!--[if gte IE 8]>
+	    <style type="text/css">
+            input[type="radio"]{margin-top:-2px;}
+            input[type="checkbox"]{margin-top:-2px;}
+        </style>
+    <![endif]-->
+    <!--[if IE 8]>
+	    <style type="text/css">
+            .dividerTb a.btn{display:inline !important;}
+        </style>
+    <![endif]-->
+    <link rel="stylesheet" href="https://img-guru.com/20240217.1/css/global.cbe817bc87c5a7d0.css" />
+    <link href="https://img-guru.com/20240217.1/css/Profile/jquery.Jcrop.min.f207eb3148879cc6.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://img-guru.com/20240217.1/css/Profile/external/token-input.380f6f38f386e59d.css" type="text/css" />
+    <link rel="stylesheet" href="https://img-guru.com/20240217.1/css/Profile/buildProfileStyles.0b88a902b32e7f50.css" />
+    <link href="https://img-guru.com/20240217.1/css/newguru/pages/JobDetails/jobDetailsPublic.a1d7d3d5e0ead3d6.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://img-guru.com/20240217.1/css/newguru/pages/JobDetails/jobDetailsModal.729795e5b25fb26f.css" />
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/Profile/froala/froala_editor.min.css">
+    <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/Profile/froala/froala_style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/Profile/froala/froala_editor.pkgd.min.css">
+    <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/Profile/froala/third_party/font_awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/Profile/workCollectionPopup.css" defer>
+     <link href='//fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'/> <link rel="stylesheet" type="text/css" href="https://img-guru.com/20240217.1/css/newguru/Guru.css">  <link rel="stylesheet" type ="text/css" href ="https://img-guru.com/20240217.1/css/Profile/external/bootstrap.css" > 
+    	
+	<link rel="preload" href="https://img-guru.com/20240217.1/css/newguru/specific/profiles.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://img-guru.com/20240217.1/css/Profile/profiles.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://img-guru.com/20240217.1/css/Profile/content.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+  
+
+ 
+  
+    <style type="text/css">
+        .webp header.profile-intro {
+            background-image: url('');
+        }
+         .nowebp header.profile-intro {
+            background-image: url('');
+        }
+
+            header.profile-intro.templateRepeat {
+                background-repeat: repeat;
+                -webkit-background-size: inherit;
+                -moz-background-size: inherit;
+                -ms-background-size: inherit;
+                -o-background-size: inherit;
+                background-size: inherit;
+                background-position: initial;
+            }
+
+        body {
+            background: #fff !important;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .fr-quick-insert.fr-visible {
+            display: none;
+        }
+        .fr-toolbar .fr-btn-grp {
+            margin:0 13px 0 0px;
+        }
+        .outputJtxt ol, .outputJtxt ul {
+            list-style-position: inside;
+        }
+
+    </style>
+      
+  <link text='text/css' rel='stylesheet' href='/WebResource.axd?d=M8F0al-XsjX9si-64V6xS4CbFQgS2kxzB8JcKBGlBkQDI388GQsNNtkFvs8paDqGLXOFqF7qcX78oMaV7CO-_hYc1XGPcmXx_AUGNHSHo2LMQN8irTRjgr9zWXKw9PjPhbTXlBw9McPKF2jHHTCwcMJZNElI6PeWaxLiqJrCxhuuylHK0&t=638437484821638476' /><link text='text/css' rel='stylesheet' href='/WebResource.axd?d=M8F0al-XsjX9si-64V6xS4CbFQgS2kxzB8JcKBGlBkQDI388GQsNNtkFvs8paDqGLXOFqF7qcX78oMaV7CO-_hYc1XGPcmXx_AUGNHSHo2LMQN8irTRjgr9zWXKw9PjPhbTXlBw9McPKF2jHHTCwcMJZNElI6PeWaxLiqJrCxhuuylHK0&t=638437484821638476' /></head>
+<body class="">
+
+    <!-- Google Tag Manager (noscript) -->
+
+    <header class="globalHeader">
+        <div class="container" id="vue-global-header">
+            <div id="ctl00_ctl00_ctl11_globalHeader__masthead" class="globalHeader__masthead clearfix">
+                <h1 class="globalHeader__logo" itemscope itemtype="//schema.org/Organization">
+                    <a href="https://www.guru.com/pro/" itemprop="url" id="f-topnav-logo-in">
+                        <img src="https://img-guru.com/20240217.1/images/Guru-logo2.png" height="30px" width="130px" style="display: block;" itemprop="logo" title="Guru.com" alt="Guru.com" />
+                    </a>
+                </h1>
+                <div id="ctl00_ctl00_ctl11_navSearchProj" class="globalHeader__search">
+                    
+                    <guru-typeahead inline-template ref="keywordSearch"
+					  :typeahead-query.sync="query"
+                      :remove-duplicates="true"
+					  :allow-any-entry="true"
+                      :hit-on-empty="true"
+					  :display-tokens="false"
+					  :clear-on-hit="false"
+					  :clear-on-blur="false"
+					  api="https://www.guru.com/api/search/services/suggestedskills/"
+                      data-searchurl="/work/"
+                      data-resultbase="/d/jobs/"
+					  @typeahead-hit="typeahead_onHit">
+                    
+                       <div class="input-group typeahead" @click.stop
+                       :class="[{ 'typeahead--open': isTypeAheadOpen}, { 'typeahead--disabled': disabled}, { 'typeahead--disabled': disabled}, inputLabelClasses]">
+                    
+                            <input type="text"
+                            autocomplete="off"
+                            ref="typeahead-input"
+                            v-model="query"
+                            :id="`typeahead-${_uid}`"
+                            maxlength="50"
+                            aria-label="Search Jobs"
+                            placeholder="Search Jobs"
+                            class="niceInput"
+                            @keydown.enter="handleEnter"
+                            @keydown.delete="handleDelete"
+                            @keydown.esc="handleEscape"
+                            @keydown="handleInput"
+                            @focus="handleFocus"
+                            @blur="handleBlur" />
+                            
+                            <span class="input-group__btn">
+                                <button type="button" 
+                                id="searchBtnTop" 
+                                @click="typeaheadHit(query)"
+                                class="module_btn secondary_btn searchBtnTop lonely_btn">
+                                    <i aria-hidden="true" data-icon="&#xe020;"></i>
+                                </button>
+                            </span> 
+                            
+                            <ul class="typeahead__menu">
+                                <li v-for="(item, $index) in items"
+                                :key="$index"
+                                ref="typeahead-item">
+                                    <a class="typeahead__menu__item"
+                                    @click="typeaheadHit(item)"
+                                    :class="{'typeahead__menu__item--hover': $index == currentSelection}"
+                                    tabindex="-1">
+                                        {{ item.Key }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+					</guru-typeahead>
+                    
+                </div>
+
+                <div id="ctl00_ctl00_ctl11_navMessageAlertsSection" class="globalHeader__panels">  
+                    <messages-panel :notification-count="0" :is-employer="false" class="globalHeader__panels__panel globalHeader__panels__panel--messages"></messages-panel>
+                    <alerts-panel :notification-count="0" class="globalHeader__panels__panel globalHeader__panels__panel--alerts"></alerts-panel>
+                </div>
+                <div id="ctl00_ctl00_ctl11_globalHeader__account" class="globalHeader__account">
+                    
+                    <div class="dropdown" ref="dropdown-parent" data-responsive-dropdown="550">
+                        <button type="button" class="link_btn module_btn" style="display:block" aria-label="My Account" role="button" ref="dropdown-toggle">
+                            <span class="module_avatar twentyfour">
+                                <span class="avatar avatar_noinfo">
+                                    <img src="" id="ctl00_ctl00_ctl11_imgTbN" class="headProfImg js-headProfImg" alt="My Account" height="24" width="24" />
+                                </span>
+                                <span class="avatarinfo">
+                                    <span class="caret"></span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <div class="resp-dropdown resp-dropdown--right" @click.stop>
+                            <div class="resp-dropdown__wrapper">
+                                <div class="resp-dropdown__heading">
+                                    <h3 class="strongHeading">Manage Account</h3>
+                                    <button type="button" class="resp-dropdown__heading__close" @click="closeDropdown"> 
+                                        <i aria-hidden="true" :data-icon="'\ue02d'"></i> 
+                                    </button>
+                                </div>
+                                <div class="resp-dropdown__content">
+                                    <ul>
+                                        <li id="ctl00_ctl00_ctl11_liAccountBtn"><a class="resp-dropdown__content__item"   href="https://www.guru.com/switchBoard.aspx?modify=true" id="f-topnav-edit-account-in">Edit Account</a></li>
+                                        
+                                        <li id="ctl00_ctl00_ctl11_liProfileBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=1" id="f-topnav-edit-profile-in">Edit Profile</a></li>
+                                        <li id="ctl00_ctl00_ctl11_liBidsBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=6" id="f-topnav-buy-bids-in">Buy Bids</a></li>
+                                        <li id="ctl00_ctl00_ctl11_liMemberBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=8" id="f-topnav-membership-in"> Membership</a></li>
+                                        <li id="ctl00_ctl00_ctl11_navPayments2"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/cashaccount/" id="f-topnav-manage-cash-account-in">Manage Cash Account</a></li>    
+                                        
+                                        <li id="ctl00_ctl00_ctl11_liDividerTop" class="divider"></li>
+                                        
+                                        <span id="ctl00_ctl00_ctl11_navManageTeam" class="adminOwner">
+                                            <li class="nav-header">Account Team</li>
+                                            <li ><a href="https://www.guru.com/manage/myteam" class="resp-dropdown__content__item" id="f-topnav-myteam-in">Manage Team</a></li>	
+                                        </span>
+
+
+                                        <li id="ctl00_ctl00_ctl11_liSwitchAccountFLDivider" class="divider"></li>
+                                        
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                        
+
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/help/" id="f-topnav-help-in">Help</a>
+                                        </li>
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/LogOut.aspx" id="f-topnav-signout-in">Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ctl00_ctl00_ctl11_navMenuRow" class="globalHeader__menu">
+            <div class="container">
+                <nav class="globalHeader__nav adminOwner">
+                    <a href="https://www.guru.com/pro/" id="ctl00_ctl00_ctl11_navDashboard" class="globalHeader__nav__item">Dashboard</a>
+                    <a href="https://www.guru.com/work/" id="ctl00_ctl00_ctl11_navWork" level="0" title="Find Work" class="globalHeader__nav__item" utm_content="hdrLeadsTxt">Find Work</a>                  
+                    <a href="https://www.guru.com/pro/jobs/" id="ctl00_ctl00_ctl11_navProjects" level="0" class="globalHeader__nav__item" utm_content="hdrProjectsTxt">Jobs</a>
+                    <a href="https://www.guru.com/payments/invoices/" id="ctl00_ctl00_ctl11_navPaymentsBtn" class="globalHeader__nav__item">Payments</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<input type="hidden" id="GLOBAL_ACCOUNT_INFO" value='{"FirstName": "","LastName": "Gideon", "ScreenName": "Uwa Gideon", "Thumbnail": "https://res.cloudinary.com/gurucom/image/upload/f_auto,w_48,h_48,dpr_2/v1708338917/pimg/FreelancerFiles/5/473/5473483/eodwwdz6qn5heiuvesgm.jpg"}'/>
+<input type="hidden" id="CDN_Base_Url" value="https://img-guru.com/20240217.1" />
+<input type="hidden" id="Guru_ID" value="5473483" />
+
+
+
+    <main role="main" class="mainContent">
+
+        <form method="post" action="./ProfileBuild.aspx?tab=1" id="aspnetForm" class="responsive resp">
+<div>
+<input type="hidden" name="WebAPIURL" id="WebAPIURL" value="https://www.guru.com/api/v1/" />
+<input type="hidden" name="MSAPIURL" id="MSAPIURL" value="https://www.guru.com/" />
+<input type="hidden" name="ctl00_ctl00_scriptMgr_HiddenField" id="ctl00_ctl00_scriptMgr_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE4Mjk3NzMyNw8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAmYPZBYCAgEPZBYEZg9kFggCAQ8WAh4EVGV4dAW7BzxzY3JpcHQ+d2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107DQp3aW5kb3cuZGF0YUxheWVyLnB1c2goeyAnSXNMb2dnZWRJbicgOiAneWVzJ30pOw0Kd2luZG93LmRhdGFMYXllci5wdXNoKHsgJ01lbWJlclR5cGUnIDogJ2ZyZWVsYW5jZXInfSk7DQp3aW5kb3cuZGF0YUxheWVyLnB1c2goeyAnVXNlcklkJyA6ICc1NDczNDgzJ30pOw0Kd2luZG93LmRhdGFMYXllci5wdXNoKHsgJ01lbWJlclNpbmNlJyA6ICcyLzE5LzIwMjQnfSk7DQp3aW5kb3cuZGF0YUxheWVyLnB1c2goeyAnRnJlZWxhbmNlck1lbWJlcnNoaXAnIDogJ2Jhc2ljJ30pOw0KPC9zY3JpcHQ+PG1ldGEgbmFtZT0ibXN2YWxpZGF0ZS4wMSIgY29udGVudD0iQzVFODE0OEMyOUZGQ0VGNzMzQUUxNDFBMEVEMjU4NzkiIC8+DQogIDwhLS0gR29vZ2xlIFRhZyBNYW5hZ2VyIC0tPg0KICAgPHNjcmlwdD4oZnVuY3Rpb24odyxkLHMsbCxpKXt3W2xdPXdbbF18fFtdO3dbbF0ucHVzaCh7J2d0bS5zdGFydCc6bmV3IERhdGUoKS5nZXRUaW1lKCksZXZlbnQ6J2d0bS5qcyd9KTt2YXIgZj1kLmdldEVsZW1lbnRzQnlUYWdOYW1lKHMpWzBdLCBqPWQuY3JlYXRlRWxlbWVudChzKSxkbD1sIT0nZGF0YUxheWVyJz8nJmw9JytsOicnO2ouZGVmZXI9dHJ1ZTtqLnNyYz0naHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RtLmpzP2lkPScraStkbDtqLmFkZEV2ZW50TGlzdGVuZXIoJ2xvYWQnLCBmdW5jdGlvbigpIHsgdmFyIF9nZSA9IG5ldyBDdXN0b21FdmVudCgnZ3RtX2xvYWRlZCcsIHsgYnViYmxlczogdHJ1ZSB9KTsgZC5kaXNwYXRjaEV2ZW50KF9nZSk7IH0pOyBmLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGosZik7fSkod2luZG93LGRvY3VtZW50LCdzY3JpcHQnLCdkYXRhTGF5ZXInLCdHVE0tTEYyMicpOzwvc2NyaXB0Pg0KICAgIDwhLS0gRW5kIEdvb2dsZSBUYWcgTWFuYWdlciAtLT5kAgIPFgIfAQWjAzwhLS0gT25lVHJ1c3QgQ29va2llcyBDb25zZW50IE5vdGljZSBzdGFydCBmb3IgZ3VydS5jb20gLS0+PHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmNvb2tpZWxhdy5vcmcvY29uc2VudC8xY2Q0ZmY2OS00ZTA0LTQ4MmQtYjIzOC1mMzQ4NmM4OGU0MjYvb3RTREtTdHViLmpzIiBkYXRhLWRvY3VtZW50LWxhbmd1YWdlPSJ0cnVlIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGNoYXJzZXQ9IlVURi04IiBkYXRhLWRvbWFpbi1zY3JpcHQ9IjFjZDRmZjY5LTRlMDQtNDgyZC1iMjM4LWYzNDg2Yzg4ZTQyNiI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPmZ1bmN0aW9uIE9wdGFub25XcmFwcGVyKCkgeyB9PC9zY3JpcHQ+PCEtLSBPbmVUcnVzdCBDb29raWVzIENvbnNlbnQgTm90aWNlIGVuZCBmb3IgZ3VydS5jb20gLS0+ZAIDDxYCHwEFnAY8c2NyaXB0PndpbmRvdy5fX2luc3AgPSB3aW5kb3cuX19pbnNwIHx8IFtdOw0Kd2luZG93Ll9faW5zcC5wdXNoKFsndGFnU2Vzc2lvbicsIHtVc2VyVHlwZTogJ2ZyZWVsYW5jZXInLCBJRDogJzU0NzM0ODMnLFVzZXJOYW1lOidVd2EgR2lkZW9uJ31dKTsNCjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKCkgew0KICAgIHdpbmRvdy5fX2luc3AgPSB3aW5kb3cuX19pbnNwIHx8IFtdOw0KICAgIF9faW5zcC5wdXNoKFsnd2lkJywgMjEwNjE4OTg5MF0pOw0KICAgIHZhciBsZGluc3AgPSBmdW5jdGlvbigpew0KICAgIGlmKHR5cGVvZiB3aW5kb3cuX19pbnNwbGQgIT0gInVuZGVmaW5lZCIpIHJldHVybjsgd2luZG93Ll9faW5zcGxkID0gMTsgdmFyIGluc3AgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsgaW5zcC50eXBlID0gJ3RleHQvamF2YXNjcmlwdCc7IGluc3AuYXN5bmMgPSB0cnVlOyBpbnNwLmlkID0gImluc3BzeW5jIjsgaW5zcC5zcmMgPSAoJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAnaHR0cHMnIDogJ2h0dHAnKSArICc6Ly9jZG4uaW5zcGVjdGxldC5jb20vaW5zcGVjdGxldC5qcz93aWQ9MjEwNjE4OTg5MCZyPScgKyBNYXRoLmZsb29yKG5ldyBEYXRlKCkuZ2V0VGltZSgpLzM2MDAwMDApOyB2YXIgeCA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgeC5wYXJlbnROb2RlLmluc2VydEJlZm9yZShpbnNwLCB4KTsgfTsNCiAgICAgICAgc2V0VGltZW91dChsZGluc3AsIDApOw0KICAgIH0pKCk7PC9zY3JpcHQ+ZAIQD2QWBAIFDxYCHwEF+wEgPGxpbmsgaHJlZj0nLy9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJhbGV3YXk6NDAwJyByZWw9J3N0eWxlc2hlZXQnIHR5cGU9J3RleHQvY3NzJy8+IDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Ii9jc3MvbmV3Z3VydS9HdXJ1LmNzcyI+ICA8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGUgPSJ0ZXh0L2NzcyIgaHJlZiA9Ii9jc3MvUHJvZmlsZS9leHRlcm5hbC9ib290c3RyYXAuY3NzIiA+IGQCCw8WAh8BBcUCPHNjcmlwdCBzcmM9Ii8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2FuZ3VsYXIuanMvMS41LjgvYW5ndWxhci5taW4uanMiIHR5cGU9InRleHQvamF2YXNjcmlwdCI+PC9zY3JpcHQ+PHNjcmlwdCBzcmM9Ii8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2FuZ3VsYXIuanMvMS41LjgvYW5ndWxhci1yb3V0ZS5taW4uanMiIHR5cGU9InRleHQvamF2YXNjcmlwdCI+PC9zY3JpcHQ+PHNjcmlwdCBzcmM9Ii8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2FuZ3VsYXIuanMvMS41LjgvYW5ndWxhci1zYW5pdGl6ZS5taW4uanMiPjwvc2NyaXB0PmQCAw8WAh4FY2xhc3MFD3Jlc3BvbnNpdmUgcmVzcBYCAgkPZBYCAgEPZBYWAgkPFgIeBGhyZWYFK2h0dHBzOi8vd3d3Lmd1cnUuY29tL2ZyZWVsYW5jZXJzL3V3YS1naWRlb25kAgoPFgIfAQUKVXdhIEdpZGVvbmQCCw8WAh8DBStodHRwczovL3d3dy5ndXJ1LmNvbS9mcmVlbGFuY2Vycy91d2EtZ2lkZW9uZAINDxYCHgdWaXNpYmxlZ2QCDg8PFgQeCENzc0NsYXNzBQZhY3RpdmUeBF8hU0ICAmRkAg8PDxYEHwVlHwYCAmRkAhEPDxYEHwVlHwYCAmRkAhIPDxYEHwVlHwYCAmRkAhMPDxYEHwVlHwYCAmRkAhQPDxYEHwVlHwYCAmRkAhgPDxYEHwVlHwYCAmRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBSNjdGwwMCRjdGwwMCRndUIkZ3VCJGN0bDAwJGluZGl2UmRpbwUiY3RsMDAkY3RsMDAkZ3VCJGd1QiRjdGwwMCRjb21wUmRpb6jtfAY5hvU15gqQYKeD7GnD24X2" />
+</div>
+
+
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5CE274CF" />
+</div>
+            <div id="divact" style="display: none">
+                <input type="hidden" name="ctl00$ctl00$hdnact" id="ctl00_ctl00_hdnact" value="Freelancer" />
+            </div>
+            <div id="ctl00_ctl00_pnlSm">
+	
+<input type="hidden" name="ctl00$ctl00$scriptMgr" id="ctl00_ctl00_scriptMgr" />
+
+            
+</div>
+            
+            
+
+<div id="ctl00_ctl00_guRefresh_guError" style="display: none; width: 400px; margin: 10px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+	    <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="" style="border: 1px solid #961C1A;background-color: #FDDDDD;">
+	<tr>
+		<td class="standardText" style="padding: 5px;"><span id="ctl00_ctl00_guRefresh_guError_pnlErrorMessage" style="display:inline-block;width:100%;">
+                <span class="bodyTitles" style="vertical-align: middle;"><span id="ctl00_ctl00_guRefresh_guError_lblErrorTitle">Error</span></span><br />
+                <span id="ctl00_ctl00_guRefresh_guError_lblMessage">An error occurred while attempting to process your request.</span></span></td>
+	</tr>
+</table>
+        </td>
+    </tr>
+    </table>
+</div>
+
+<span id="ctl00_ctl00_guRefresh_lblErrorHeader" style="display: none;">A system error has occurred.<br/>Please <a href='/contact.aspx' target='_blank'>Contact Us</a> so we can correct the problem. Kindly copy and paste the "Error Details" that appear below into your message to us.<br/><br/>Thank you, and we apologize for the inconvenience,<br/>Guru.com Team<br/><br/><br/><b>Error details:</b><br/>Page: /pro/ProfileBuild.aspx<br></span>
+
+
+
+            
+
+    
+    <div id="hdnAdobeUiKeyContainer">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnAdobeUiKey" id="ctl00_ctl00_guB_guB_hdnAdobeUiKey" value="8cb83c8070c94882a335f3a4f11ef8ae" />
+    </div>
+    <div id="hdnCloudinaryCloudC">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnCloudinaryCloud" id="hdnCloudinaryCloud" value="gurucom" />
+    </div>
+    <div id="hdnCloudinaryBaseFolderC">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnCloudinaryBaseFolder" id="hdnCloudinaryBaseFolder" value="pimg" />
+    </div>
+    <div id="hdnCloudinaryPresetWithoutCropC">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnCloudinaryPresetWithoutCrop" id="hdnCloudinaryPresetWithoutCrop" value="r4cwdvln" />
+    </div>
+    <div id="hdnMinCelebConfidenceScoreC">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnMinCelebConfidenceScore" id="hdnMinCelebConfidenceScore" value="90" />
+    </div>
+
+    
+    <style>
+        .messageConfirm {
+            font-size: 22px;
+            padding: 10px 0;
+            line-height: 36px;
+        }
+    </style>
+<div id="confirmDialog" class="modal fade" style="z-index: 999999999999">
+    <div class="modal-header">
+        <span class="messageConfirm" id="confirmTitle">
+            Confirm</span>
+    </div>
+    <div class="modal-body">
+        <p>
+            <strong id="confirmMessage">Are you sure?</strong></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" id='btnConfirmOK' class="btnGreenFlat">OK</a> 
+        <a href="#" id='btnConfirmCancel' class="btnGrayFlat">Cancel</a>
+    </div>
+</div>
+
+
+    <div class="module_secondaryHead no-shadow">
+        <div class="container">
+            <div class="module_headerCrumb control-group flex flex-center">
+                <h1 class="inline">Edit Profile</h1>
+                <div class="pull-right flex flex-center column-gap-half marginLeftAuto">
+                    <div class="flex flex-column">
+                        <p class="darkGrey font-bold rhythmMargin0 align-self-end">Profile Visibility</p>
+                        <p id="visibilityDisabledText" class="lightGrey rhythmMargin0 margin-top-3" style="display: none;">You must adequately fill and publish at least one Service & 'About' information to make your profile public.</p>
+                    </div>
+                    <div>
+                        <span >
+                            <label for="ProfileVisibility" class="g-toggle rhythmMargin0">
+                                <input id="ProfileVisibility" type="checkbox" disabled class="g-toggle__input">
+                                <span class="g-toggle__button"></span>
+                            </label>
+                        </span>
+                        <input name="ctl00$ctl00$guB$guB$hdnProfileVisible" type="hidden" id="ctl00_ctl00_guB_guB_hdnProfileVisible" value="disabled" />
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container pageContent">
+        <div id="vue-feedbackJobDetails">
+            <feedback-job-details-modal ref="feedbackJobDetailsModal"></feedback-job-details-modal>
+        </div>
+        
+        <article class="clearfix">
+            <div id="copydrafts" class="popMsg hide">
+                <p></p>
+            </div>
+            <div id="unpublish" class="popMsg hide">
+                <p></p>
+            </div>
+            <div id="delete" class="popMsg hide" style="left: 50% !important">
+                <p></p>
+            </div>
+
+            <nav class="switchPanel fixedpos" data-spy="affix" data-offset-top="0">
+
+                <div class="module_avatar vertical">
+                    <div class="avatar">
+                        <a href="" id="ctl00_ctl00_guB_guB_aViewProfileLinkImage" class="linkToProfile">
+                            <img src="" height="48px" width="48px" align="absmiddle" class="js-profileImgNav" />
+                        </a>
+                    </div>
+                    <div class="avatarinfo" style="word-wrap: break-word">
+                        <h4 class="identityName rhythmMarginSmall">
+                            <!-- Uwa Gideon -->
+                        </h4>
+                        <div>
+                            <a href="https://www.guru.com/freelancers/uwa-gideon" id="ctl00_ctl00_guB_guB_aViewProfileLink" class="dirty linkToProfile">View Profile</a>
+                        </div>
+                        <div>
+                            
+                            <a href="/pro/ProfileBuild.aspx?tab=8" id="ctl00_ctl00_guB_guB_aupgrade">Upgrade Membership</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+                <ul>
+                    <li class="mainNav"><a href="/pro/ProfileBuild.aspx?tab=1" id="lnkHtml_EditProfile" class=""><span aria-hidden="true" data-icon="&#xe004;"></span>Edit Profile</a>
+                        <ul class="secondaryNav">
+                            <li><a id="html_lnkServices" class="dirty" href="?tab=2">Services/Dedicated Resources</a></li>
+                            <li><a id="html_lnkPortfolio" class="dirty" href="?tab=3">Portfolio</a></li>
+                            <li><a id="html_lnkAbout" class="dirty" href="?tab=1">About</a></li>
+                            <li><a id="html_lnkTest" class="dirty" href="?tab=4">Feedback</a></li>
+                            <li class="hide"><a id="html_lnkAddServices" href="#" onclick="linkClick(5)">Add Services</a></li>
+
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkAbout" class="active" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkAbout&#39;,&#39;&#39;)">About</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkServices" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkServices&#39;,&#39;&#39;)">Services</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkPortfolio" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkPortfolio&#39;,&#39;&#39;)">Portfolio</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkTest" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkTest&#39;,&#39;&#39;)">Feedback</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkAddServices" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkAddServices&#39;,&#39;&#39;)">Add Services</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkAddBids" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkAddBids&#39;,&#39;&#39;)">Bids</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkProfileStats" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkProfileStats&#39;,&#39;&#39;)">Profile Stats</a>
+                            </li>
+                            <li class="hiddenLink">
+                                <a id="ctl00_ctl00_guB_guB_lnkHidden" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkHidden&#39;,&#39;&#39;)">NOTHING</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <input type="hidden" name="ctl00$ctl00$guB$guB$selectedTabNo" id="ctl00_ctl00_guB_guB_selectedTabNo" value="1" />
+                    <li class="mainNav">
+                        <a id="html_lnkMembership" class="dirty" href="?tab=8">
+                            <span aria-hidden="true" data-icon="&#xe90d;"></span>
+                            Membership
+                            
+                        </a>
+                    </li>
+                    <li class="mainNav hiddenLink">
+                        <a id="ctl00_ctl00_guB_guB_lnkMembership" href="javascript:__doPostBack(&#39;ctl00$ctl00$guB$guB$lnkMembership&#39;,&#39;&#39;)">
+                            <span aria-hidden="true" data-icon="&#xe90d;"></span>
+                            Membership
+                            </a>
+                    </li>
+                    <li class="mainNav">
+                        <a id="html_lnkAddBids" class="dirty" href="?tab=6">
+                            <span aria-hidden="true" data-icon="&#xe025;"></span>
+                            Bids
+                        </a>
+                    </li>
+                    <li class="mainNav">
+                        <a id="html_lnkProfileStats" class="dirty" href="?tab=7">
+                            <span aria-hidden="true" data-icon="&#xe026;"></span>
+                            Profile Stats
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Edit Profile Info-->
+
+            <div id="ctl00_ctl00_guB_guB_divPanel" class="panelHold whiteBox boxSize" style="margin-bottom: 70px;">
+
+                <div id="usercontrolResult" ng-app="guru.proManageFeedback" ng-controller="proFeedbackCtrl">
+                    
+
+
+<style type="text/css">
+    .modal-open {
+        height: auto;
+    }
+
+    .cropper {
+        background: #fafafa;
+        padding: 5px;
+        height: 300px;
+        vertical-align: middle;
+        display: table-cell;
+        width: 500px;
+    }
+
+    .progress {
+        background: transparent !important;
+    }
+
+    .txtInput {
+        width: auto !important;
+        color: #555555 !important;
+    }
+
+    .profileImgUrl .txtInput {
+        width: 470px !important;
+    }
+
+    .saveProfileimgURL .inlineButton {
+        width: auto !important;
+        height: 37px !important;
+    }
+
+    .custom-width input {
+        width: 64.3% !important;
+    }
+
+    .custom-width textarea {
+        width: 100% !important;
+    }
+
+    .custom-width select {
+        width: 64.3% !important;
+    }
+
+    select.txtInput {
+        height: 41px !important;
+        padding: 10px 10px 10px 5px !important;
+    }
+
+    .half-width input {
+        width: 45% !important;
+    }
+
+    ul#teamList input[type="text"].teamMemberName.invalid {
+        border-color: #d06320 !important;
+        background: #FDF4C1 !important;
+    }
+
+        ul#teamList input[type="text"].teamMemberName.invalid::-webkit-input-placeholder {
+            color: #d06320 !important;
+        }
+
+        ul#teamList input[type="text"].teamMemberName.invalid:-moz-placeholder {
+            color: #d06320 !important;
+        }
+
+        ul#teamList input[type="text"].teamMemberName.invalid::-moz-placeholder {
+            color: #d06320 !important;
+        }
+
+        ul#teamList input[type="text"].teamMemberName.invalid:-ms-input-placeholder {
+            color: #d06320 !important;
+        }
+
+    .progressContainer {
+        background-color: none !important;
+    }
+
+    .progressbarimage {
+        width: 25px;
+    }
+
+    .progress img {
+        display: none;
+    }
+
+    .attachskill-container {
+        border: 0px solid black;
+    }
+
+    .attachskills {
+        border: 0px solid red;
+        width: 200px;
+        float: left;
+        color: #D37A22;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .takeskilltest {
+        width: 100px;
+        float: right;
+        text-align: right;
+    }
+
+        .takeskilltest a {
+            text-align: right;
+            font-size: 13px;
+            font-style: normal;
+        }
+
+    .takenby {
+        font-size: 11px;
+        font-style: normal;
+        color: #999;
+    }
+
+    .takeskilltestselectdiv {
+        width: 245px;
+    }
+
+        .takeskilltestselectdiv select {
+            height: 26px !important;
+            padding: 2px !important;
+            font-size: 12px !important;
+            font-weight: normal !important;
+        }
+
+    .skilltestlistcontainer {
+        margin-left: 0px;
+    }
+
+    .skillTestsProfile ul li button {
+        width: 90px;
+    }
+
+    .control-group {
+        display: block;
+    }
+
+    .signBad, .signGood, .helpTxt_NOT {
+        display: none;
+    }
+
+    a.addupdateCV {
+        position: relative;
+    }
+
+    .privacyBox {
+        float: left;
+        width: 90%;
+    }
+
+    .divPrivacyContent {
+        float: left;
+        border: 0px solid black;
+        width: 85%;
+    }
+
+    .divPrivacyEdit {
+        float: right;
+        border: 0px solid red;
+        color: #4F8A91;
+        font-weight: bold;
+    }
+
+    .helpPos {
+        width: 200px;
+        background-color: #FFFFFF;
+    }
+
+    label.checkbox {
+        width: 120px;
+    }
+
+    .privacyOptionDiv-child {
+        border-left: 2px solid #E6E6E6;
+        float: left;
+        width: 75%;
+        margin-left: 179px;
+    }
+
+    .privacyHoriLine, .privacyHoriLine-last {
+        float: left;
+        border-bottom: 2px solid #E6E6E6;
+        width: 14px;
+        height: 13px;
+    }
+
+    .privacyHoriLine-last {
+        width: 15px;
+    }
+
+    .controls.privacy-control {
+        margin-left: 25px;
+    }
+
+    .privacyLast-gap {
+        float: left;
+        width: 90%;
+        height: 15px;
+    }
+
+    .privacyOptionLast {
+        float: left;
+        width: 75%;
+        margin-left: 181px;
+        margin-top: -18px;
+    }
+
+    .placeHolder, .placeHolderBad {
+        margin-right: 50px !important;
+    }
+
+    .btn-group-center .btn {
+        float: none;
+        margin: 10px 0 0 -5px;
+        display: inline-block;
+        position: relative;
+    }
+    .btn-group-right {
+        margin-top:10px;
+    }
+    .btn-group-right .btn {
+        float: right;
+    }
+    .btn-group-right .caret {
+        margin-left: 5px;
+    }
+    .btn-group-right .dropdown-menu {
+        right: 0;
+        left: auto;
+        margin: 0px;
+        min-width: 0px !important;
+    }
+    .btn-group-right .dropdown-menu li {
+        padding-top: 5px;
+    }
+    .btn-group-center ul {
+        left: 40.5%;
+    }
+    .editProfilePic {
+        left: 37.5% !important;
+        width: 183px;
+    }
+
+    ul.addInlineContent li {
+        width: 19.91%;
+    }
+    .modals {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: initial;
+        margin: initial;
+        overflow: auto;
+        background-color: transparent;
+    }
+    .modal-header {
+        margin: initial !important;
+	    background: white !important;
+        border-bottom: 1px solid #ddd !important;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modal-backdrop {
+	cursor: default;
+}
+</style>
+<div id="panel1" class="panel">
+    <header class="boxSize">
+        <h1 id="editHead">Edit About Info</h1>
+    </header>
+    
+    <div id="form-f1" class="form-horizontal updateProfile buildForm">
+        <input width="104px" height="120px" type="file" id="TeamMemberImageUpload" accept="image/*"
+            style="display: none" />
+        <input type="file" id="TeamMemberaddImageUpload" accept="image/*" style="display: none" />
+        <input type="file" id="addfiles" style="visibility: hidden; position: absolute; height: 0;" />
+        <input type="file" id="addUpdateResume" style="display: none" />
+        
+
+        <span id="ctl00_ctl00_guB_guB_ctl00_valSummary"><div id="ctl00_ctl00_guB_guB_ctl00_valSummary_valSummary_ErrorText" class="errorMsg" style="display:none"><div> Be sure to correctly complete all of the required fields. </div></div></span>
+        <div id="ctl00_ctl00_guB_guB_ctl00_divBackGroundCover" class="backgroundCover" style="background-image:url(&#39;https://res.cloudinary.com/gurucom/image/upload/f_auto,q_auto,dpr_2/pimg/CoverImages/default_cover_image.jpeg&#39;);">
+            
+
+            
+            
+
+
+        <div style="text-align: center">
+                <div class="module_avatar vertical">
+                    <div class="avatar">
+                        <img src="" id="ctl00_ctl00_guB_guB_ctl00_ucProfilePicture_profileImg" class="profileImg" style="height: 128px; width: 128px" />
+                    </div>
+                    <div class="avatarinfo">
+                        <input type="file" id="profileImageUpload" style="display: none;" accept=".jpg,.png,.jpeg" />
+                        <div id="ctl00_ctl00_guB_guB_ctl00_ucProfilePicture_divProfilePic" class="btn-group btn-group-center pictureOption">
+                            <a id="chooseProfileImage2" class="btn greyButton" style="width:108px">Change Photo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<div id="hndDefaultImagesContainer">
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$ucProfilePicture$hndDefaultImages" id="ctl00_ctl00_guB_guB_ctl00_ucProfilePicture_hndDefaultImages" value="[{&quot;Key&quot;:&quot;default1&quot;,&quot;Value&quot;:&quot;https://res.cloudinary.com/gurucom/image/upload/static/ScreenIcon/def_fl_48.png&quot;}]" />
+</div>
+
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$ucProfilePicture$hdnProfileImgUrl" id="ctl00_ctl00_guB_guB_ctl00_ucProfilePicture_hdnProfileImgUrl" />
+<style type="text/css">
+    .greyButton:active {
+        padding-bottom: 1px;
+    }
+</style>
+        </div>
+        <div id="vue-CoverImageGalleryPopup">
+            <div class="btn-group btn-group-right">
+                <a class="btn module_btn white_btn dropdown-toggle" data-toggle="dropdown" style="padding:3px 8px;">Change cover<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                     <a role="button" @click="showCoverImageGalleryPopup">Apply Template</a>
+                    </li>
+                    <li id="uploadCloudinaryImage"><a id="auploadCloudinaryLocal" href="#">Upload Image</a></li>
+                    <li id="uploadCloudinaryUnsplashImage"><a id="auploadCloudinaryUnsplashImage" href="#">Search Image</a></li>
+                </ul>
+            </div>
+            <cover-image-gallery-popup></cover-image-gallery-popup>
+           </div>
+    
+         <div id="vue-EditProfileCrop">
+            <guru-image-crop ref="guruCropProfileCover" image-id="pImgCover" :min-cropped-width=1000 :min-cropped-height=250 :aspect-ratio=4></guru-image-crop>
+             <guru-image-crop ref="guruCropProfilePic" image-id="pImgProfile" :min-cropped-width=200 :min-cropped-height=200 :aspect-ratio=1></guru-image-crop>
+             <upload-status ref="pImgUploadStatus" widget-button="auploadCloudinaryUnsplashImage"></upload-status>
+        </div>
+        
+        
+        <fieldset>
+            <legend class="first">Public Identity</legend>
+            
+            <div class="control-group">
+                <label class="control-label" for="sn">
+                    Screen Name <span class="asterix">*</span>
+                </label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtScreenName" class="custom-width" onKeyUp="changeProfileUrlText(this.childNodes[1].value)"><div id="ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_DefaultText" class="placeHolder">Screen Name</div><input name="ctl00$ctl00$guB$guB$ctl00$txtScreenName$txtScreenName_TextBox" type="text" value="Uwa Gideon" maxlength="35" id="ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_TextBox" class="txtInput" OnBlur="RemoveSpaces();" /><span id="ctl00_ctl00_guB_guB_ctl00_txtScreenName_ctl00" class="loading"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_NameSign" style="display:none"></span></span>
+                    <div class="instruction">
+                        <span id="ctl00_ctl00_guB_guB_ctl00_spnProfileUrl">https://www.guru.com/freelancers/uwa-gideon</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <div class="control-group" style="display: none">
+                <label class="control-label" for="closeCity">
+                    Metro Area <span class="asterix">*</span>
+                </label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtClosestCity" class="custom-width" MinSelect="1"><div id="ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_DefaultText" style="display:none;" class="placeHolder"></div><input name="ctl00$ctl00$guB$guB$ctl00$txtClosestCity$txtClosestCity_TextBox" type="text" maxlength="30" id="ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_TextBox" class="txtInput" /><span id="ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_NameSign" style="display:none"></span><input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$txtClosestCity$txtClosestCity_TextBox_Value" id="ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_TextBox_Value" value="[{&quot;key&quot;:4193,&quot;value&quot;:&quot;Enugu, Nigeria&quot;}]" /></span>
+                </div>
+            </div>
+            
+
+            
+            <div class="control-group">
+                <label class="control-label" for="website">
+                    Website Link</label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtWebsite" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_DefaultText" class="placeHolder"></div><input name="ctl00$ctl00$guB$guB$ctl00$txtWebsite$txtWebsite_TextBox" type="text" maxlength="100" id="ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_TextBox" class="txtInput" /><span id="ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_NameSign" style="display:none"></span></span>
+                </div>
+            </div>
+            
+
+            
+            
+            <div class="control-group">
+
+                <label class="control-label">Professional Video Link</label>
+                <div class="controls">
+                    
+                    <div style="position: relative; width: 64.3% !important;">
+                        <input name="ctl00$ctl00$guB$guB$ctl00$ProfileVideo" type="text" id="ctl00_ctl00_guB_guB_ctl00_ProfileVideo" class="txtInput js-profileVideo" placeholder="Add the link to your video on YouTube or Vimeo" style="margin-bottom: 0 !important; width: 100% !important; padding-right: 32px  !important" />
+                        
+                         
+                        <input name="ctl00$ctl00$guB$guB$ctl00$ProfileVideoThumbnail" type="hidden" id="ctl00_ctl00_guB_guB_ctl00_ProfileVideoThumbnail" class="js-profileVideoThumbnail" />
+                         
+
+                        <div class="dropdown pull-right"  style="position: absolute; top: 50%; right: 12px; transform: translateY(-50%);">
+                            <i data-icon="&#xf059;" id="profileVideoIcon" aria-hidden="true" class="grey" data-toggle="dropdown"></i>
+                            <div class="dropdown-menu rhythmPadding1" style="width: 235px">
+                                <p class="copy rhythmMargin0 small">
+                                    Add the link of your professional video highlighting your skills and expertise here. This video will be displayed on your Profile. 
+                                    <a href="https://www.guru.com/blog/connect-with-potential-employers-with-a-video/" style="color: #4c83c3; display: inline; padding: 0px" target="_blank">Know more.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructions alert-color" id="profileVideoErrorMessage" style="display:none">
+                        There is something wrong with the video link
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="control-group">
+                <label class="control-label" for="website">
+                    Facebook Link</label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtFacebookLink" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_DefaultText" class="placeHolder"></div><input name="ctl00$ctl00$guB$guB$ctl00$txtFacebookLink$txtFacebookLink_TextBox" type="text" maxlength="100" id="ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_TextBox" class="txtInput" /><span id="ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_NameSign" style="display:none"></span></span>
+                </div>
+            </div>
+            
+            
+            <div class="control-group">
+                <label class="control-label" for="website">
+                    LinkedIn Link</label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_DefaultText" class="placeHolder"></div><input name="ctl00$ctl00$guB$guB$ctl00$txtLinkedInLink$txtLinkedInLink_TextBox" type="text" maxlength="100" id="ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_TextBox" class="txtInput" /><span id="ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_NameSign" style="display:none"></span></span>
+                </div>
+            </div>
+            
+            
+            <div style="float: left; width: 90%;">&nbsp;</div>
+            <div class="control-group">
+                <label class="control-label">
+                    &nbsp;</label>
+                <div class="controls">
+                    <div class="actions saveChanges" id="saveChangesTop" style="border-top: 0;">
+                        <span id="ctl00_ctl00_guB_guB_ctl00_btnSubmitTop" onclick="javascript:return false;" class="primaryBt"><input type="submit" name="ctl00$ctl00$guB$guB$ctl00$btnSubmitTop$btnSubmitTop_Button" value="Save" id="ctl00_ctl00_guB_guB_ctl00_btnSubmitTop_btnSubmitTop_Button" Class="module_btn primary_btn" /><div id="ctl00_ctl00_guB_guB_ctl00_btnSubmitTop_btnSubmitTop_Progress" style="position: fixed; z-index: 100001; left: 574px; top: 169.5px; display: none;"><div class='progress'> <img src='/WebResource.axd?d=vvuCs0-pysRzUUEO-s0c_2YLasAr1ghA0R01Jp3mQg5IUUUj5VLkanZX4Cuuugas4fKZ_ieS4UfSbzcmHs4ponJ_4x2Hi6V5xWPGmtcQelxm5OBDeRJ0LzkhRDXAgCaQthvsoT95P1HE5SfHlLqEZTTeW-k1&t=638437484821638476'></div></div></span>
+                        <img class="progressbarimage hide" src="https://img-guru.com/20240217.1/images/icons/i-wait.gif">
+                    </div>
+                </div>
+            </div>
+            
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Overview</legend>
+            
+            <div class="control-group">
+                <label class="control-label" for="indivRdio">
+                    I am...</label>
+                <div class="controls">
+                    <label for="ctl00_ctl00_guB_guB_ctl00_indivRdio" class="radio inline">
+                        <input value="indivRdio" name="ctl00$ctl00$guB$guB$ctl00$indivComp" type="radio" id="ctl00_ctl00_guB_guB_ctl00_indivRdio" onkeypress="enterpressalert(event, this)" checked="checked" />An
+                        Individual</label>
+                    &nbsp;&nbsp;
+                    <label for="ctl00_ctl00_guB_guB_ctl00_compRdio" class="radio inline">
+                        <input value="compRdio" name="ctl00$ctl00$guB$guB$ctl00$indivComp" type="radio" id="ctl00_ctl00_guB_guB_ctl00_compRdio" onkeypress="enterpressalert(event, this)" />A Company</label>
+                </div>
+            </div>
+            
+            
+            
+            <div class="control-group">
+                <label class="control-label" for="tagline">Tagline</label>
+
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtTagLine" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_DefaultText" class="placeHolder">Write a tagline that conveys your mission, your promise, and your brand.</div><textarea name="ctl00$ctl00$guB$guB$ctl00$txtTagLine$txtTagLine_TextBox" rows="2" cols="20" id="ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_TextBox" class="txtInput full-width" OnBlur="countChar(1);" OnKeyUp="countChar(1);" OnDrop="countChar(1);">
+</textarea><span id="ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_NameSign" style="display:none"></span></span>
+                    <div id="ctl00_ctl00_guB_guB_ctl00_countTagLine" class="instruction countTagLine">
+                        190 characters left
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="control-group" id="bio">
+                <label class="control-label">
+                    Bio <span class="asterix">*</span>
+                </label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtBio" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_DefaultText" class="placeHolder">Tell your story! Include information about your work experience, values, personal anecdotes, hobbies, etc.</div><textarea name="ctl00$ctl00$guB$guB$ctl00$txtBio$txtBio_TextBox" rows="7" cols="20" id="ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_TextBox" class="txtInput" OnBlur="countChar(2);" OnKeyUp="countChar(2)" OnDrop="countChar(2)">
+</textarea><span id="ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_NameSign" style="display:none"></span></span>
+                    <div id="ctl00_ctl00_guB_guB_ctl00_countBio" class="instruction countBio">
+                        3000 characters left
+                    </div>
+                    <div class="instructions alert-color" id="bioErrorMessage" style="display:none">
+                        Please use at least 300 characters.
+                    </div>
+                    <div class="instructions alert-color" id="bioEmptyErrorMessage" style="display:none">
+                        Mandatory field.
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="control-group hide" id="aboutCompany">
+                <label class="control-label">
+                    Company History <span class="asterix">*</span>
+                </label>
+                <div class="controls">
+                     <span id="ctl00_ctl00_guB_guB_ctl00_txtAboutCompany" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_DefaultText" class="placeHolder">Tell your company's story! Include information about the individuals that make up the company, as well as the company itself.</div><textarea name="ctl00$ctl00$guB$guB$ctl00$txtAboutCompany$txtAboutCompany_TextBox" rows="7" cols="20" id="ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_TextBox" class="txtInput" OnBlur="countChar(4);" OnKeyUp="countChar(4)" OnDrop="countChar(4)">
+</textarea><span id="ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_NameSign" style="display:none"></span></span>
+                    <div id="ctl00_ctl00_guB_guB_ctl00_countAboutCompany" class="instruction countAboutCompany">
+                        3000 characters left
+                    </div>
+                    <div class="instructions alert-color" id="companyHistoryErrorMessage" style="display:none">
+                        Please use at least 300 characters.
+                    </div>
+                    <div class="instructions alert-color" id="companyHistoryEmptyErrorMessage" style="display:none">
+                        Mandatory field.
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="control-group hide  smaller-input" id="opSince">
+                <label class="control-label" for="opSinceInput">
+                    Operating since</label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_opSinceInput" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_DefaultText" class="placeHolder"></div><input name="ctl00$ctl00$guB$guB$ctl00$opSinceInput$opSinceInput_TextBox" type="text" maxlength="4" id="ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_TextBox" class="txtInput" /><span id="ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_NameSign" style="display:none"></span></span>
+                </div>
+            </div>
+            
+            
+            <div class="control-group hide" id="team">
+                <label class="control-label" for="teamInput">
+                    Featured Team Members</label>
+                <div class="controls">
+                    <li id='addTeamMember' class="hide"><a href='#' title="Add a Team Member">
+                        <img src='https://img-guru.com/20240217.1/images/profile/addTeammate.png'></a></li>
+                    <ul class="addInlineContent clearfix pro" id="teamList">
+                        <script type="text/x-tmpl" id="teamTemplate">
+                                    <li teamMemberid="{{ID}}" displayIndexOnLoad={{DisplayIndex}} class="item draggable ">
+                                        <div class="editProjGroup" style="top:-10px; right:-5px;">
+                                            <a class="btn greyButton dropdown-toggle" data-toggle="dropdown" ><span
+                                                class="caret"></span></a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a  class="UpdatePhoto">Change Photo</a></li>
+                                                <li><a  class="DeleteTeamMember">Remove</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <img style="max-height: 94px;" src="{{ImagePath}}">
+                                        <input type="text" class="teamMemberName" placeholder="Name" maxlength="25" value="{{Name}}">
+                                        <input type="text" class="teamMemberTitle" placeholder="Title" maxlength="30"  value="{{Title}}">
+                                        <a class="addupdateCV linkpd"><span>{{resumestatus}}</span></a>
+                                        <div class="instructionTxt">(pdf / doc)</div>
+                                    </li>
+                        </script>
+                    </ul>
+                </div>
+            </div>
+            <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnTeamMembers" id="ctl00_ctl00_guB_guB_ctl00_hdnTeamMembers" value="[]" />
+            
+            
+            <br />
+            <div class="control-group">
+                <label class="control-label" for="Work Terms">
+                    Work Terms</label>
+                <div class="controls">
+                    <span id="ctl00_ctl00_guB_guB_ctl00_txtWorkTerms" class="custom-width"><div id="ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_DefaultText" class="placeHolder">Hours of operation, payment terms, and preferred communication style, etc.</div><textarea name="ctl00$ctl00$guB$guB$ctl00$txtWorkTerms$txtWorkTerms_TextBox" rows="4" cols="20" id="ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_TextBox" class="txtInput" OnBlur="countChar(3);" OnKeyUp="countChar(3)" OnDrop="countChar(3)">
+</textarea><span id="ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_Instruction" class="helpTxt" style="display:none"></span><span id="ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_NameSign" style="display:none"></span></span>
+                    <div id="ctl00_ctl00_guB_guB_ctl00_countWorkTerms" class="instruction countWorkTerms">
+                        2000 characters left
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="control-group">
+                <label class="control-label">
+                    &nbsp;</label>
+                <div class="controls">
+                    <div class="actions saveChanges" id="saveChangesBottom" style="border-top: 0;">
+                        <span id="ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom" onclick="javascript:return false;" class="primaryBt"><input type="submit" name="ctl00$ctl00$guB$guB$ctl00$btnSubmitBottom$btnSubmitBottom_Button" value="Save" id="ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom_btnSubmitBottom_Button" Class="module_btn primary_btn" /><div id="ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom_btnSubmitBottom_Progress" style="position: fixed; z-index: 100001; left: 574px; top: 169.5px; display: none;"><div class='progress'> <img src='/WebResource.axd?d=vvuCs0-pysRzUUEO-s0c_2YLasAr1ghA0R01Jp3mQg5IUUUj5VLkanZX4Cuuugas4fKZ_ieS4UfSbzcmHs4ponJ_4x2Hi6V5xWPGmtcQelxm5OBDeRJ0LzkhRDXAgCaQthvsoT95P1HE5SfHlLqEZTTeW-k1&t=638437484821638476'></div></div></span>
+                        <img class="progressbarimage hide" src="https://img-guru.com/20240217.1/images/icons/i-wait.gif">
+                    </div>
+                </div>
+            </div>
+            
+        </fieldset>
+        
+        
+        <fieldset>
+             <link rel="stylesheet" href="https://img-guru.com/20240217.1/css/newguru/pages/Profile/EditProfile.css">
+            <legend>Attach Files and Videos</legend>
+              <div id="vue-EditProfileAttachments">
+                <edit-profile-attachments>
+                </edit-profile-attachments>
+            </div>
+         </fieldset>
+    </div>
+    
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnEmbedVideo" id="hdnEmbedVideo" />
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnEmbedVideoThumbnail" id="hdnEmbedVideoThumbnail" />
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnYoutubeKey" id="ctl00_ctl00_guB_guB_ctl00_hdnYoutubeKey" value="AIzaSyCckKUdh4NGMlpZCgg89XClFppZKjwcHFE" />
+    
+    
+</div>
+
+</div>
+<div id="SocialLink" class="popMsg hide" style="z-index: 100000; top: 0px; left: 200px;">
+    <p>
+    </p>
+</div>
+
+
+
+<div id="ctl00_ctl00_guB_guB_ctl00_pnlUpdateProgress" class="progressContainer" style="display: none;">
+	
+    <div class="progress"><img src="https://img-guru.com/20240217.1/images/icons/i-wait.gif" /></div>
+
+</div>
+<div id="SaveChanges2" class="popMsg hide">
+    <p>
+    </p>
+</div>
+
+<!-- Crop Model TEam Member  Pic update Start-->
+<div class="modal fade cropModal hide" id="cropModalTeamMember">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+            x</button>
+        <h1 style="font-size: 28px;">Crop Image</h1>
+    </div>
+    <div class="modal-body">
+        <div class="content">
+            <div class="clearfix" id="Div4">
+                <div id="teamMemberPicCropper" align="center" class="cropper">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer" style="text-align: left">
+        <input type="button" class="btnGreenFlat" value="Finish"
+            id="cropFinishTeamMember" />
+        <input type="button" class="btnGrayFlat" data-dismiss="modal" id="Button4"
+            value="Cancel" />
+    </div>
+</div>
+<!-- Crop Model TEam Member Pic update End-->
+<!-- Crop Model TEam Member Pic Start-->
+<div class="modal fade cropModal hide" id="cropModaladdTeamMember">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+            x</button>
+        <h1 style="font-size: 28px;">Crop Image</h1>
+    </div>
+    <div class="modal-body">
+        <div class="content">
+            <div class="clearfix" id="Div5">
+                <div id="addTeamMemberPicCropper" align="center" class="cropper">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer" style="text-align: left">
+        <input type="button" class="btnGreenFlat" value="Finish"
+            id="cropFinishaddTeamMember" />
+        <input type="button" class="btnGrayFlat" data-dismiss="modal" id="Button5"
+            value="Cancel" />
+    </div>
+</div>
+<!-- Crop Model TEam Member Pic End-->
+<!-- Social Link  Modal Start-->
+<div class="modal fade hide" id="SocialLinkModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;</button>
+        <h2>Share Social URL
+        </h2>
+    </div>
+    <div class="modal-body">
+        <!-- <form>-->
+        <label>
+            <strong>Copy your profile link</strong></label>
+        <textarea class="full-width boxSize" id="socialLinkURL"></textarea>
+        <!--<div class="instruction">
+                Embed your image from........</div>-->
+        <!--</form>-->
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="modal-footer">
+        <button class="btn inlineButton btn-large" id="socialLinkEnable" onclick="javascript:return false;">
+            Done</button>
+        <button class="btn greyButton btn-large" id="socialLinkDisable" data-dismiss="modal">
+            Cancel</button>
+    </div>
+</div>
+<!-- Social Link Modal End-->
+
+
+<div class="helpPos popArrow  border-callout" style="display: none;" id="helpDiv">
+    <div>
+        <div class="padding10 borderBottomGray">
+            <div style="float: right">
+                <a href="javascript:void();" class="BlueLinks" onclick="hide('helpDiv')">Close</a>
+            </div>
+            <div class="txt16px txt333">
+                <strong>Only owner</strong>
+            </div>
+            <div style="clear: both">
+            </div>
+        </div>
+        <div class="padding20 paddingBottom5 paddingTop10 txt666">
+            <div class="txt666 txt13px">
+                Only the account owner can change this info.
+            </div>
+        </div>
+        <div class="borderTopGray padding5 backF5F5F5 hide" align="right">
+            <a href="javascript:help('help/freelancer/about-feedback-freelancer/')" class="BlueLinks">Read More in the Help Center</a>
+        </div>
+    </div>
+    <b class="border-notchLT notchLT"></b><b class="notchLT"></b>
+</div>
+
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnSocialLinkDisplayData" id="ctl00_ctl00_guB_guB_ctl00_hdnSocialLinkDisplayData" value="[{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:1,&quot;NetworkImgTage&quot;:&quot;&amp;#xe00d;&quot;,&quot;NetworkName&quot;:&quot;Facebook&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;facebook&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:2,&quot;NetworkImgTage&quot;:&quot;&amp;#xe00e;&quot;,&quot;NetworkName&quot;:&quot;Twitter&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;twitter&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:3,&quot;NetworkImgTage&quot;:&quot;&amp;#xe00f;&quot;,&quot;NetworkName&quot;:&quot;Google Plus&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;google&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:4,&quot;NetworkImgTage&quot;:&quot;&amp;#xe010;&quot;,&quot;NetworkName&quot;:&quot;Dribble&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;dribbble&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:5,&quot;NetworkImgTage&quot;:&quot;&amp;#xe011;&quot;,&quot;NetworkName&quot;:&quot;Vimeo&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;vimeo&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:6,&quot;NetworkImgTage&quot;:&quot;&amp;#xe012;&quot;,&quot;NetworkName&quot;:&quot;Youtube&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;youtube&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:7,&quot;NetworkImgTage&quot;:&quot;&amp;#xe013;&quot;,&quot;NetworkName&quot;:&quot;Flicker&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;flickr&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:8,&quot;NetworkImgTage&quot;:&quot;&amp;#xe014;&quot;,&quot;NetworkName&quot;:&quot;Linkedin&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;linkedin&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:9,&quot;NetworkImgTage&quot;:&quot;&amp;#xe015;&quot;,&quot;NetworkName&quot;:&quot;Zerply&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;github&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:10,&quot;NetworkImgTage&quot;:&quot;&amp;#xe016;&quot;,&quot;NetworkName&quot;:&quot;Github&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;zerply&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:11,&quot;NetworkImgTage&quot;:&quot;&amp;#xe017;&quot;,&quot;NetworkName&quot;:&quot;Stackoverflow&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;stackoverflow&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:12,&quot;NetworkImgTage&quot;:&quot;&amp;#xe018;&quot;,&quot;NetworkName&quot;:&quot;Forrst&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;forrst&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:13,&quot;NetworkImgTage&quot;:&quot;&amp;#xe019;&quot;,&quot;NetworkName&quot;:&quot;Instagram&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;instagram&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:14,&quot;NetworkImgTage&quot;:&quot;&amp;#xe01a;&quot;,&quot;NetworkName&quot;:&quot;Tumblr&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;tumblr&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:15,&quot;NetworkImgTage&quot;:&quot;&amp;#xe01b;&quot;,&quot;NetworkName&quot;:&quot;Soundcloud&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;soundcloud&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:16,&quot;NetworkImgTage&quot;:&quot;&amp;#xe01c;&quot;,&quot;NetworkName&quot;:&quot;Treehouse&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;treehouse&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:17,&quot;NetworkImgTage&quot;:&quot;&amp;#xe01d;&quot;,&quot;NetworkName&quot;:&quot;Behance&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;behance&quot;},{&quot;ID&quot;:0,&quot;IsChanged&quot;:false,&quot;IsOpted&quot;:0,&quot;NetworkId&quot;:18,&quot;NetworkImgTage&quot;:null,&quot;NetworkName&quot;:&quot;Apple&quot;,&quot;NetworkURL&quot;:&quot;&quot;,&quot;css&quot;:&quot;apple&quot;}]" />
+<!-- default cover image model-->
+<div id="hdnBackgroundTemplatesContainer">
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnBackgroundTemplates" id="ctl00_ctl00_guB_guB_ctl00_hdnBackgroundTemplates" value="[{&quot;Key&quot;:1,&quot;Value&quot;:&quot;/images/CoverImage/admin.png&quot;},{&quot;Key&quot;:2,&quot;Value&quot;:&quot;/images/CoverImage/art-design-multimedia.png&quot;},{&quot;Key&quot;:3,&quot;Value&quot;:&quot;/images/CoverImage/engineering-architecture.png&quot;},{&quot;Key&quot;:4,&quot;Value&quot;:&quot;/images/CoverImage/legal.png&quot;},{&quot;Key&quot;:5,&quot;Value&quot;:&quot;/images/CoverImage/management-finance.png&quot;},{&quot;Key&quot;:6,&quot;Value&quot;:&quot;/images/CoverImage/sales-marketing.png&quot;},{&quot;Key&quot;:7,&quot;Value&quot;:&quot;/images/CoverImage/web-software-it.png&quot;},{&quot;Key&quot;:8,&quot;Value&quot;:&quot;/images/CoverImage/writing-translation.png&quot;}]" />
+</div>
+
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnProURL" id="ctl00_ctl00_guB_guB_ctl00_hdnProURL" value="https://www.guru.com" />
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnScreenName" id="ctl00_ctl00_guB_guB_ctl00_hdnScreenName" value="Uwa Gideon" />
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnAttachedFilesDetail" id="hdnAttachedFilesDetail" value="[]" />
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnGroupID" id="ctl00_ctl00_guB_guB_ctl00_hdnGroupID" />
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnAttchFileSize" id="ctl00_ctl00_guB_guB_ctl00_hdnAttchFileSize" value="0" />
+<input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnNewFilesAdded" id="ctl00_ctl00_guB_guB_ctl00_hdnNewFilesAdded" />
+<div id="hdnGoogleSearchKeyC">
+    <input type="hidden" name="ctl00$ctl00$guB$guB$ctl00$hdnGoogleSearchKey" id="ctl00_ctl00_guB_guB_ctl00_hdnGoogleSearchKey" value="AIzaSyCbEpklKGPzd5OL0ULLTJWHBosgUPnkXDo" />
+</div>
+
+<div id="unpublishModal" class="modal fade" style="display:none">
+    <div class="modal-header">
+        <span class="messageConfirm" id="confirmTitle">Your profile has been made Private</span>
+    </div>
+    <div class="modal-body">
+        <p><strong>Your profile will be eligible to be Public when you publish a service or dedicated resource.</strong></p>
+    </div>
+    <div class="modal-footer">
+       <button id="unpublishModalCloseBtn" class="module_btn primary_btn">Ok</button>
+    </div>
+</div>  
+
+                            <div class="clearfix">
+                                <div class="pull-right" ng-if="feedbackScore">
+                                    <feedback-score score="feedbackScore" show-medium="true" clickable="false" show-badge="true" show-badge="true"></feedback-score>
+                                    <div class="lightGrey">
+                                        <i data-icon="&#xf164" aria-hidden="true"></i>{{RevenuePositive12 | currency:undefined:0}} | <i data-icon="&#xf165" aria-hidden="true"></i>
+                                        {{RevenueNegative12 | currency:undefined:0}}
+                                    </div>
+                                </div>
+                                <h1>Feedback and Testimonials</h1>
+                            </div>
+                            <ul class="module_tabs">
+                                <li class="tab" ng-class="{'active': tab == 0}" ng-click="tab = 0"><a>Feedback</a></li>
+                                <li class="tab" ng-class="{'active': tab == 1}" ng-click="tab = 1"><a>Testimonials</a></li>
+                            </ul>
+                        </header>
+
+                        <manage-feedback is-guru="true" show-filters="true" show-actions="true" page-size="25" ng-if="tab == 0"></manage-feedback>
+                        <testimonials freelancer-id="5473483" ng-if="tab == 1"></testimonials>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div id="dialog-savechanges" class="hide" title="Save Changes?">
+        <p>You've made changes to this page. Do you want to leave this page without saving?</p>
+    </div>
+    <div class="divCurrentMemberShipIdp">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnCurrentMemberShipId" id="ctl00_ctl00_guB_guB_hdnCurrentMemberShipId" />
+    </div>
+
+    <div class="divCurrentMemberShipNamep">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnCurrentMemberShipName" id="ctl00_ctl00_guB_guB_hdnCurrentMemberShipName" />
+    </div>
+
+    <div class="divPriceRenewp">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnPriceToRenew" id="ctl00_ctl00_guB_guB_hdnPriceToRenew" />
+    </div>
+
+    <div class="divFreelancerIdp">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnFreelancerId" id="ctl00_ctl00_guB_guB_hdnFreelancerId" value="5473483" />
+    </div>
+
+    <div class="divMemPlanTypep">
+        <input type="hidden" name="ctl00$ctl00$guB$guB$hdnMemPlanType" id="ctl00_ctl00_guB_guB_hdnMemPlanType" />
+    </div>
+    <script src="https://img-guru.com/20240217.1/js/Guru.Util.js" type="text/javascript"></script>
+    <script src="https://img-guru.com/20240217.1/js/ngapps/manageFeedback.min.cff609b7a198e19c.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //to fix bug 4497: adding javascript code to disable enter key pressing on text boxes
+        function stopEnterKey(evt) {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+        }
+        document.onkeypress = stopEnterKey;
+    </script>
+    <script type="text/javascript">
+        const visibilityToggle  = document.getElementById('ProfileVisibility');
+        // to show/hide visibilityDisabledText on initial render
+        if (visibilityToggle.disabled)
+            $('#visibilityDisabledText').show()
+        else 
+            $('#visibilityDisabledText').hide();
+
+        // to show/hide visibilityDisabledText on disabled attribute change
+        const observer = new MutationObserver(function(mutations) {
+           for (const mutation in mutations) {
+                if (visibilityToggle.disabled)
+                    $('#visibilityDisabledText').show()
+                else
+                    $('#visibilityDisabledText').hide();
+           }
+        });
+        observer.observe(visibilityToggle, { 
+        attributes: true, 
+        attributeFilter: ['disabled'] });
+
+        $('#ProfileVisibility').change(function () {
+            var Data2Send = "{ \"isPublic\":" + ProfileVisibility.checked + " }";
+            $.ajax({
+                type: "POST",
+                url: "../Services/FreelancerService.svc/UpdateProfileVisibilty", // service to handle the ajax call
+                data: Data2Send,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (resp) {
+                    if (!ProfileVisibility.checked) {                           // Toggle button to private
+                        freelancerId = $('#Guru_ID').val();
+                        $.ajax({
+                            url: '../Services/FreelancerService.svc/IsQualifiedForPublicProfile',
+                            type: 'POST',
+                            data: "{ \"freelancerId\":" + freelancerId + " }",
+                            contentType: "application/json; charset=utf-8",
+                            success: function (response) {
+                                if (!response.d.Result) {
+                                    $('#ProfileVisibility').attr('disabled', true);
+                                }
+                            },
+                            error: function () {
+                                ShowPopUpMsg('Something went wrong', 2500);
+                            }
+                        });
+                    }
+                    if (!resp.d.Result) {
+                        if (ProfileVisibility.checked) {
+                            $('#ProfileVisibility').attr('checked', false);
+                        }
+                    }
+                },
+                error: function (result) {
+                    ShowPopUpMsg('Something went wrong', 2500);
+                }
+            });
+        });
+
+        $('body').addClass('buildProfile');
+
+        function linkClick(p) {
+            var url = "";
+            url = "?tab=" + p;
+            $(location).attr('href', url);
+        }
+        function setSelectedTab() {
+            var tabNo = $('#ctl00_ctl00_guB_guB_selectedTabNo').val();
+            var linkId = '';
+            switch (parseInt(tabNo)) {
+                case 1:
+                    linkId = 'html_lnkAbout';
+                    break;
+                case 2:
+                    linkId = 'html_lnkServices';
+                    break;
+                case 3:
+                    linkId = 'html_lnkPortfolio';
+                    break;
+                case 4:
+                    linkId = 'html_lnkTest';
+                    break;
+                case 5:
+                    linkId = 'html_lnkServices';
+                    break;
+                case 6:
+                    linkId = 'html_lnkAddBids';
+                    break;
+                case 7:
+                    linkId = 'html_lnkProfileStats';
+                    break;
+                case 8:
+                    linkId = 'html_lnkMembership';
+                    break;
+                default:
+                    linkId = 'html_lnkServices';
+                    break;
+            }
+            $('#' + linkId).addClass("active");
+        }
+        setSelectedTab();
+    </script>
+    <script type="text/javascript" language="JavaScript">
+        $(document).ready(function () {
+
+            if ($.browser.msie && $.browser.version == 10) {
+                $('input[type="radio"]').css('margin-top', '-2px');
+                $('input[type="checkbox"]').css('margin-top', '-2px');
+            }
+        });
+
+        var PORTFOLIO_MODE = '';
+        var PORTFOLIO_ID = '';
+        var PORTFOLIO_CONTAINER = 'draftsList';
+
+        function addPortfolio() {
+            PORTFOLIO_MODE = 'add';
+        }
+        function editPortfolio(portfolioId, container) {
+            if (!IsNumeric(portfolioId)) {
+                portfolioId = 0;
+            }
+            PORTFOLIO_ID = portfolioId;
+            PORTFOLIO_CONTAINER = container;
+            PORTFOLIO_MODE = 'edit';
+        }
+    </script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script src="https://img-guru.com/20240217.1/js/cloudinaryWidget/all.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://img-guru.com/20240217.1/js/bootstrap/ui-bootstrap-tpls-1.1.js"></script>
+    <script type="text/javascript" src="https://img-guru.com/20240217.1/js/profile/external/jquery.drag-drop.plugin.js"></script>
+    <script type="text/javascript" src="https://img-guru.com/20240217.1/js/profile/external/basket.js"></script>
+    <script type="text/javascript" src="https://img-guru.com/20240217.1/js/profile/main.js"></script>
+
+    <script type="text/javascript" src="https://img-guru.com/20240217.1/js/bundles/feedbackJobs-bundle.444e3845a2b1fb58.js"></script>
+    <script>
+        (function () {
+            $(document).on('click', '#ctl00_ctl00_guB_guB_btnRenewMemb', function () {
+                var MembershipTypeID = parseInt($('.divCurrentMemberShipIdp input').val());
+                var MembershipTypeName = $('.divCurrentMemberShipNamep input').val();
+                var priceToSend = $('.divPriceRenewp input').val();
+                var planType = $('.divMemPlanTypep input').val().toLowerCase();
+                var fun = 'renew';
+                var serviceURL = window.location.protocol + "//" + window.location.host + "/";
+
+                $.ajax({
+                    type: "GET",
+                    url: serviceURL + "api/payments/GetMembershipPurchaseID?price=" + priceToSend + "&membershipType=" + MembershipTypeID + "&membershipDurationType=" + planType + "&membershipAction=" + fun, //service to handle the ajax call
+                    contentType: "application/json",
+                    dataType: "json",
+                    success: function (resp) {
+                        window.location.href = serviceURL + "payment/membership/" + resp;
+                    },
+                    error: function (result) {
+                        // in case when method didn't call
+                    }
+                });
+
+                return false;
+            });
+        })();
+        // To apply style on mount
+        if (window.screen.availWidth <= 984) $('body').css('width', 'fit-content');
+        // To apply style on resize
+        $(window).resize(() => {
+            if (window.screen.availWidth <= 984) $('body').css('width', 'fit-content');
+            else $('body').css('width', 'auto')
+        })
+    </script>
+
+<script type="text/javascript">
+
+    if ($('header.profile-intro').length) {
+        if ($('header.profile-intro').css('background-image').indexOf('/coverimage/') != -1) {
+            $('header.profile-intro').addClass('templateRepeat');
+        }
+        if ($('header.profile-intro').css('background-image').indexOf('/CoverImage/') != -1) {
+            $('header.profile-intro').addClass('templateRepeat');
+        }
+   
+    }
+    if (canUseWebP()) {
+        $('html').addClass('webp').removeClass('nowebp');
+    }
+    else {
+        $('html').addClass('nowebp').removeClass('webp');
+    }
+        
+    function canUseWebP() {
+    var elem = document.createElement('canvas');
+
+    if (!!(elem.getContext && elem.getContext('2d'))) {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+    }
+
+    // very old browser like IE 8, canvas not supported
+    return false;
+}
+</script>
+
+            <div style="text-align: center; position: relative; top: 0; width: 100%; left: 0;">
+                <span id="ctl00_ctl00_popMsg"><div id='ctl00_ctl00_popMsg' align='center' style='display:none'> </div><script>function ShowPopUpMsg(Message, Duration){var div = document.getElementById('ctl00_ctl00_popMsg');  div.innerHTML = Message;div.style.display = '';div.className = 'popMsg';let timer1 = setTimeout(function() { div.style.display = 'none'; }, Duration);}</script></span>
+            </div>
+        <input type="hidden" name="ctl00$ctl00$hdnGuid" id="ctl00_ctl00_hdnGuid" value="GUID" />
+
+<script type="text/javascript">
+//<![CDATA[
+function onPostBack(){ 
+var y=generateRandomSequence(); 
+var hdnGuid=document.getElementById('ctl00_ctl00_hdnGuid'); 
+hdnGuid.value = y; 
+} 
+
+function generateRandomSequence(){ 
+var g = ''; 
+for(var i = 0; i < 32; i++) 
+g += Math.floor(Math.random() * 0xF).toString(0xF)  
+return g  
+}  
+(function() {var fn = function() {$get("ctl00_ctl00_scriptMgr_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function(){RefreshErrorHandler_AppInit});//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=cJcTsXC2BPGiWnHUQdSUs18lp8N2je7rPosUyjuNuEdlthzGWZFHm55abcPxTPWiJpEtoumkfqKhrcJkzphyv0ZnTyu89wljj1ztcgoS4wdfsmc_qPp8Tf5hahxEWM2eX02c-HK7cy4G28hei5mzYl7slH6HQJR9R2YeYZsbJLs7djVJ0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=SYnrnf1SSrypSCqY9xSRzisk4T2qtgLxalowtXYwKsZh5uWMzo2_2dZN0alhUi5HGrH-oNlagkIslMSnwF9l75KBGE9gpHTzRkAbGLcl10lComSDuTJRvYriA-CWvYLyPFesOx7FMc_ee2-DmQT95ny-nirizy2oUVgXfyGyeo51t_N30&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=u17aaK6_oIFQolOaC7AWbN_5KiYPbOtj8uSew15hjRnRUu4KrWBQjE055mMwpWd4TzDRzkMwr3juunhIYOn2Qp6vCuCgrQor5sob9GQJhUtZyKT-sWnq8vOzl0Y4haLS8Veh3ivCsANaYFBtQjRT1I0XU188As5cjEmApHO1CQUx3VIm0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=K5N6ezbWO9eouCWUAO8hBMVsZr8aJ382XqHQutp7kNwoDu3p7gK8MHOLqsRGF0Uxgbt04f5r6iG7h8GX6-5mJac1dr6jTnUiZUr4E89ATOi8MHQvSxKk6K7qvpzqX-zyCMV0B9MEuoTOCF5Gq9LgNlam23aIZCZY1ZvUCP5z6p2mrmrA0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=1JVE6lrLeqhMdBWFB72eNIttODYIYj0jiXru0pXzZnMy2jHmIDAej1jhPLPiqmPm-f0n-SHE5gRJwtoFDQcptHRLfdzRfQ1bno0htI-nQ5Wzi5vARZvRQ6dx3xQt8q0Y5eapG1iWaVHOHsRlLNeleUc2DWo0NnwjNfwr0YXpz_Vqz-bE0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Ho9GVf9xBHfspcffx-L7m7LdmBGNpEFItjbIqrnigAuhS_nYZIdhA_kyXsjQP_ffIgpg0EI2daItDHPwI-hfpaa2BGKvGuoF9nezk-SzJ47YkSHxDdaZ2J33BuZDnOHYuDWV--o-tgF5eGesZAX9FJZSwfALVEmZsjmTaoEvYnXq0e6g0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=7VhOHzle_lbkYTSrHxOnlxiWfpRUrbhDXlsZSbm7-JWkfCPmeQKbzlhTZDP_hhbnn6XQzA_oH6AugixOWbtl4pvv12LxuY-eUUeX4fr2iMPXUMW1ywshpXcGfN56LaUBM-GHrSkQD8lMmxlhR0NoYSe8CVPES4cVIkOVnbm8-KT_SLea0&amp;t=ffffffff9578daf9" type="text/javascript"></script>
+<script src="/pro/ProfileBuild.aspx?_TSM_HiddenField_=ctl00_ctl00_scriptMgr_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.60919.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a311bfa99-1d92-41d7-aace-73bb01d14bf6%3a475a4ef5%3aeffe2a26%3a1d3ed089%3a5546a2b%3a497ef277%3aa43b07eb%3ad2e10b12%3a37e2e5c9%3a751cdd15%3adfad98a5%3a3cf12cf1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruValidationSummary, {"invalid":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_valSummary_valSummary_ErrorText"),"required":true,"text":"\u003cdiv\u003e Be sure to correctly complete all of the required fields. \u003c/div\u003e","validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_valSummary"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"Screen Name","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_DefaultText"),"errorText":"Screen name must be 4 to 35 characters.","helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"loadingElement":$get("ctl00_ctl00_guB_guB_ctl00_txtScreenName_ctl00"),"loadingImg":"/WebResource.axd?d=FHBugQdg40iSydVAgPZPsfOH3JrFyC3WfBd-FD0ERPEGFzqLgYiN1garUEcte-Y8IVVoMSNCFMYs3TbgTSVL6908SlbOlTHOyuSQeIb3rC-E__EtRYvQwpw39lTFpsg-dU8z7ATRXqAzcvVpcdali-q-HPydApYyerCelqd_3WVG1m8Y0\u0026t=638437484821638476","mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_TextBox"),"maxLength":35,"minLength":4,"regexErrorMsg":"Atleast one alphanumeric character is required.","regularExpression":"^.*(?=.*[a-zA-Z0-9]).*$","required":true,"serverValidateMethod":"/pro/ProfileBuild.aspx/ScreenNameExists","showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtScreenName_txtScreenName_NameSign"),"text":"Uwa Gideon","type":0,"validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtScreenName"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruAutoFill, {"allowHTML":0,"allowInsertByInput":false,"cacheSize":500,"compareType":0,"dataSource":"ProfileBuild.aspx/GetCities","dataTextField":"value","dataValueField":"key","defaultText":"","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_DefaultText"),"helpType":0,"invalid":false,"isInstructionRequired":false,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_TextBox"),"maxLength":30,"maxRecordLimit":5,"maxSelect":"1","minChar":"3","minLength":0,"noResultsText":"City not found.","required":false,"searchingText":"Looking for that city...","selectedItems":"[{\"key\":4193,\"value\":\"Enugu, Nigeria\"}]","selectedItemsElement":$get("ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_TextBox_Value"),"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtClosestCity_txtClosestCity_NameSign"),"text":"","type":0,"validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtClosestCity"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"basicErrorMsg":"Your website URL format is wrong.","compareType":0,"defaultText":"","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_TextBox"),"maxLength":100,"minLength":0,"required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWebsite_txtWebsite_NameSign"),"text":"","type":4}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtWebsite"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"basicErrorMsg":"Your facebook link format is wrong.","compareType":0,"defaultText":"","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_TextBox"),"maxLength":100,"minLength":0,"required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtFacebookLink_txtFacebookLink_NameSign"),"text":"","type":4}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtFacebookLink"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"basicErrorMsg":"Your linkedin link format is wrong.","compareType":0,"defaultText":"","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_TextBox"),"maxLength":100,"minLength":0,"required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink_txtLinkedInLink_NameSign"),"text":"","type":4}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtLinkedInLink"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruButton, {"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_btnSubmitTop_btnSubmitTop_Button"),"progressElement":$get("ctl00_ctl00_guB_guB_ctl00_btnSubmitTop_btnSubmitTop_Progress"),"text":"Save","validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_btnSubmitTop"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"Write a tagline that conveys your mission, your promise, and your brand.","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_TextBox"),"maxLength":190,"minLength":0,"required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtTagLine_txtTagLine_NameSign"),"text":"","type":6,"validationGroup":""}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtTagLine"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"Tell your story! Include information about your work experience, values, personal anecdotes, hobbies, etc.","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_TextBox"),"maxLength":3000,"minLength":300,"required":true,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtBio_txtBio_NameSign"),"text":"","type":6}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtBio"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"Tell your company\u0027s story! Include information about the individuals that make up the company, as well as the company itself.","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_TextBox"),"maxLength":3000,"minLength":300,"required":true,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtAboutCompany_txtAboutCompany_NameSign"),"text":"","type":6}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtAboutCompany"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_DefaultText"),"errorText":"Must be a number.","helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_TextBox"),"maxLength":4,"minLength":4,"regexErrorMsg":"Year must not be before 1960","regularExpression":"^(19[6-9][0-9]|2[0-9][0-9][0-9])$","required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_opSinceInput_opSinceInput_NameSign"),"text":"","type":1,"validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_opSinceInput"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruTextBox, {"allowHTML":0,"compareType":0,"defaultText":"Hours of operation, payment terms, and preferred communication style, etc.","defaultTextElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_DefaultText"),"helpType":0,"instructionElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_Instruction"),"invalid":false,"isInstructionRequired":true,"isPreFix":false,"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_TextBox"),"maxLength":2000,"minLength":0,"required":false,"showErrorIconOnError":false,"showSuccessIconOnSuccess":false,"spanNameSignElement":$get("ctl00_ctl00_guB_guB_ctl00_txtWorkTerms_txtWorkTerms_NameSign"),"text":"","type":6}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_txtWorkTerms"));
+});
+Sys.Application.add_init(function() {
+    $create(Guru.Web.UI.Controls.GuruButton, {"mainElement":$get("ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom_btnSubmitBottom_Button"),"progressElement":$get("ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom_btnSubmitBottom_Progress"),"text":"Save","validationGroup":"AboutInfo"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_btnSubmitBottom"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"PopupControlID":"ctl00_ctl00_guB_guB_ctl00_pnlUpdateProgress","dynamicServicePath":"/pro/ProfileBuild.aspx","id":"pnlUpdateProgress"}, null, null, $get("ctl00_ctl00_guB_guB_ctl00_pnlUpdateProgress"));
+});
+//]]>
+</script>
+</form>
+    </main>
+    
+<footer class="globalFooter">
+    <div class="container" style="position: relative">
+        <div id="ctl00_ctl00_ctl12_divSin" class="globalFooterWrap">
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Navigate</h3>
+                
+                <ul id="ctl00_ctl00_ctl12_divFlNavSIn" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl00_ctl12_divFlDashBoard"><a href="https://www.guru.com/pro/" id="f-footer-dash-in" tabindex="-1">Dashboard</a></li>
+                    <li id="ctl00_ctl00_ctl12_divFlFindWork"><a href="/work/" id="f-footer-find-work-in" tabindex="-1">Find Work</a></li>
+                    <li><a href="https://www.guru.com/pro/jobs/" id="f-footer-projects-in" tabindex="-1">Jobs</a></li>
+                    <li id="ctl00_ctl00_ctl12_divFlPayments"><a href="/payments/invoices/" id="f-footer-payments-in" tabindex="-1">Payments</a></li>
+                    <li id="ctl00_ctl00_ctl12_divFlMyAgency"><a href="/agency/" id="f-footer-leads-in" tabindex="-1" target="_blank">Agency Solutions</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Company Info</h3>
+                <ul id="ctl00_ctl00_ctl12_CIEmpSin" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl00_ctl12_divcinfoag"><a href="https://www.guru.com/about/" id="f-footer-about-in" tabindex="-1" target="_blank">About Guru</a></li>
+                    
+                    <li id="ctl00_ctl00_ctl12_divFlHowitwork"><a href="/how-it-works-freelancer/" id="f-footer-fl-how-guru-works-in" tabindex="-1" target="_blank">How Guru Works</a></li>
+                    <li id="ctl00_ctl00_ctl12_divcinfowg"><a href="/why-guru/" id="f-footer-why-guru-in" tabindex="-1" target="_blank">Why Guru</a></li>
+                    <li id="ctl00_ctl00_ctl12_divcinfowa"><a href="/agreements/" id="f-footer-work-agreement-in" tabindex="-1" target="_blank">Work Agreements</a></li>
+                    <li id="ctl00_ctl00_ctl12_divcinfosp"><a href="/safepay/" id="f-footer-safepay-in" tabindex="-1" target="_blank">SafePay</a></li>
+                    
+                    <li id="ctl00_ctl00_ctl12_divFlPricing"><a href="/pricing-freelancer/" id="f-footer-fl-pricing-in" tabindex="-1" target="_blank">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Resources</h3>
+                <ul class="module_list veryTight no-border">
+                    
+                    <li id="ctl00_ctl00_ctl12_divFlHelp"><a href="/help/freelancer/" id="f-footer-fl-help-in" tabindex="-1" target="_blank">Help & FAQ</a></li>
+                    <li><a href="https://www.guru.com/blog/" id="f-footer-blog-in" tabindex="-1" target="_blank">Blog</a></li>
+                    <li><a href="https://www.guru.com/contact.aspx/" id="f-footer-contactus" tabindex="-1" target="_blank">Contact Us</a></li>
+                    
+                    <li><a href="https://www.guru.com/apihelp/help.html" target="_blank" id="f-footer-apis-in" tabindex="-1">APIs</a></li>
+                    
+                    <li><a class="optanon-show-settings">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Policies</h3>
+                <ul class="module_list veryTight no-border">
+                    <li><a href="https://www.guru.com/trademark-copyright-policy/" id="f-footer-ip-in" tabindex="-1" target="_blank">IP Policy</a></li>
+                    <li><a href="https://www.guru.com/privacy-policy/" id="f-footer-privacy-in" tabindex="-1" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.guru.com/terms-of-service/" id="f-footer-terms-in" tabindex="-1" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                
+
+                <div id="ctl00_ctl00_ctl12_divFScoSch">
+                    <h3 class="strongHeading">Get Hired Today!</h3>
+                    <div class="rhythmMargin input-group footerSearchInput">
+                        <input type="text" id="prjsrch" onkeydown="srchChkEnterAndSubmit(event, 'prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"
+                            class="niceInput" maxlength="128" placeholder="Search Jobs" />
+                        <i class="footerSearchIcon" aria-hidden="true" data-icon="&#xe020" onclick="srchCheckAndSubmit('prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="strongHeading">Connect With Us</h3>
+                    <div class="globalFooter__socials rhythmMargin">
+                        <a href="https://www.facebook.com/GuruFreelancing/" title="Connect with Guru on Facebook" target="_blank" id="footer-social-media-facebook" class="globalFooter__socials__social globalFooter__socials__social--facebook" rel="me noreferrer" id="footer-social-media-facebook" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on Facebook" alt="Facebook">
+                                <title>Connect with Guru on Facebook</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/GuruFreelancing" title="Connect with Guru on X" target="_blank" class="globalFooter__socials__social globalFooter__socials__social--x" rel="me noreferrer" alt="X" id="footer-social-media-x" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on X">
+                                <title>Connect with Guru on X</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-x"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/gurufreelancing/" title="Connect with Guru on LinkedIn" target="_blank" id="footer-social-media-linkedin" class="globalFooter__socials__social globalFooter__socials__social--linkedIn" rel="me noreferrer" alt="LinkedIn" id="footer-social-media-linkedin" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on LinkedIn">
+                                <title>Connect with Guru on LinkedIn</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+      </div>
+        <div class="globalFooterWrap botRowWrap">
+            <div class="globalFooter__botRow">
+                <p class="globalFooter__logowrap">
+                    <a href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.7 56.8" aria-label="Guru Home" alt="Guru" class="globalFooter__logo">
+                            <path d="M162.4 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H162.4z" class="a" />
+                            <path d="M244.8 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H244.8z" class="a" />
+                            <path d="M178.6 41.3h-5.9V9.2h5.9v13c9.2-12 26-13 26.2-13l0.3 5.9C204 15.2 178.6 16.7 178.6 41.3z" class="a" />
+                            <path d="M118 9.2v4.8c-3.7-2.9-8.8-4.8-14.5-4.8 -11.3 0-20.4 7.2-20.4 16 0 8.8 9.2 16 20.4 16 5.7 0 10.8-1.8 14.5-4.8v4.3c0 5.5-6.6 10.1-14.5 10.1 -6.3 0-11.8-3-13.7-7l-5.7 1.8c2.6 6.5 10.4 11.2 19.4 11.2 11 0 20-6.9 20.4-15.5h0V9.2H118zM103.5 35.3c-7.9 0-14.5-4.6-14.5-10.1 0-5.5 6.6-10.1 14.5-10.1 7.9 0 14.5 4.6 14.5 10.1C118 30.7 111.4 35.3 103.5 35.3z" class="a" />
+                            <path d="M46.6 33.9c2.8 0.7 5.5 1.6 8.1 2.9 2.6 1.2 4.9 2.7 7.1 4.4 2.2 1.7 4.2 3.6 6.1 5.7 1.9 2.1 3.5 4.3 4.9 6.8H62.3c-1.6-1.9-3.3-3.6-5.2-5.1 -1.9-1.5-4-2.8-6.2-3.9 -2.2-1.1-4.5-1.9-6.9-2.5 -2.4-0.6-4.9-0.9-7.6-0.9 -2.7 0-5.2 0.3-7.7 0.9 -2.5 0.6-4.8 1.4-6.9 2.5 -2.2 1.1-4.2 2.4-6.1 3.9 -1.9 1.5-3.7 3.2-5.2 5.1H0c1.4-2.5 3-4.7 4.9-6.9 1.9-2.1 3.9-4 6.2-5.7 2.3-1.7 4.7-3.1 7.2-4.3 2.6-1.2 5.3-2.2 8.1-2.9 -2.5-0.6-4.8-1.4-6.9-2.4 -2.2-1-4.2-2.2-6.2-3.6 -2-1.4-3.8-2.9-5.5-4.6 -1.7-1.7-3.2-3.6-4.6-5.5 0.7-1.1 1.4-2.1 2.3-3.1 0.8-1 1.7-1.9 2.6-2.8S9.9 10 11 9.2c1-0.8 2-1.6 3-2.3 0.1-0.9 0.3-1.7 0.7-2.4 0.4-0.7 0.9-1.4 1.5-2 0.6-0.6 1.3-1.1 2.1-1.4 0.8-0.3 1.6-0.5 2.5-0.5 1 0 1.9 0.2 2.7 0.6 0.8 0.4 1.6 0.9 2.2 1.5 0.6 0.6 1.2 1.4 1.5 2.2C27.8 5.8 28 6.7 28 7.7c0 1-0.2 1.9-0.6 2.7 -0.4 0.8-0.9 1.6-1.5 2.2 -0.6 0.6-1.4 1.1-2.2 1.5 -0.8 0.3-1.7 0.5-2.7 0.5 -0.2 0-0.4 0-0.7 0 -0.2 0-0.5 0-0.7-0.1 -0.2 0-0.4-0.1-0.7-0.2 -0.2-0.1-0.5-0.2-0.7-0.3 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1.1 0.9 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1 1 1.5 1.4 3 2.7 4.7 3.8 1.7 1.2 3.5 2.2 5.4 2.9 1.9 0.8 3.9 1.4 6 1.8 2.1 0.4 4.3 0.7 6.4 0.7 2.2 0 4.3-0.2 6.4-0.7 2.1-0.4 4.1-1.1 6-1.8 1.9-0.8 3.7-1.8 5.4-2.9 1.7-1.2 3.2-2.5 4.7-3.8h0.1c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-1 0.2-1.9 0.5-2.8 0.3-0.9 0.9-1.7 1.5-2.4 0.7-0.7 1.5-1.2 2.4-1.5 0.9-0.3 1.8-0.5 2.8-0.5 1 0 1.9 0.2 2.8 0.5 0.9 0.3 1.6 0.9 2.3 1.5 0.6 0.7 1.2 1.5 1.5 2.4 0.4 0.9 0.6 1.8 0.6 2.8 0 1-0.2 1.9-0.6 2.8 -0.4 0.9-0.9 1.6-1.5 2.3 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -0.2 0-0.3 0-0.4 0 -0.1 0-0.2 0-0.4 0 -0.1 0-0.3 0-0.4-0.1 -0.1 0-0.2-0.1-0.4-0.1 -1.2 1.2-2.5 2.3-3.9 3.4 -1.4 1.1-2.9 2.1-4.4 2.9 -1.5 0.9-3.1 1.7-4.8 2.4C50.1 33 48.3 33.5 46.6 33.9z" class="a" />
+                            <path d="M32 8.7c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3s0-0.2 0-0.3c0-0.6-0.1-1.2-0.1-1.8 -0.1-0.6-0.2-1.3-0.4-1.8 -0.2-0.6-0.5-1.2-0.8-1.7 -0.3-0.5-0.7-1.1-1-1.5 0.5-0.1 1-0.2 1.6-0.2 0.6 0 1.2-0.1 1.8-0.1 0.6 0 1.2-0.1 1.8-0.1C35.4 0 36 0 36.5 0c2.2 0 4.3 0.2 6.4 0.5 2.1 0.3 4.1 0.8 6.1 1.5 2 0.6 3.9 1.4 5.7 2.4 1.8 0.9 3.6 2 5.2 3.2 -0.6 0.4-1.1 0.9-1.6 1.4 -0.5 0.5-0.9 1.1-1.3 1.7 -0.3 0.6-0.7 1.2-1 1.9 -0.3 0.7-0.5 1.4-0.6 2.1 -1.3-1-2.7-1.9-4.2-2.7 -1.5-0.8-3.1-1.4-4.6-2 -1.6-0.5-3.2-0.9-4.9-1.2 -1.7-0.2-3.5-0.4-5.2-0.4 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.1 0.1C32.7 8.5 32.4 8.6 32 8.7z" fill="#4B83C3" />
+                            <path d="M29.9 18.3c0-1 0.2-1.9 0.6-2.7 0.4-0.8 0.9-1.6 1.5-2.2 0.6-0.6 1.4-1.2 2.2-1.5 0.8-0.4 1.7-0.6 2.7-0.6 1 0 1.9 0.2 2.8 0.6 0.9 0.4 1.6 0.9 2.3 1.5 0.6 0.6 1.1 1.4 1.5 2.2 0.3 0.8 0.5 1.7 0.5 2.7 0 1-0.2 1.9-0.5 2.7 -0.3 0.8-0.8 1.6-1.5 2.2 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -1 0-1.9-0.2-2.7-0.6 -0.8-0.4-1.6-0.9-2.2-1.5 -0.6-0.6-1.2-1.4-1.5-2.2C30.1 20.2 29.9 19.3 29.9 18.3z" class="a" />
+                        </svg>
+                    </a>
+                    <span>| Get Work Done</span>
+                </p>
+            </div>
+            <div class="globalFooter__botRow globalFooter__copyright">
+                <span>Copyright &copy; 2024, Guru.com
+                </span>
+            </div>
+        </div> 
+    </div>
+</footer>
+
+<script language="javascript" src="https://www.guru.com/js/localclock_5.js"></script>
+<script type="text/javascript" language="javascript">
+    function srchChkEnterEvent(e) {
+        if (!e) return false;
+
+        var keynum = e.which || e.keyCode;
+        if (keynum === 13) {
+            return true;
+        }
+        return false;
+    }
+    function srchChkEnterAndSubmit(event, srchbox, host, user_type, def_kw) {
+        if (srchChkEnterEvent(event)) {
+            srchCheckAndSubmit(srchbox, host, user_type, def_kw)
+        }
+    }
+    function srchCheckAndSubmit(srchbox, host, user_type, def_kw) {
+        var url;
+        var keyword = document.getElementById(srchbox).value;
+        if (keyword == def_kw) {
+            keyword = "";
+        }
+        keyword = keyword.trim()
+        keyword = keyword
+            .replace(/\//g, "%2F")
+            .replace(/\-/g, "--")
+            .replace(/ \s*/g, "-");
+
+        keyword = encodeURIComponent(keyword);
+        keyword = keyword.replace(/%5C/g, "%25255c");
+
+        if (user_type == "emp") {
+            if (keyword != "") {
+                var encryptedString = btoa("/d/freelancers/skill/" + keyword);
+                url = "/hire/find/?q=" + encryptedString;
+            }
+            else {
+                url = "/hire/find/";
+            }
+        } else {
+            if (keyword != "") {
+                var encryptedString = btoa("/d/jobs/skill/" + keyword);
+                url = "/work/?q=" + encryptedString;
+            }
+            else {
+                url = "/work/";
+            }
+        }
+        window.location.href = url;
+    }
+
+    var chatFullName = "";
+    var chatUserEmail = "";
+    var chatCustom3 = "";
+    var chatUserType = "Freelancer";
+    var chatUserId = "0";
+    //Mobile Footer Code
+        $(document).ready(function () {
+            if ($("body").hasClass("resp") || $("body").hasClass("responsive")) {
+                $(".footerHeading").click(function () {
+                    $(this).toggleClass("active");
+                    $(this).next(".module_list").slideToggle();
+                });
+            }
+            if ($(".mobileFooter").length && window.innerWidth < 960) $(".globalFooter").hide();
+            $(window).resize(function () {
+                if (window.innerWidth > 700) $(".footerHeading").next(".module_list").show();
+                else if ($("body").hasClass("resp") || $("body").hasClass("responsive")) {
+                    $(".footerHeading").removeClass("active");
+                    $(".footerHeading").next(".module_list").hide();
+                }
+                if ($(".mobileFooter").length && window.innerWidth < 960) $(".globalFooter").hide();
+                else $(".globalFooter").show();
+            })
+        });
+</script>
+
+
+
+
+</body>
+</html>
+

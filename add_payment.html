@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paypal_guru</title>
+    <link rel="stylesheet" href="./guru.css" />
+    <script>
+      function formatCardNumber(input) {
+        // Remove all non-digit characters
+        var cardNumber = input.value.replace(/\D/g, "");
+
+        // Add spaces after every 4 digits
+        cardNumber = cardNumber.replace(/(\d{4})/g, "$1 ").trim();
+
+        // Update the input value
+        input.value = cardNumber;
+      }
+    </script>
+    <style>
+      /* Style for the dropdown */
+      .custom-select {
+        position: relative;
+        display: inline-block;
+        width: 300px; /* Adjust width as needed */
+      }
+
+      .custom-select select {
+        display: none; /* Hide default select box */
+      }
+
+      .select-styled {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+      .cardTypeTitle {
+        font-size: 0.7rem;
+        color: #535353;
+      }
+      .select-styled:after {
+        content: ""; /* Unicode character for down arrow */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        transition: all 0.2s;
+        background-image: url("./assets/dropdown.png");
+      }
+      .select-styled:hover::after {
+        /* Optional hover effect for the arrow */
+        opacity: 0.8;
+        transform: translateY(-30%);
+      }
+      .select-styled:hover {
+        background-color: #f4f4f4;
+      }
+
+      /* Style for options */
+      .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+        background-color: #fff;
+        z-index: 99;
+      }
+      .select-options {
+        list-style: none;
+      }
+      li {
+        list-style: none;
+        cursor: pointer;
+        padding: 0.4rem;
+      }
+
+      .select-options div {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .select-options div:hover {
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="./assets/paydemopic.jpg" alt="" /> -->
+    <div class="mainContainer">
+      <div class="svgContainer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48">
+          <path
+            fill="#001C64"
+            d="M37.972 13.82c.107-5.565-4.485-9.837-10.799-9.837H14.115a1.278 1.278 0 0 0-1.262 1.079L7.62 37.758a1.038 1.038 0 0 0 1.025 1.2h7.737l-1.21 7.572a1.038 1.038 0 0 0 1.026 1.2H22.5c.305 0 .576-.11.807-.307.231-.198.269-.471.316-.772l1.85-10.885c.047-.3.2-.69.432-.888.231-.198.433-.306.737-.307H30.5c6.183 0 11.43-4.394 12.389-10.507.678-4.34-1.182-8.287-4.916-10.244Z"
+          />
+          <path
+            fill="#0070E0"
+            d="m18.056 26.9-1.927 12.22-1.21 7.664a1.038 1.038 0 0 0 1.026 1.2h6.67a1.278 1.278 0 0 0 1.261-1.079l1.758-11.14a1.277 1.277 0 0 1 1.261-1.078h3.927c6.183 0 11.429-4.51 12.388-10.623.68-4.339-1.504-8.286-5.238-10.244-.01.462-.05.923-.121 1.38-.959 6.112-6.206 10.623-12.389 10.623h-6.145a1.277 1.277 0 0 0-1.261 1.077Z"
+          />
+          <path
+            fill="#003087"
+            d="M16.128 39.12h-7.76a1.037 1.037 0 0 1-1.025-1.2l5.232-33.182a1.277 1.277 0 0 1 1.262-1.078h13.337c6.313 0 10.905 4.595 10.798 10.16-1.571-.824-3.417-1.295-5.44-1.295H21.413a1.278 1.278 0 0 0-1.261 1.078L18.057 26.9l-1.93 12.22Z"
+          />
+        </svg>
+      </div>
+      <p class="linkCardTitle">Link a card</p>
+      <div class="cardImgContainer">
+        <img src="./assets/generic_card.png" alt="" />
+      </div>
+      <div class="inputContainer">
+        <!-- <label for="cardNumber">Card Number:</label> -->
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          oninput="formatCardNumber(this)"
+          maxlength="19"
+          placeholder="Debit or credit card number"
+          required
+        />
+      </div>
+      <div class="custom-select" onclick="toggleOptions()">
+        <div class="select-styled">
+          <p class="cardTypeTitle">Card type</p>
+          <p class="selectCard">Select your card type</p>
+        </div>
+        <ul class="select-options">
+          <li
+            onclick="selectCardType('Mastercard')"
+            data-cardSrc="./assets/master_card.png"
+          >
+            Mastercard
+          </li>
+          <li onclick="selectCardType('Visa')" data-cardSrc="./assets/visa.png">
+            Visa
+          </li>
+          <li
+            onclick="selectCardType('American Express')"
+            data-cardSrc="./assets/amex.png"
+          >
+            American Express
+          </li>
+        </ul>
+        <select id="cardType" name="cardType">
+          <option value="Mastercard">Mastercard</option>
+          <option value="Visa">Visa</option>
+          <option value="American Express">American Express</option>
+        </select>
+      </div>
+      <div class="expirationDate">
+        <input
+          type="text"
+          placeholder="Expiration date"
+          class="expirationDateInput"
+          id="expDate"
+        />
+      </div>
+      <div class="securityCode">
+        <input type="text" placeholder="Security code" id="securityCode" />
+        <div class="spriteContainer"></div>
+      </div>
+      <div class="billingAddress">
+        <input type="text" placeholder="Address" id="billingAddress" />
+      </div>
+      <a onclick="routeToConfirmationPage()">
+        <button class="linkCardbtn">Link Card</button>
+      </a>
+    </div>
+    <script>
+      // Function to handle selection of card type
+      function selectCardType(cardType) {
+        console.log("debug");
+        document.getElementById("cardType").value = cardType;
+        document.querySelector(".select-styled").innerText = cardType;
+        console.log(this);
+        var selectedLi = document.querySelector(
+          '.select-options li[data-cardSrc][onclick*="' + cardType + '"]'
+        );
+        if (selectedLi) {
+          var cardSrc = selectedLi.getAttribute("data-cardSrc");
+          var cardImg = document.querySelector(".cardImgContainer img");
+          if (cardImg) {
+            cardImg.src = cardSrc;
+          }
+        }
+        toggleOptions();
+      }
+
+      // Function to toggle display of options
+      function toggleOptions() {
+        var options = document.querySelector(".select-options");
+        options.style.display =
+          options.style.display === "block" ? "none" : "block";
+      }
+
+      // Close dropdown if user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".select-styled")) {
+          var options = document.querySelector(".select-options");
+          if (options.style.display === "block") {
+            options.style.display = "none";
+          }
+        }
+      };
+    </script>
+    <script src="/routing.js"></script>
+  </body>
+</html>

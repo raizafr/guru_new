@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter";
+  font-weight: 300;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+.mainContainer {
+  background-color: white;
+  width: fit-content;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 30%;
+}
+.svgContainer {
+  display: flex;
+  justify-content: center;
+}
+svg {
+  width: 35px;
+  height: 35px;
+}
+.linkCardTitle {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.cardImgContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+}
+.cardImgContainer img {
+  box-shadow: rgba(189, 189, 189, 0.363) -1px -1px 5px;
+  width: 150px;
+  height: 98px;
+}
+
+.inputContainer {
+  margin-top: 1rem;
+}
+.inputContainer input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Inter";
+  outline: none;
+  border: 1px solid rgba(146, 146, 146, 0.603);
+}
+.inputContainer input::placeholder {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.custom-select {
+  margin-top: 0.7rem;
+  width: 100%;
+}
+.selectCard {
+  font-weight: 500;
+}
+.expirationDate {
+  margin-top: 1rem;
+}
+.expirationDateInput {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Inter";
+  outline: none;
+  border: 1px solid rgba(146, 146, 146, 0.603);
+}
+.securityCode {
+  margin-top: 1rem;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+#securityCode {
+  padding: 1rem;
+  width: 60%;
+  border-radius: 5px;
+  font-family: "Inter";
+  outline: none;
+  border: 1px solid rgba(146, 146, 146, 0.603);
+}
+.billingAddress {
+  margin-top: 1rem;
+}
+#billingAddress {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Inter";
+  outline: none;
+  border: 1px solid rgba(146, 146, 146, 0.603);
+}
+.linkCardbtn {
+  background-color: #0070ba;
+  width: 96%;
+  margin-top: 1rem;
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  font-family: "Inter";
+}
+.linkCardbtn:hover {
+  background-color: #034979;
+}
+.spriteContainer {
+  height: 30px;
+  right: 25%;
+  bottom: -10px;
+  width: 48px;
+  position: absolute;
+  background-image: url("./assets/sprite_logos_wallet_2x.png");
+  background-repeat: no-repeat;
+  background-position: 0px -700px;
+}
+@media screen and (max-width: 800px) {
+  .mainContainer {
+    width: 100%;
+  }
+}

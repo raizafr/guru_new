@@ -1,0 +1,713 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html id="ctl00_html_tag" class="" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+
+<head id="ctl00_Head1">
+<meta name="robots" content="noodp, nodir, index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" /><title>
+	Guru.com - Manage Payment Methods
+</title><link href="https://res.cloudinary.com" rel="preconnect" crossorigin="" /><link rel="manifest" href="/manifest.json" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4c83c3" /><link rel="shortcut icon" href="/favicon.ico" /><meta name="msapplication-config" content="/browserconfig.xml" /><meta name="theme-color" content="#ffffff" /><link rel="stylesheet" type="text/css" href="https://img-guru.com/20240221.3/css/appshell/core.a6707739139be53b.css" />
+    <link rel="Stylesheet" href="https://img-guru.com/20240221.3/css/newguru/specific/payments/payments.789ee1aa42094f74.css" />
+    <link href="https://img-guru.com/20240221.3/css/intlTelInput.5fcae11e5e02d861.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Manage your payment methods.">
+    <link rel="stylesheet" href="/validateAddedCard.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.js"></script>
+    <link rel="Stylesheet"
+                            href="https://img-guru.com/20240221.3/css/newguru/objects/Dashboard/dashboard.867b8ab26421b26e.css" />            
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-sanitize.js"></script>
+    <base href="/payments/transfer-methods/" />
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="">
+    <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bundles/vendor-bundle.5d1d2c3745c1c905.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-LF22"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
+    <header class="globalHeader">
+        <div class="container" id="vue-global-header">
+            <div id="ctl00_ctl11_globalHeader__masthead" class="globalHeader__masthead clearfix">
+                <h1 class="globalHeader__logo" itemscope itemtype="//schema.org/Organization">
+                    <a href="https://www.guru.com/pro/" itemprop="url" id="f-topnav-logo-in">
+                        <img src="https://img-guru.com/20240221.3/images/Guru-logo2.png" height="30px" width="130px" style="display: block;" itemprop="logo" title="Guru.com" alt="Guru.com" />
+                    </a>
+                </h1>
+                <div id="ctl00_ctl11_navSearchProj" class="globalHeader__search">
+                    
+                    <guru-typeahead inline-template ref="keywordSearch"
+					  :typeahead-query.sync="query"
+                      :remove-duplicates="true"
+					  :allow-any-entry="true"
+                      :hit-on-empty="true"
+					  :display-tokens="false"
+					  :clear-on-hit="false"
+					  :clear-on-blur="false"
+					  api="https://www.guru.com/api/search/services/suggestedskills/"
+                      data-searchurl="/work/"
+                      data-resultbase="/d/jobs/"
+					  @typeahead-hit="typeahead_onHit">
+                    
+                       <div class="input-group typeahead" @click.stop
+                       :class="[{ 'typeahead--open': isTypeAheadOpen}, { 'typeahead--disabled': disabled}, { 'typeahead--disabled': disabled}, inputLabelClasses]">
+                    
+                            <!-- <input type="text"
+                            autocomplete="off"
+                            ref="typeahead-input"
+                            v-model="query"
+                            :id="`typeahead-${_uid}`"
+                            maxlength="50"
+                            aria-label="Search Jobs"
+                            placeholder="Search Jobs"
+                            class="niceInput"
+                            @keydown.enter="handleEnter"
+                            @keydown.delete="handleDelete"
+                            @keydown.esc="handleEscape"
+                            @keydown="handleInput"
+                            @focus="handleFocus"
+                            @blur="handleBlur" /> -->
+                            
+                            <!-- <span class="input-group__btn">
+                                <button type="button" 
+                                id="searchBtnTop" 
+                                @click="typeaheadHit(query)"
+                                class="module_btn secondary_btn searchBtnTop lonely_btn">
+                                    <i aria-hidden="true" data-icon="&#xe020;"></i>
+                                </button>
+                            </span> 
+                             -->
+                            <ul class="typeahead__menu">
+                                <li v-for="(item, $index) in items"
+                                :key="$index"
+                                ref="typeahead-item">
+                                    <a class="typeahead__menu__item"
+                                    @click="typeaheadHit(item)"
+                                    :class="{'typeahead__menu__item--hover': $index == currentSelection}"
+                                    tabindex="-1">
+                                        {{ item.Key }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+					</guru-typeahead>
+                    
+                </div>
+
+                <div id="ctl00_ctl11_navMessageAlertsSection" class="globalHeader__panels">  
+                    <messages-panel :notification-count="0" :is-employer="false" class="globalHeader__panels__panel globalHeader__panels__panel--messages"></messages-panel>
+                    <alerts-panel :notification-count="0" class="globalHeader__panels__panel globalHeader__panels__panel--alerts"></alerts-panel>
+                </div>
+                <div id="ctl00_ctl11_globalHeader__account" class="globalHeader__account">
+                    
+                    <div class="dropdown" ref="dropdown-parent" data-responsive-dropdown="550">
+                        <button type="button" class="link_btn module_btn" style="display:block" aria-label="My Account" role="button" ref="dropdown-toggle">
+                            <span class="module_avatar twentyfour">
+                                <span class="avatar avatar_noinfo">
+                                    <img src="" id="ctl00_ctl11_imgTbN" class="headProfImg js-headProfImg" alt="My Account" height="24" width="24" />
+                                </span>
+                                <span class="avatarinfo">
+                                    <span class="caret"></span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <div class="resp-dropdown resp-dropdown--right" @click.stop>
+                            <div class="resp-dropdown__wrapper">
+                                <div class="resp-dropdown__heading">
+                                    <h3 class="strongHeading">Manage Account</h3>
+                                    <button type="button" class="resp-dropdown__heading__close" @click="closeDropdown"> 
+                                        <i aria-hidden="true" :data-icon="'\ue02d'"></i> 
+                                    </button>
+                                </div>
+                                <div class="resp-dropdown__content">
+                                    <ul>
+                                        <li id="ctl00_ctl11_liAccountBtn"><a class="resp-dropdown__content__item"   href="https://www.guru.com/switchBoard.aspx?modify=true" id="f-topnav-edit-account-in">Edit Account</a></li>
+                                        
+                                        <li id="ctl00_ctl11_liProfileBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=1" id="f-topnav-edit-profile-in">Edit Profile</a></li>
+                                        <li id="ctl00_ctl11_liBidsBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=6" id="f-topnav-buy-bids-in">Buy Bids</a></li>
+                                        <li id="ctl00_ctl11_liMemberBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=8" id="f-topnav-membership-in"> Membership</a></li>
+                                        <li id="ctl00_ctl11_navPayments2"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/cashaccount/" id="f-topnav-manage-cash-account-in">Manage Cash Account</a></li>    
+                                        
+                                        <li id="ctl00_ctl11_liDividerTop" class="divider"></li>
+                                        
+                                        <span id="ctl00_ctl11_navManageTeam" class="adminOwner">
+                                            <li class="nav-header">Account Team</li>
+                                            <li ><a href="https://www.guru.com/manage/myteam" class="resp-dropdown__content__item" id="f-topnav-myteam-in">Manage Team</a></li>	
+                                        </span>
+
+
+                                        <li id="ctl00_ctl11_liSwitchAccountFLDivider" class="divider"></li>
+                                        
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                        
+
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/help/" id="f-topnav-help-in">Help</a>
+                                        </li>
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/LogOut.aspx" id="f-topnav-signout-in">Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ctl00_ctl11_navMenuRow" class="globalHeader__menu">
+            <div class="container">
+                <nav class="globalHeader__nav adminOwner">
+                    <a onclick="routeToDashboard()" id="ctl00_ctl11_navDashboard" class="globalHeader__nav__item">Dashboard</a>
+                    <!-- <a href="https://www.guru.com/work/" id="ctl00_ctl11_navWork" level="0" title="Find Work" class="globalHeader__nav__item" utm_content="hdrLeadsTxt">Find Work</a>                   -->
+                    <!-- <a href="https://www.guru.com/pro/jobs/" id="ctl00_ctl11_navProjects" level="0" class="globalHeader__nav__item" utm_content="hdrProjectsTxt">Jobs</a> -->
+                    <a href="/" id="ctl00_ctl11_navPaymentsBtn" class="globalHeader__nav__item globalHeader__nav__item--active">Payments</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<input type="hidden" id="GLOBAL_ACCOUNT_INFO" value='{"FirstName": "","LastName": "Gideon", "ScreenName": "Uwa Gideon", "Thumbnail": "https://res.cloudinary.com/gurucom/image/upload/f_auto,w_48,h_48,dpr_2/v1708338917/pimg/FreelancerFiles/5/473/5473483/eodwwdz6qn5heiuvesgm.jpg"}'/>
+<input type="hidden" id="CDN_Base_Url" value="https://img-guru.com/20240221.3" />
+<input type="hidden" id="Guru_ID" value="5473483" />
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        if (navigator.userAgent.match(/iPad/i)) {
+            var minHeight = Math.max(document.documentElement.clientHeight, document.documentElement.clientWidth);
+            var minHeightInPx = minHeight + 'px';
+            document.body.classList.add('touchDevice')
+            document.body.style.minHeight = minHeightInPx
+        }
+    }, false);
+</script>
+
+
+
+    <main role="main" class="mainContent">
+        
+
+
+
+        <form method="post" action="./?rww=1" id="aspnetForm">
+<div>
+<input type="hidden" name="WebAPIURL" id="WebAPIURL" value="https://www.guru.com/api/v1/" />
+<input type="hidden" name="MSAPIURL" id="MSAPIURL" value="https://www.guru.com/" />
+<input type="hidden" name="ctl00_scriptMgr_HiddenField" id="ctl00_scriptMgr_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgyMTE2NTYyNg9kFgJmD2QWAgIBD2QWBGYPZBYGAgEPFgIeBFRleHQFuwc8c2NyaXB0PndpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOw0Kd2luZG93LmRhdGFMYXllci5wdXNoKHsgJ0lzTG9nZ2VkSW4nIDogJ3llcyd9KTsNCndpbmRvdy5kYXRhTGF5ZXIucHVzaCh7ICdNZW1iZXJUeXBlJyA6ICdmcmVlbGFuY2VyJ30pOw0Kd2luZG93LmRhdGFMYXllci5wdXNoKHsgJ1VzZXJJZCcgOiAnNTQ3MzQ4Myd9KTsNCndpbmRvdy5kYXRhTGF5ZXIucHVzaCh7ICdNZW1iZXJTaW5jZScgOiAnMi8xOS8yMDI0J30pOw0Kd2luZG93LmRhdGFMYXllci5wdXNoKHsgJ0ZyZWVsYW5jZXJNZW1iZXJzaGlwJyA6ICdiYXNpYyd9KTsNCjwvc2NyaXB0PjxtZXRhIG5hbWU9Im1zdmFsaWRhdGUuMDEiIGNvbnRlbnQ9IkM1RTgxNDhDMjlGRkNFRjczM0FFMTQxQTBFRDI1ODc5IiAvPg0KICA8IS0tIEdvb2dsZSBUYWcgTWFuYWdlciAtLT4NCiAgIDxzY3JpcHQ+KGZ1bmN0aW9uKHcsZCxzLGwsaSl7d1tsXT13W2xdfHxbXTt3W2xdLnB1c2goeydndG0uc3RhcnQnOm5ldyBEYXRlKCkuZ2V0VGltZSgpLGV2ZW50OidndG0uanMnfSk7dmFyIGY9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSwgaj1kLmNyZWF0ZUVsZW1lbnQocyksZGw9bCE9J2RhdGFMYXllcic/JyZsPScrbDonJztqLmRlZmVyPXRydWU7ai5zcmM9J2h0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0bS5qcz9pZD0nK2krZGw7ai5hZGRFdmVudExpc3RlbmVyKCdsb2FkJywgZnVuY3Rpb24oKSB7IHZhciBfZ2UgPSBuZXcgQ3VzdG9tRXZlbnQoJ2d0bV9sb2FkZWQnLCB7IGJ1YmJsZXM6IHRydWUgfSk7IGQuZGlzcGF0Y2hFdmVudChfZ2UpOyB9KTsgZi5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqLGYpO30pKHdpbmRvdyxkb2N1bWVudCwnc2NyaXB0JywnZGF0YUxheWVyJywnR1RNLUxGMjInKTs8L3NjcmlwdD4NCiAgICA8IS0tIEVuZCBHb29nbGUgVGFnIE1hbmFnZXIgLS0+ZAICDxYCHwAFowM8IS0tIE9uZVRydXN0IENvb2tpZXMgQ29uc2VudCBOb3RpY2Ugc3RhcnQgZm9yIGd1cnUuY29tIC0tPjxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi5jb29raWVsYXcub3JnL2NvbnNlbnQvMWNkNGZmNjktNGUwNC00ODJkLWIyMzgtZjM0ODZjODhlNDI2L290U0RLU3R1Yi5qcyIgZGF0YS1kb2N1bWVudC1sYW5ndWFnZT0idHJ1ZSIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBjaGFyc2V0PSJVVEYtOCIgZGF0YS1kb21haW4tc2NyaXB0PSIxY2Q0ZmY2OS00ZTA0LTQ4MmQtYjIzOC1mMzQ4NmM4OGU0MjYiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij5mdW5jdGlvbiBPcHRhbm9uV3JhcHBlcigpIHsgfTwvc2NyaXB0PjwhLS0gT25lVHJ1c3QgQ29va2llcyBDb25zZW50IE5vdGljZSBlbmQgZm9yIGd1cnUuY29tIC0tPmQCAw8WAh8ABZwGPHNjcmlwdD53aW5kb3cuX19pbnNwID0gd2luZG93Ll9faW5zcCB8fCBbXTsNCndpbmRvdy5fX2luc3AucHVzaChbJ3RhZ1Nlc3Npb24nLCB7VXNlclR5cGU6ICdmcmVlbGFuY2VyJywgSUQ6ICc1NDczNDgzJyxVc2VyTmFtZTonVXdhIEdpZGVvbid9XSk7DQo8L3NjcmlwdD48c2NyaXB0PihmdW5jdGlvbigpIHsNCiAgICB3aW5kb3cuX19pbnNwID0gd2luZG93Ll9faW5zcCB8fCBbXTsNCiAgICBfX2luc3AucHVzaChbJ3dpZCcsIDIxMDYxODk4OTBdKTsNCiAgICB2YXIgbGRpbnNwID0gZnVuY3Rpb24oKXsNCiAgICBpZih0eXBlb2Ygd2luZG93Ll9faW5zcGxkICE9ICJ1bmRlZmluZWQiKSByZXR1cm47IHdpbmRvdy5fX2luc3BsZCA9IDE7IHZhciBpbnNwID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IGluc3AudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOyBpbnNwLmFzeW5jID0gdHJ1ZTsgaW5zcC5pZCA9ICJpbnNwc3luYyI7IGluc3Auc3JjID0gKCdodHRwczonID09IGRvY3VtZW50LmxvY2F0aW9uLnByb3RvY29sID8gJ2h0dHBzJyA6ICdodHRwJykgKyAnOi8vY2RuLmluc3BlY3RsZXQuY29tL2luc3BlY3RsZXQuanM/d2lkPTIxMDYxODk4OTAmcj0nICsgTWF0aC5mbG9vcihuZXcgRGF0ZSgpLmdldFRpbWUoKS8zNjAwMDAwKTsgdmFyIHggPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07IHgucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaW5zcCwgeCk7IH07DQogICAgICAgIHNldFRpbWVvdXQobGRpbnNwLCAwKTsNCiAgICB9KSgpOzwvc2NyaXB0PmQCAw9kFgICCQ9kFgJmDw8WAh8ABdUBPHNwYW4+VG8gaGVscCBrZWVwIG91ciBjb21tdW5pdHkgc2FmZSwgd2UgbWF5IHJlcXVpcmUgdXNlcnMgdG8gdmVyaWZ5IHRoZWlyIElELCBpbiBhZGRpdGlvbiB0byB0aGVpciBwYXltZW50IG1ldGhvZC4gQXZvaWQgYW55IHBvdGVudGlhbCBkZWxheXMsIDxhIGhyZWY9Jy92ZXJpZnktaWRlbnRpdHkvaWR2Jz51cGxvYWQgeW91ciBJRCBpbmZvcm1hdGlvbjwvYT48L3NwYW4+ZGRkSTuc24DODmcLPbGE2bwvbb4R3eM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=zF6aTLPqvoYxtja59DpNWrWQ5kNViCz0_iGc4X9AcYR1AYhEp-DSgcoShC9gknLrECMlqdINrTrwXdzDhwejpXk4PSY1&amp;t=638393280364924856" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+if(typeof angular != 'undefined') { angular.module('guru.common.debugConstants', []).constant('publishedInDebugMode', false)};//]]>
+</script>
+
+    <script language="javascript" type="text/javascript">
+
+    function RefreshErrorHandler_AppInit()
+    {
+      Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(RefreshErrorHandler_BeginRequest);
+      Sys.WebForms.PageRequestManager.getInstance().add_endRequest(RefreshErrorHandler_EndRequest);
+    }
+     
+    function RefreshErrorHandler_BeginRequest(sender, args) {
+      // Clear the error if it's visible from a previous request.
+        RefreshErrorHandler_CloseError();
+    }
+
+    function RefreshErrorHandler_EndRequest(sender, args) {
+      // Check to see if there's an error on this request.
+      if (args.get_error() != undefined)
+      {
+        // If there is, show the custom error.
+        RefreshErrorHandler_OpenError(args.get_error());
+     
+        // Let the framework know that the error is handled, 
+        //  so it doesn't throw the JavaScript alert.
+        args.set_errorHandled(true);
+      }
+    }
+
+    function RefreshErrorHandler_OpenError(error) {
+        // Show the error div.
+        var isShown = false;
+        var locationFunction = "";
+        var defaultLabel = GetPageElement('ctl00_guRefresh_guError_lblMessage');
+        var onOpenError = "";
+        var defaultContainer = GetPageElement('ctl00_guRefresh_guError');
+        var errorHeader = GetPageElement('ctl00_guRefresh_lblErrorHeader').innerHTML;
+        var serverErrorMessage = "";
+
+        defaultLabel.innerHTML = errorHeader + error.message;
+
+        if ((error.httpStatusCode == '500' || !error.httpStatusCode) && serverErrorMessage != '')
+            defaultLabel.innerHTML = errorHeader + serverErrorMessage;
+        else if (error.message.indexOf("Timeout") > 0)
+            defaultLabel.innerHTML = "It looks like our server is busy. Please wait a moment and try again.";
+        
+        if (locationFunction.length != 0)
+        {
+            try {
+                var label = eval(locationFunction);
+                if (label != null && label.length > 0)
+                {
+                    label = GetPageElement(label);
+                    if (label != null)
+                    {
+                        label.style.display = "";
+                        label.innerHTML = defaultContainer.innerHTML;
+                        isShown = true;
+                    }
+                }
+            }
+            catch (err)
+            { }
+        }
+        
+        if (!isShown)
+            defaultContainer.style.display = "";
+            
+        if (onOpenError.length != 0)
+            eval(onOpenError);
+    }
+
+    function RefreshErrorHandler_CloseError() {
+        // Hide the error div.
+        GetPageElement('ctl00_guRefresh_guError').style.display = "none";
+        GetPageElement('ctl00_guRefresh_guError_lblMessage').innerHTML = "";
+        
+        var locationFunction = "";
+
+        if (locationFunction.length != 0)
+        {
+            try {
+                var label = eval(locationFunction);
+                if (label != null && label.length > 0)
+                {
+                    label = GetPageElement(label);
+                    if (label != null)
+                        label.style.display = "none";
+                }
+            }
+            catch (err)
+            { }
+        }
+    }
+   
+    </script>
+
+<script src="/ScriptResource.axd?d=WKHGifGr30F1ge4QGKlwjiy3HATn_xXyrcbf46fRYwJ5xzPHKP4gSOgVIQb9kuPRIz3YMbv_yqixwlKpAKyVIpY8xgHDF5h7JT_CsgxEbLO2hisnnfX7Th5gBY8FKO6Vmo4zzQ2&amp;t=60b7ac5d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=vhJNBpYimVXyaiiaOToDxJQItiZzRvB9X8hy8NFJKEV4DMLlvV1iPuJxLAph0zSbsu0FgIiEiUeZfwgoPH-Qd3ZisL6UMM-YLN56a-luL0A1EV0G6u-70G6QZspOU42Eh2FQDQ2&amp;t=60b7ac5d" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0A083FFA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAK7qFGEM/8XmYYX2yJqIThSgIh3KKNm9r2lOrUzpgSkLCze2URQf6fqLVlALNcfH2RxQQlH" />
+</div>
+            <div id="divact" style="display: none">
+                <input type="hidden" name="ctl00$hdnact" id="ctl00_hdnact" value="Freelancer" />
+            </div>
+            <div id="ctl00_pnlSm">
+	
+                <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scriptMgr', 'aspnetForm', [], ['ctl00$scriptMgr',''], [], 90, 'ctl00');
+	//]]>
+</script>
+<input type="hidden" name="ctl00$scriptMgr" id="ctl00_scriptMgr" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl00_scriptMgr", "ctl00$scriptMgr");
+	Sys.Application._enableHistoryInScriptManager();
+	//]]>
+</script>
+
+            
+</div>
+            
+            
+
+<div id="ctl00_guRefresh_guError" style="display: none; width: 400px; margin: 10px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+	    <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="" style="border: 1px solid #961C1A;background-color: #FDDDDD;">
+	<tr>
+		<td class="standardText" style="padding: 5px;"><span id="ctl00_guRefresh_guError_pnlErrorMessage" style="display:inline-block;width:100%;">
+                <span class="bodyTitles" style="vertical-align: middle;"><span id="ctl00_guRefresh_guError_lblErrorTitle">Error</span></span><br />
+                <span id="ctl00_guRefresh_guError_lblMessage">An error occurred while attempting to process your request.</span></span></td>
+	</tr>
+</table>
+        </td>
+    </tr>
+    </table>
+</div>
+
+<span id="ctl00_guRefresh_lblErrorHeader" style="display: none;">A system error has occurred.<br/>Please <a href='/contact.aspx' target='_blank'>Contact Us</a> so we can correct the problem. Kindly copy and paste the "Error Details" that appear below into your message to us.<br/><br/>Thank you, and we apologize for the inconvenience,<br/>Guru.com Team<br/><br/><br/><b>Error details:</b><br/>Page: /pro/secure/TransferMethods.aspx<br></span>
+
+
+
+            <script type="text/javascript" src="https://img-guru.com/20240221.3/js/components.min.40147ea74345fa16.js"></script>
+            <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bootstrap-dropdown.js"></script>
+            
+    <script>
+        window.__MinCashAccBalToAddWT = 100;
+    </script>
+    <!-- <script src="https://img-guru.com/20240221.3/js/ngapps/payMethod.min.8439e2f48e3ee3ce.js" type="text/javascript"></script> -->
+    <div class="module_secondaryHead no-shadow">
+        <div class="container">
+            <div class="module_headerCrumb">
+                <h1>Payments</h1>
+            </div>
+            <ul class="module_tabs">
+                <!-- <li class="tab"><a href="/payments/invoices/">Invoices</a></li> -->
+                <li class="tab active"><a href="/payments/transfer-methods/">Withdrawal Methods</a></li>
+                <!-- <li class="tab"><a href="/pro/cashaccount/">Cash Account</a></li> -->
+                <!-- <li class="tab"><a href="/payments/1099-Reports/">1099 Tax Forms</a></li> -->
+                <!-- <li class="tab"><a href="/payments/transaction-reports/">Transaction Reports</a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="payContainer" class="container" ng-app="guruPaymentMethods" ng-controller="pmethodController" ng-init="userType = 'Freelancer'; UserCountry = 'Nigeria'; isWTRestrictedCountry = 'False'.toLowerCase() === 'true'; paypalTransactionStatus=0;payoneerTransactionStatus=0;paypalErrorMessage=''; membershipAutorenew ='False';paypalRestrictionStatus=1;isUserPaymentLocked=false;UserPhone='+234'; IsPayoneerAccountFraud ='False'; UserCountryCode = 'ng';NonUSTransferFee='1';CountryCurrencyCode='';UserDob='';BeneficiaryType='INDIVIDUAL';LocalCurrencyPaymentCode='';LocalCurrencyOtherCodeLabel='';IsKYCVerified='False'.toLowerCase() === 'true';UserCountryPhoneCode='+234';IsKYCNotRequired='False'.toLowerCase() === 'true'; minCashAccBalToAddNonUSBank=100;canHaveVirtualRouting = 'True' === 'True';getCashAccountBalance()">
+        <p class="module_toast toast_top"></p>
+        <div class="layout-right-aside">
+            <div class="left-col">
+                <div class="module_callout callout-small hide"
+                    ng-class="{'show': showCallout.display, 'callout-success': showCallout.success, 'callout-warning': showCallout.warning}"
+                    ng-if="showCallout.display && !loading">
+                    <a ng-click="closeCallout()" class="closeCalloutx" ng-if="showCallout.closeIcon"><i aria-hidden="true" data-icon="&#xe02d"></i></a>
+                    <h4 class="callout-title">{{showCallout.title}}</h4>
+                    <div class="callout-body" ng-if="showCallout.message">
+                        <p ng-bind-html="showCallout.message"></p>
+                    </div>
+                </div>
+                <payment-methods></payment-methods>
+                <payment-methods
+                ><!-- ngIf: userType != 'Employer' && LocalCurrencyPaymentCode !== '' -->
+                <!-- ngIf: loading && !showAddNonUSBankACForm -->
+          
+                <!-- ngIf: !loading && noPaymentMethods.display && !showAddWTForm && !showEditWTForm  && isUserPaymentLocked === false && !showAddNonUSBankACForm -->
+                <div
+                  ng-if="!loading &amp;&amp; noPaymentMethods.display &amp;&amp; !showAddWTForm &amp;&amp; !showEditWTForm  &amp;&amp; isUserPaymentLocked === false &amp;&amp; !showAddNonUSBankACForm"
+                  class="ng-scope"
+                >
+                  <h4 class="primaryHeading font-bold">
+                    Add a
+                    <!-- ngIf: userType == 'Employer' -->
+                    <!-- ngIf: userType != 'Employer' --><span
+                      ng-if="userType != 'Employer'"
+                      class="ng-scope"
+                      >Withdrawal</span
+                    ><!-- end ngIf: userType != 'Employer' -->
+                    method
+                  </h4>
+                  <p>
+                    Add your bank account to PayPal marketplace to be able to withdraw
+                    your work earnings from your cash account on freelancerhub.
+                  </p>
+                  <!-- ngIf: pendingAutopayItems.length -->
+                  <div class="rhythmMargin flex flex-column row-gap-1">
+                    <div
+                      class="module_box rhythmPaddingHorz1 flex flex-center space-between"
+                    >
+                      <div class="flex flex-center module_avatar">
+                        <div class="avatar">
+                          <img
+                            src="/images/paypal.png"
+                            alt="Bank Account"
+                            title="Bank Account"
+                            class="paymentMethodLogo"
+                          />
+                        </div>
+                        <div class="avatarinfo">
+                          <h3 class="identityName font-bold">
+                            Paypal Marketplace
+                            <!-- ngIf: userType == 'Employer' -->
+                          </h3>
+                        </div>
+                      </div>
+                      <!-- ngIf: IsPayAdmin === 'False' --><a
+                       
+                        class="module_btn primary_btn marginRight0 ng-scope" 
+                       onclick="routeToAddPayment()"
+                        >Add</a
+                      ><!-- end ngIf: IsPayAdmin === 'False' -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end ngIf: !loading && noPaymentMethods.display && !showAddWTForm && !showEditWTForm  && isUserPaymentLocked === false && !showAddNonUSBankACForm -->
+          
+                <!-- ngIf: !loading && !noPaymentMethods.display && !showAddWTForm && !showEditWTForm && !showAddNonUSBankACForm -->
+          
+                <style>
+                  .paymethods .header .avatarinfo .identityName {
+                    margin-top: 5px;
+                  }
+          
+                  .wireTransferLogo {
+                    width: 48px !important;
+                    height: 48px !important;
+                  }
+                </style>
+              </payment-methods>
+                <span id="ctl00_guB_uploadIDInformationLink"><span>To help keep our community safe, we may require users to verify their
+                    ID, in addition to their withdrawal method to avoid any potential
+                    delays.</span></span>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://img-guru.com/20240221.3/css/newguru/specific/kyc.6590cdf382ad3dda.css" />
+    <script src="https://img-guru.com/20240221.3/js/bootstrap/ui-bootstrap-tpls-0.12.0.min.js" type="text/javascript"></script>
+    <script src="https://img-guru.com/20240221.3/js/Common/disablepage.js" type="text/javascript"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCXh8_BYRW0P0fGCdYJXG8nUk-_fMKJ8j0"></script>
+
+            <div style="text-align: center; position: relative; top: 0; width: 100%; left: 0;">
+                <span id="ctl00_popMsg"><div id='ctl00_popMsg' align='center' style='display:none'> </div><script>function ShowPopUpMsg(Message, Duration){var div = document.getElementById('ctl00_popMsg');  div.innerHTML = Message;div.style.display = '';div.className = 'popMsg';let timer1 = setTimeout(function() { div.style.display = 'none'; }, Duration);}</script></span>
+            </div>
+        
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_scriptMgr_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function(){RefreshErrorHandler_AppInit});//]]>
+</script>
+</form>
+    </main>
+    
+<footer class="globalFooter">
+    <div class="container" style="position: relative">
+        <div id="ctl00_ctl12_divSin" class="globalFooterWrap">
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Navigate</h3>
+                
+                <ul id="ctl00_ctl12_divFlNavSIn" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl12_divFlDashBoard"><a href="https://www.guru.com/pro/" id="f-footer-dash-in" tabindex="-1">Dashboard</a></li>
+                    <li id="ctl00_ctl12_divFlFindWork"><a href="/work/" id="f-footer-find-work-in" tabindex="-1">Find Work</a></li>
+                    <li><a href="https://www.guru.com/pro/jobs/" id="f-footer-projects-in" tabindex="-1">Jobs</a></li>
+                    <li id="ctl00_ctl12_divFlPayments"><a href="/payments/invoices/" id="f-footer-payments-in" tabindex="-1">Payments</a></li>
+                    <li id="ctl00_ctl12_divFlMyAgency"><a href="/agency/" id="f-footer-leads-in" tabindex="-1" target="_blank">Agency Solutions</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Company Info</h3>
+                <ul id="ctl00_ctl12_CIEmpSin" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl12_divcinfoag"><a href="https://www.guru.com/about/" id="f-footer-about-in" tabindex="-1" target="_blank">About Guru</a></li>
+                    
+                    <li id="ctl00_ctl12_divFlHowitwork"><a href="/how-it-works-freelancer/" id="f-footer-fl-how-guru-works-in" tabindex="-1" target="_blank">How Guru Works</a></li>
+                    <li id="ctl00_ctl12_divcinfowg"><a href="/why-guru/" id="f-footer-why-guru-in" tabindex="-1" target="_blank">Why Guru</a></li>
+                    <li id="ctl00_ctl12_divcinfowa"><a href="/agreements/" id="f-footer-work-agreement-in" tabindex="-1" target="_blank">Work Agreements</a></li>
+                    <li id="ctl00_ctl12_divcinfosp"><a href="/safepay/" id="f-footer-safepay-in" tabindex="-1" target="_blank">SafePay</a></li>
+                    
+                    <li id="ctl00_ctl12_divFlPricing"><a href="/pricing-freelancer/" id="f-footer-fl-pricing-in" tabindex="-1" target="_blank">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Resources</h3>
+                <ul class="module_list veryTight no-border">
+                    
+                    <li id="ctl00_ctl12_divFlHelp"><a href="/help/freelancer/" id="f-footer-fl-help-in" tabindex="-1" target="_blank">Help & FAQ</a></li>
+                    <li><a href="https://www.guru.com/blog/" id="f-footer-blog-in" tabindex="-1" target="_blank">Blog</a></li>
+                    <li><a href="https://www.guru.com/contact.aspx/" id="f-footer-contactus" tabindex="-1" target="_blank">Contact Us</a></li>
+                    
+                    <li><a href="https://www.guru.com/apihelp/help.html" target="_blank" id="f-footer-apis-in" tabindex="-1">APIs</a></li>
+                    
+                    <li><a class="optanon-show-settings">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Policies</h3>
+                <ul class="module_list veryTight no-border">
+                    <li><a href="https://www.guru.com/trademark-copyright-policy/" id="f-footer-ip-in" tabindex="-1" target="_blank">IP Policy</a></li>
+                    <li><a href="https://www.guru.com/privacy-policy/" id="f-footer-privacy-in" tabindex="-1" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.guru.com/terms-of-service/" id="f-footer-terms-in" tabindex="-1" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                
+
+                <div id="ctl00_ctl12_divFScoSch">
+                    <h3 class="strongHeading">Get Hired Today!</h3>
+                    <!-- <div class="rhythmMargin input-group footerSearchInput">
+                        <input type="text" id="prjsrch" onkeydown="srchChkEnterAndSubmit(event, 'prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"
+                            class="niceInput" maxlength="128" placeholder="Search Jobs" />
+                        <i class="footerSearchIcon" aria-hidden="true" data-icon="&#xe020" onclick="srchCheckAndSubmit('prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"></i>
+                    </div> -->
+                </div>
+                <div>
+                    <h3 class="strongHeading">Connect With Us</h3>
+                    <div class="globalFooter__socials rhythmMargin">
+                        <a href="https://www.facebook.com/GuruFreelancing/" title="Connect with Guru on Facebook" target="_blank" id="footer-social-media-facebook" class="globalFooter__socials__social globalFooter__socials__social--facebook" rel="me noreferrer" id="footer-social-media-facebook" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on Facebook" alt="Facebook">
+                                <title>Connect with Guru on Facebook</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/GuruFreelancing" title="Connect with Guru on X" target="_blank" class="globalFooter__socials__social globalFooter__socials__social--x" rel="me noreferrer" alt="X" id="footer-social-media-x" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on X">
+                                <title>Connect with Guru on X</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-x"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/gurufreelancing/" title="Connect with Guru on LinkedIn" target="_blank" id="footer-social-media-linkedin" class="globalFooter__socials__social globalFooter__socials__social--linkedIn" rel="me noreferrer" alt="LinkedIn" id="footer-social-media-linkedin" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on LinkedIn">
+                                <title>Connect with Guru on LinkedIn</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+      </div>
+        <div class="globalFooterWrap botRowWrap">
+            <div class="globalFooter__botRow">
+                <p class="globalFooter__logowrap">
+                    <a href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.7 56.8" aria-label="Guru Home" alt="Guru" class="globalFooter__logo">
+                            <path d="M162.4 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H162.4z" class="a" />
+                            <path d="M244.8 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H244.8z" class="a" />
+                            <path d="M178.6 41.3h-5.9V9.2h5.9v13c9.2-12 26-13 26.2-13l0.3 5.9C204 15.2 178.6 16.7 178.6 41.3z" class="a" />
+                            <path d="M118 9.2v4.8c-3.7-2.9-8.8-4.8-14.5-4.8 -11.3 0-20.4 7.2-20.4 16 0 8.8 9.2 16 20.4 16 5.7 0 10.8-1.8 14.5-4.8v4.3c0 5.5-6.6 10.1-14.5 10.1 -6.3 0-11.8-3-13.7-7l-5.7 1.8c2.6 6.5 10.4 11.2 19.4 11.2 11 0 20-6.9 20.4-15.5h0V9.2H118zM103.5 35.3c-7.9 0-14.5-4.6-14.5-10.1 0-5.5 6.6-10.1 14.5-10.1 7.9 0 14.5 4.6 14.5 10.1C118 30.7 111.4 35.3 103.5 35.3z" class="a" />
+                            <path d="M46.6 33.9c2.8 0.7 5.5 1.6 8.1 2.9 2.6 1.2 4.9 2.7 7.1 4.4 2.2 1.7 4.2 3.6 6.1 5.7 1.9 2.1 3.5 4.3 4.9 6.8H62.3c-1.6-1.9-3.3-3.6-5.2-5.1 -1.9-1.5-4-2.8-6.2-3.9 -2.2-1.1-4.5-1.9-6.9-2.5 -2.4-0.6-4.9-0.9-7.6-0.9 -2.7 0-5.2 0.3-7.7 0.9 -2.5 0.6-4.8 1.4-6.9 2.5 -2.2 1.1-4.2 2.4-6.1 3.9 -1.9 1.5-3.7 3.2-5.2 5.1H0c1.4-2.5 3-4.7 4.9-6.9 1.9-2.1 3.9-4 6.2-5.7 2.3-1.7 4.7-3.1 7.2-4.3 2.6-1.2 5.3-2.2 8.1-2.9 -2.5-0.6-4.8-1.4-6.9-2.4 -2.2-1-4.2-2.2-6.2-3.6 -2-1.4-3.8-2.9-5.5-4.6 -1.7-1.7-3.2-3.6-4.6-5.5 0.7-1.1 1.4-2.1 2.3-3.1 0.8-1 1.7-1.9 2.6-2.8S9.9 10 11 9.2c1-0.8 2-1.6 3-2.3 0.1-0.9 0.3-1.7 0.7-2.4 0.4-0.7 0.9-1.4 1.5-2 0.6-0.6 1.3-1.1 2.1-1.4 0.8-0.3 1.6-0.5 2.5-0.5 1 0 1.9 0.2 2.7 0.6 0.8 0.4 1.6 0.9 2.2 1.5 0.6 0.6 1.2 1.4 1.5 2.2C27.8 5.8 28 6.7 28 7.7c0 1-0.2 1.9-0.6 2.7 -0.4 0.8-0.9 1.6-1.5 2.2 -0.6 0.6-1.4 1.1-2.2 1.5 -0.8 0.3-1.7 0.5-2.7 0.5 -0.2 0-0.4 0-0.7 0 -0.2 0-0.5 0-0.7-0.1 -0.2 0-0.4-0.1-0.7-0.2 -0.2-0.1-0.5-0.2-0.7-0.3 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1.1 0.9 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1 1 1.5 1.4 3 2.7 4.7 3.8 1.7 1.2 3.5 2.2 5.4 2.9 1.9 0.8 3.9 1.4 6 1.8 2.1 0.4 4.3 0.7 6.4 0.7 2.2 0 4.3-0.2 6.4-0.7 2.1-0.4 4.1-1.1 6-1.8 1.9-0.8 3.7-1.8 5.4-2.9 1.7-1.2 3.2-2.5 4.7-3.8h0.1c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-1 0.2-1.9 0.5-2.8 0.3-0.9 0.9-1.7 1.5-2.4 0.7-0.7 1.5-1.2 2.4-1.5 0.9-0.3 1.8-0.5 2.8-0.5 1 0 1.9 0.2 2.8 0.5 0.9 0.3 1.6 0.9 2.3 1.5 0.6 0.7 1.2 1.5 1.5 2.4 0.4 0.9 0.6 1.8 0.6 2.8 0 1-0.2 1.9-0.6 2.8 -0.4 0.9-0.9 1.6-1.5 2.3 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -0.2 0-0.3 0-0.4 0 -0.1 0-0.2 0-0.4 0 -0.1 0-0.3 0-0.4-0.1 -0.1 0-0.2-0.1-0.4-0.1 -1.2 1.2-2.5 2.3-3.9 3.4 -1.4 1.1-2.9 2.1-4.4 2.9 -1.5 0.9-3.1 1.7-4.8 2.4C50.1 33 48.3 33.5 46.6 33.9z" class="a" />
+                            <path d="M32 8.7c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3s0-0.2 0-0.3c0-0.6-0.1-1.2-0.1-1.8 -0.1-0.6-0.2-1.3-0.4-1.8 -0.2-0.6-0.5-1.2-0.8-1.7 -0.3-0.5-0.7-1.1-1-1.5 0.5-0.1 1-0.2 1.6-0.2 0.6 0 1.2-0.1 1.8-0.1 0.6 0 1.2-0.1 1.8-0.1C35.4 0 36 0 36.5 0c2.2 0 4.3 0.2 6.4 0.5 2.1 0.3 4.1 0.8 6.1 1.5 2 0.6 3.9 1.4 5.7 2.4 1.8 0.9 3.6 2 5.2 3.2 -0.6 0.4-1.1 0.9-1.6 1.4 -0.5 0.5-0.9 1.1-1.3 1.7 -0.3 0.6-0.7 1.2-1 1.9 -0.3 0.7-0.5 1.4-0.6 2.1 -1.3-1-2.7-1.9-4.2-2.7 -1.5-0.8-3.1-1.4-4.6-2 -1.6-0.5-3.2-0.9-4.9-1.2 -1.7-0.2-3.5-0.4-5.2-0.4 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.1 0.1C32.7 8.5 32.4 8.6 32 8.7z" fill="#4B83C3" />
+                            <path d="M29.9 18.3c0-1 0.2-1.9 0.6-2.7 0.4-0.8 0.9-1.6 1.5-2.2 0.6-0.6 1.4-1.2 2.2-1.5 0.8-0.4 1.7-0.6 2.7-0.6 1 0 1.9 0.2 2.8 0.6 0.9 0.4 1.6 0.9 2.3 1.5 0.6 0.6 1.1 1.4 1.5 2.2 0.3 0.8 0.5 1.7 0.5 2.7 0 1-0.2 1.9-0.5 2.7 -0.3 0.8-0.8 1.6-1.5 2.2 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -1 0-1.9-0.2-2.7-0.6 -0.8-0.4-1.6-0.9-2.2-1.5 -0.6-0.6-1.2-1.4-1.5-2.2C30.1 20.2 29.9 19.3 29.9 18.3z" class="a" />
+                        </svg>
+                    </a>
+                    <span>| Get Work Done</span>
+                </p>
+            </div>
+            <div class="globalFooter__botRow globalFooter__copyright">
+                <span>Copyright &copy; 2024, Guru.com
+                </span>
+            </div>
+        </div> 
+    </div>
+</footer>
+
+
+<script type="text/javascript" language="javascript">
+    function srchChkEnterEvent(e) {
+        if (!e) return false;
+
+        var keynum = e.which || e.keyCode;
+        if (keynum === 13) {
+            return true;
+        }
+        return false;
+    }
+    function srchChkEnterAndSubmit(event, srchbox, host, user_type, def_kw) {
+        if (srchChkEnterEvent(event)) {
+            srchCheckAndSubmit(srchbox, host, user_type, def_kw)
+        }
+    }
+    function srchCheckAndSubmit(srchbox, host, user_type, def_kw) {
+        var url;
+        var keyword = document.getElementById(srchbox).value;
+        if (keyword == def_kw) {
+            keyword = "";
+        }
+        keyword = keyword.trim()
+        keyword = keyword
+            .replace(/\//g, "%2F")
+            .replace(/\-/g, "--")
+            .replace(/ \s*/g, "-");
+
+        keyword = encodeURIComponent(keyword);
+        keyword = keyword.replace(/%5C/g, "%25255c");
+
+        if (user_type == "emp") {
+            if (keyword != "") {
+                var encryptedString = btoa("/d/freelancers/skill/" + keyword);
+                url = "/hire/find/?q=" + encryptedString;
+            }
+            else {
+                url = "/hire/find/";
+            }
+        } else {
+            if (keyword != "") {
+                var encryptedString = btoa("/d/jobs/skill/" + keyword);
+                url = "/work/?q=" + encryptedString;
+            }
+            else {
+                url = "/work/";
+            }
+        }
+        window.location.href = url;
+    }
+
+    var chatFullName = "";
+    var chatUserEmail = "";
+    var chatCustom3 = "";
+    var chatUserType = "Freelancer";
+    var chatUserId = "0";
+    //Mobile Footer Code
+        $(document).ready(function () {
+            if ($("body").hasClass("resp") || $("body").hasClass("responsive")) {
+                $(".footerHeading").click(function () {
+                    $(this).toggleClass("active");
+                    $(this).next(".module_list").slideToggle();
+                });
+            }
+            if ($(".mobileFooter").length && window.innerWidth < 960) $(".globalFooter").hide();
+            $(window).resize(function () {
+                if (window.innerWidth > 700) $(".footerHeading").next(".module_list").show();
+                else if ($("body").hasClass("resp") || $("body").hasClass("responsive")) {
+                    $(".footerHeading").removeClass("active");
+                    $(".footerHeading").next(".module_list").hide();
+                }
+                if ($(".mobileFooter").length && window.innerWidth < 960) $(".globalFooter").hide();
+                else $(".globalFooter").show();
+            })
+        });
+</script>
+
+
+
+    <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bundles/global-bundle.d6e02c143045a0ba.js"></script>
+    <script src="/routing.js"></script>
+    <script src="/validateCardsInputted.js"></script>
+
+</body>
+</html>
+

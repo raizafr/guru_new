@@ -1,0 +1,1935 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html id="ctl00_html_tag" class="" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+
+<head id="ctl00_Head1">
+<meta name="msvalidate.01" content="C5E8148C29FFCEF733AE141A0ED25879" />
+  <!-- Google Tag Manager -->
+<meta name="robots" content="noodp, nodir, index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" /><title>
+	Dashboard - Freelancers - Guru
+</title><link href="https://res.cloudinary.com" rel="preconnect" crossorigin="" /><link rel="manifest" href="/manifest.json" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4c83c3" /><link rel="shortcut icon" href="/favicon.ico" /><meta name="msapplication-config" content="/browserconfig.xml" /><meta name="theme-color" content="#ffffff" /><link rel="stylesheet" type="text/css" href="https://img-guru.com/20240221.3/css/appshell/core.a6707739139be53b.css" />
+                <meta name="description"
+                    content="Use the Guru Dashboard as your control panel to find work, manage jobs, get paid and update your account information.">
+                <meta name="viewport"
+                    content="width=device-width, initial-scale=1, viewport-fit=cover">
+                
+
+                        <link rel="Stylesheet"
+                            href="https://img-guru.com/20240221.3/css/newguru/objects/Dashboard/dashboard.867b8ab26421b26e.css" />            
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-route.min.js"></script>
+                        <script
+                            src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
+                        <script
+                            src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-sanitize.min.js"></script>
+            <link text='text/css' rel='stylesheet' href='/WebResource.axd?d=M8F0al-XsjX9si-64V6xS4CbFQgS2kxzB8JcKBGlBkQDI388GQsNNtkFvs8paDqGLXOFqF7qcX78oMaV7CO-_hYc1XGPcmXx_AUGNHSHo2LMQN8irTRjgr9zWXKw9PjPhbTXlBw9McPKF2jHHTCwcMJZNElI6PeWaxLiqJrCxhuuylHK0&t=638441211684175980' /></head>
+<body class="resp">
+    <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bundles/vendor-bundle.5d1d2c3745c1c905.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
+    <header class="globalHeader">
+        <div class="container" id="vue-global-header">
+            <div id="ctl00_ctl11_globalHeader__masthead" class="globalHeader__masthead clearfix">
+                <h1 class="globalHeader__logo" itemscope itemtype="//schema.org/Organization">
+                    <a href="https://www.guru.com/pro/" itemprop="url" id="f-topnav-logo-in">
+                        <img src="https://img-guru.com/20240221.3/images/Guru-logo2.png" height="30px" width="130px" style="display: block;" itemprop="logo" title="Guru.com" alt="Guru.com" />
+                    </a>
+                </h1>
+                <div id="ctl00_ctl11_navSearchProj" class="globalHeader__search">
+                    
+                    <guru-typeahead inline-template ref="keywordSearch"
+					  :typeahead-query.sync="query"
+                      :remove-duplicates="true"
+					  :allow-any-entry="true"
+                      :hit-on-empty="true"
+					  :display-tokens="false"
+					  :clear-on-hit="false"
+					  :clear-on-blur="false"
+					  api="https://www.guru.com/api/search/services/suggestedskills/"
+                      data-searchurl="/work/"
+                      data-resultbase="/d/jobs/"
+					  @typeahead-hit="typeahead_onHit">
+                    
+                       <div class="input-group typeahead" @click.stop
+                       :class="[{ 'typeahead--open': isTypeAheadOpen}, { 'typeahead--disabled': disabled}, { 'typeahead--disabled': disabled}, inputLabelClasses]">
+                    
+                            <!-- <input type="text"
+                            autocomplete="off"
+                            ref="typeahead-input"
+                            v-model="query"
+                            :id="`typeahead-${_uid}`"
+                            maxlength="50"
+                            aria-label="Search Jobs"
+                            placeholder="Search Jobs"
+                            class="niceInput"
+                            @keydown.enter="handleEnter"
+                            @keydown.delete="handleDelete"
+                            @keydown.esc="handleEscape"
+                            @keydown="handleInput"
+                            @focus="handleFocus"
+                            @blur="handleBlur" /> -->
+                            
+                            <!-- <span class="input-group__btn">
+                                <button type="button" 
+                                id="searchBtnTop" 
+                                @click="typeaheadHit(query)"
+                                class="module_btn secondary_btn searchBtnTop lonely_btn">
+                                    <i aria-hidden="true" data-icon="&#xe020;"></i>
+                                </button>
+                            </span>  -->
+                            
+                            <ul class="typeahead__menu">
+                                <li v-for="(item, $index) in items"
+                                :key="$index"
+                                ref="typeahead-item">
+                                    <a class="typeahead__menu__item"
+                                    @click="typeaheadHit(item)"
+                                    :class="{'typeahead__menu__item--hover': $index == currentSelection}"
+                                    tabindex="-1">
+                                        {{ item.Key }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+					</guru-typeahead>
+                    
+                </div>
+
+                <div id="ctl00_ctl11_navMessageAlertsSection" class="globalHeader__panels">  
+                    <messages-panel :notification-count="0" :is-employer="false" class="globalHeader__panels__panel globalHeader__panels__panel--messages"></messages-panel>
+                    <alerts-panel :notification-count="0" class="globalHeader__panels__panel globalHeader__panels__panel--alerts"></alerts-panel>
+                </div>
+                <div id="ctl00_ctl11_globalHeader__account" class="globalHeader__account">
+                    
+                    <div class="dropdown" ref="dropdown-parent" data-responsive-dropdown="550">
+                        <button type="button" class="link_btn module_btn" style="display:block" aria-label="My Account" role="button" ref="dropdown-toggle">
+                            <span class="module_avatar twentyfour">
+                                <span class="avatar avatar_noinfo">
+                                    <img src="" id="ctl00_ctl11_imgTbN" class="headProfImg js-headProfImg" alt="My Account" height="24" width="24" />
+                                </span>
+                                <span class="avatarinfo">
+                                    <span class="caret"></span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <div class="resp-dropdown resp-dropdown--right" @click.stop>
+                            <div class="resp-dropdown__wrapper">
+                                <div class="resp-dropdown__heading">
+                                    <h3 class="strongHeading">Manage Account</h3>
+                                    <button type="button" class="resp-dropdown__heading__close" @click="closeDropdown"> 
+                                        <i aria-hidden="true" :data-icon="'\ue02d'"></i> 
+                                    </button>
+                                </div>
+                                <div class="resp-dropdown__content">
+                                    <ul>
+                                        <li id="ctl00_ctl11_liAccountBtn"><a class="resp-dropdown__content__item"   href="https://www.guru.com/switchBoard.aspx?modify=true" id="f-topnav-edit-account-in">Edit Account</a></li>
+                                        
+                                        <li id="ctl00_ctl11_liProfileBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=1" id="f-topnav-edit-profile-in">Edit Profile</a></li>
+                                        <li id="ctl00_ctl11_liBidsBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=6" id="f-topnav-buy-bids-in">Buy Bids</a></li>
+                                        <li id="ctl00_ctl11_liMemberBtn"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/profilebuild.aspx?tab=8" id="f-topnav-membership-in"> Membership</a></li>
+                                        <li id="ctl00_ctl11_navPayments2"><a class="resp-dropdown__content__item" href="https://www.guru.com/pro/cashaccount/" id="f-topnav-manage-cash-account-in">Manage Cash Account</a></li>    
+                                        
+                                        <li id="ctl00_ctl11_liDividerTop" class="divider"></li>
+                                        
+                                        <span id="ctl00_ctl11_navManageTeam" class="adminOwner">
+                                            <li class="nav-header">Account Team</li>
+                                            <li ><a href="https://www.guru.com/manage/myteam" class="resp-dropdown__content__item" id="f-topnav-myteam-in">Manage Team</a></li>	
+                                        </span>
+
+
+                                        <li id="ctl00_ctl11_liSwitchAccountFLDivider" class="divider"></li>
+                                        
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                        
+
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/help/" id="f-topnav-help-in">Help</a>
+                                        </li>
+                                        <li>
+                                            <a class="resp-dropdown__content__item" href="https://www.guru.com/LogOut.aspx" id="f-topnav-signout-in">Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ctl00_ctl11_navMenuRow" class="globalHeader__menu">
+            <div class="container">
+                <nav class="globalHeader__nav adminOwner">
+                    <a href="/overview_dashboard.html" id="ctl00_ctl11_navDashboard" class="globalHeader__nav__item globalHeader__nav__item--active">Dashboard</a>
+                    <!-- <a href="https://www.guru.com/work/" id="ctl00_ctl11_navWork" level="0" title="Find Work" class="globalHeader__nav__item" utm_content="hdrLeadsTxt">Find Work</a>                   -->
+                    <!-- <a href="https://www.guru.com/pro/jobs/" id="ctl00_ctl11_navProjects" level="0" class="globalHeader__nav__item" utm_content="hdrProjectsTxt">Jobs</a> -->
+                    <a id="ctl00_ctl11_navPaymentsBtn" class="globalHeader__nav__item"  onclick="routeToPaymentPage()">Payments</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<input type="hidden" id="GLOBAL_ACCOUNT_INFO" value='{"FirstName": "","LastName": "Gideon", "ScreenName": "Uwa Gideon", "Thumbnail": "https://res.cloudinary.com/gurucom/image/upload/f_auto,w_48,h_48,dpr_2/v1708338917/pimg/FreelancerFiles/5/473/5473483/eodwwdz6qn5heiuvesgm.jpg"}'/>
+<input type="hidden" id="CDN_Base_Url" value="https://img-guru.com/20240221.3" />
+<input type="hidden" id="Guru_ID" value="5473483" />
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        if (navigator.userAgent.match(/iPad/i)) {
+            var minHeight = Math.max(document.documentElement.clientHeight, document.documentElement.clientWidth);
+            var minHeightInPx = minHeight + 'px';
+            document.body.classList.add('touchDevice')
+            document.body.style.minHeight = minHeightInPx
+        }
+    }, false);
+</script>
+
+
+
+    <main role="main" class="mainContent">
+        
+
+
+
+        <form method="post" action="" id="aspnetForm">
+<div>
+<input type="hidden" name="WebAPIURL" id="WebAPIURL" value="https://www.guru.com/api/v1/" />
+<input type="hidden" name="MSAPIURL" id="MSAPIURL" value="https://www.guru.com/" />
+<input type="hidden" name="ctl00_scriptMgr_HiddenField" id="ctl00_scriptMgr_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExOTQzMDA4NjRkZJ/dFcLB/o1ouaExHDJ/FLUL8M/a" />
+</div>
+
+<!-- <script src="/WebResource.axd?d=zF6aTLPqvoYxtja59DpNWrWQ5kNViCz0_iGc4X9AcYR1AYhEp-DSgcoShC9gknLrECMlqdINrTrwXdzDhwejpXk4PSY1&amp;t=638393280364924856" type="text/javascript"></script> -->
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4E7CDEBD" />
+</div>
+            <div id="divact" style="display: none">
+                <input type="hidden" name="ctl00$hdnact" id="ctl00_hdnact" value="Freelancer" />
+            </div>
+            <div id="ctl00_pnlSm">
+	
+<input type="hidden" name="ctl00$scriptMgr" id="ctl00_scriptMgr" />
+
+            
+</div>
+            
+            
+
+<div id="ctl00_guRefresh_guError" style="display: none; width: 400px; margin: 10px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+	    <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="" style="border: 1px solid #961C1A;background-color: #FDDDDD;">
+	<tr>
+		<td class="standardText" style="padding: 5px;"><span id="ctl00_guRefresh_guError_pnlErrorMessage" style="display:inline-block;width:100%;">
+                <span class="bodyTitles" style="vertical-align: middle;"><span id="ctl00_guRefresh_guError_lblErrorTitle">Error</span></span><br />
+                <span id="ctl00_guRefresh_guError_lblMessage">An error occurred while attempting to process your request.</span></span></td>
+	</tr>
+</table>
+        </td>
+    </tr>
+    </table>
+</div>
+
+<span id="ctl00_guRefresh_lblErrorHeader" style="display: none;">A system error has occurred.<br/>Please <a href='/contact.aspx' target='_blank'>Contact Us</a> so we can correct the problem. Kindly copy and paste the "Error Details" that appear below into your message to us.<br/><br/>Thank you, and we apologize for the inconvenience,<br/>Guru.com Team<br/><br/><br/><b>Error details:</b><br/>Page: /pro/dashboard.aspx<br></span>
+
+
+
+            <script type="text/javascript" src="https://img-guru.com/20240221.3/js/components.min.40147ea74345fa16.js"></script>
+            <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bootstrap-dropdown.js"></script>
+            
+                <script src="https://img-guru.com/20240221.3/js/ngapps/proDashBoard.min.fcae28f43dc7b17d.js"
+                    type="text/javascript"></script>
+                <input type="hidden" name="ctl00$guB$hdnProposals" id="ctl00_guB_hdnProposals" value="{&quot;Status&quot;:1,&quot;Result&quot;:[]}" />
+                <input type="hidden" name="ctl00$guB$hdnManageProjects" id="ctl00_guB_hdnManageProjects" value="{&quot;Status&quot;:1,&quot;Result&quot;:[]}" />
+                <input type="hidden" name="ctl00$guB$hdnTotalProjectToHire" id="ctl00_guB_hdnTotalProjectToHire" value="0" />
+                <input type="hidden" name="ctl00$guB$hdnShowTips" id="ctl00_guB_hdnShowTips" value="1" />
+                <input type="hidden" name="ctl00$guB$hdnTotalProposal" id="ctl00_guB_hdnTotalProposal" value="0" />
+                <script>
+                    var totalProjectsToHire = $("#ctl00_guB_hdnTotalProjectToHire").val();
+                    var showTips = $("#ctl00_guB_hdnShowTips").val();
+                    var totalProposals = $("#ctl00_guB_hdnTotalProposal").val();
+                </script>
+
+                
+
+                
+                    <div class="module_secondaryHead">
+                        <div class="container">
+                            <div class="module_headerCrumb">
+                                <div class="dashboard-mobileOnly">
+
+                                    <div class="clearfix">
+                                        <div class="pull-left">
+                                            <div class="module_avatar thirtytwo">
+                                                <div class="avatar">
+                                                    <img src=""
+                                                        title=""
+                                                        alt="" />
+                                                </div>
+
+                                                <div class="avatarinfo">
+                                                    <h3 class="largeText darkGrey">
+                                                        <a href="/freelancers/uwa-gideon" id="ctl00_guB_lnkSeoMobile">
+                                                            <strong>
+                                                                No name yet
+                                                            </strong>
+                                                        </a>
+                                                    </h3>
+
+                                                    <p class="subtext">
+                                                        Cash Account:
+
+                                                        <span id="ctl00_guB_lnkWithdraw">
+                                                            <a href="/pro/cashaccount/">
+                                                                $0.00
+                                                            </a>
+                                                        </span>
+
+                                                        
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <button type="button"
+                                                id="revealLinks"
+                                                class="module_btn lonely_btn small_btn ghost_btn"
+                                                style="font-size: 24px">
+                                                <i aria-hidden="true"
+                                                    data-icon="&#xf107"
+                                                    class="rotateCaret"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="module_box"
+                                        style="display:none; margin-top: 1rem"
+                                        id="additionalLinks">
+
+                                        <p class="copy rhythmMarginSmall small">
+                                            <a href="#"
+                                                data-toggle="modal"
+                                                data-target="#myStats">All-Time Transaction Data</a>
+                                        </p>
+
+                                        <p class="copy rhythmMarginSmall small">
+                                            <a href="/pro/profilebuild.aspx?tab=1">Edit Profile</a>
+                                        </p>
+
+                                        <p class="copy rhythmMarginSmall small">
+                                            
+                                            <a href="" id="ctl00_guB_aUpgradeWrapMobile">Upgrade Membership</a>
+                                            
+                                        </p>
+
+                                        <p class="copy rhythmMarginSmall small">
+                                            Verification: <strong> Not Verified </strong> - <a href='/verify-identity'>Verify</a> 
+                                        </p>
+
+                                        <p class="copy rhythmMarginSmall small">
+                                            Guru ID: <strong class="darkGrey">
+                                                5473483
+                                            </strong>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="dashboard-desktopOnly">
+                                    <h1>Dashboard</h1>
+                                    <p class="spaceRight absolute lightGrey">
+                                        Guru ID: 5473483
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ctl00_guB_prodashboard" class="container">
+                            <div id="account-security-app">
+                                <div id="ctl00_guB_divConnectWhatsappMsg">
+                                    <div class="module_callout callout-small">
+                                        <div class="flex flex-wrap pos-relative">
+                                            <div class="flex flex-wrap">
+                                                <img src="https://res.cloudinary.com/gurucom/image/upload/f_auto/static/whatsapp-guru_povec7.png"
+                                                    onerror="if(this.src !== '/images/whatsapp-guru.png') this.src = '/images/whatsapp-guru.png'"
+                                                    alt="Connect on WhatsApp"
+                                                    width="50">
+                                                <p class="callout-title">Connect your WhatsApp with Guru and increase
+                                                    your chances of being contacted.</p>
+                                            </div>
+                                            <div class="flex">
+                                                <button type="button"
+                                                    @click="openVerifyPhoneNumberModal()"
+                                                    class="module_btn outline_btn outline_btn--primary">Connect
+                                                    WhatsApp</button>
+                                                <a href="#"
+                                                    class="closeCalloutx exitWalkthrough pos-absolute pos-relative--lg top-0 right-0"
+                                                    onclick="CWhatsappClose()">
+                                                    <i aria-hidden="true"
+                                                        data-icon="&#xe02d"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <phone-number-verification-modal :entry-point="2"
+                                        :existing-phone-number="''"
+                                        source="dashboard"
+                                        ref="verifyPhoneNumber"></phone-number-verification-modal>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <div id="ctl00_guB_spnTeamAlert" class="module_callout callout-small callout-warning clearfix">
+                                <h4 class="callout-title"
+                                    style="font-weight:400">
+                                    <i data-icon="&#xe02e"
+                                        aria-hidden="true"></i>
+                                    There has been an update to the team.
+                                    <a href="/manage/myteam"
+                                        style="color:#d06320; text-decoration:underline"> <strong>Manage Team
+                                        </strong></a>
+                                </h4>
+                            </div>
+
+                            
+
+                            
+
+                            <div class="proDashboard"
+                                role="main">
+
+                                <!-- Profile -->
+                                <div
+                                    class="proDashboard__card proDashboard__card--grey module_box box_NoPadding dashboard-desktopOnly">
+
+                                    <ul class="module_list cozy">
+                                        <li>
+                                            <div class="module_avatar vertical rhythmPaddingHorz1">
+                                                <div class="avatar">
+                                                    <img src=""
+                                                        alt="" />
+                                                </div>
+
+                                                <div class="avatarinfo rhythmMargin0">
+                                                    <h3 class="darkGrey largerText">
+                                                        <a href="/freelancers/uwa-gideon" id="ctl00_guB_lnkSeo">
+                                                            <strong>
+                                                                No name yet
+                                                            </strong>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="subtext">
+                                                        <strong class="darkGrey largeText">
+                                                            $0 <span class="lightGrey">
+                                                                    earned/yr</span>
+                                                        </strong>
+                                                        <span class="pipe"
+                                                            aria-hidden="true"
+                                                            aria-role="presentation"> &middot; </span>
+                                                        <a href="/pro/profilebuild.aspx?tab=4">
+                                                            <span id="ctl00_guB_lblFeedback">No Feedback</span>
+                                                        </a>
+                                                        
+                                                    </p>
+                                                    <p class="subtext">
+                                                        <button type="button"
+                                                            class="link_btn"
+                                                            data-toggle="modal"
+                                                            data-target="#myStats">All-Time Transaction Data</button>
+
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+
+                                                <div class="profileList">
+                                                    <i class='profileList__icon' data-icon='&#xe912' aria-hidden='true'></i><p class='profileList__item'>Not Verified Yet</p> <a class='profileList__action' href='/verify-identity'>Verify</a>
+                                                </div>
+
+                                                <div class="profileList">
+                                                    <i class="profileList__icon"
+                                                        data-icon="&#xe90d"
+                                                        aria-hidden="true"></i>
+
+                                                    <p class="profileList__item">
+                                                        <span id="ctl00_guB_divMemNameForOwner" data-placement="right" data-original-title="Basic Member">Basic Member</span>
+                                                    </p>
+
+                                                    <div class="profileList__action">
+                                                        
+                                                        <span id="ctl00_guB_aUpgradeWrap"><a href="/pro/profilebuild.aspx?tab=8" id="ctl00_guB_aUpgrade">Upgrade</a></span>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+                                                <div class="profileList">
+                                                    <i class="profileList__icon"
+                                                        data-icon="&#xe004"
+                                                        aria-hidden="true"></i>
+
+                                                    <p class="profileList__item">
+                                                        <a href='/pro/profilebuild.aspx?tab=1'>Edit Profile</a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="profileList">
+                                                    <i class="profileList__icon"
+                                                        data-icon="&#xe90e"
+                                                        aria-hidden="true"></i>
+
+                                                    <p class="profileList__item">
+                                                        <a href='/pro/profilebuild.aspx?tab=1'>Link Website</a>
+                                                    </p>
+
+                                                    <div class="profileList__action">
+                                                        
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="profileList">
+                                                    <i class="profileList__icon"
+                                                        data-icon="&#xe913"
+                                                        aria-hidden="true"></i>
+
+                                                    <p class="profileList__item">
+                                                        <a href='/pro/profilebuild.aspx?tab=1'>Add Video</a>
+                                                    </p>
+
+                                                    <div class="profileList__action">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+                                                <p class="lightGrey smallText rhythmMarginSmall">Cash Account Balance
+                                                </p>
+
+                                                <div class="flex flex-center space-between">
+                                                    <div>
+                                                        <a href="/pro/cashaccount/"
+                                                            class="largerText">
+                                                            <strong>
+                                                                $0.00
+                                                            </strong>
+                                                        </a>
+                                                    </div>
+
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    
+
+                                    <div id="ctl00_guB_contactSection">
+                                        
+                                        
+                                    </div>
+
+                                    <div class="divCurrentMemberShipIdp">
+                                        <input type="hidden" name="ctl00$guB$hdnCurrentMemberShipId" id="ctl00_guB_hdnCurrentMemberShipId" />
+                                    </div>
+
+                                    <div class="divCurrentMemberShipNamep">
+                                        <input type="hidden" name="ctl00$guB$hdnCurrentMemberShipName" id="ctl00_guB_hdnCurrentMemberShipName" />
+                                    </div>
+                                    <div class="divPriceRenewp">
+                                        <input type="hidden" name="ctl00$guB$hdnPriceToRenew" id="ctl00_guB_hdnPriceToRenew" />
+                                    </div>
+                                    <div class="divFreelancerIdp">
+                                        <input type="hidden" name="ctl00$guB$hdnFreelancerId" id="ctl00_guB_hdnFreelancerId" />
+                                    </div>
+                                    <div class="divMemPlanTypep">
+                                        <input type="hidden" name="ctl00$guB$hdnMemPlanType" id="ctl00_guB_hdnMemPlanType" />
+                                    </div>
+                                </div>
+
+                                <!-- FIND -->
+                                <div class="rhythmMargin dropdown dashboard-mobileOnly">
+                                    <div class="input-group--flex">
+                                        <div class="input-group__input">
+                                            <div class="g-input g-input--small"
+                                                style="display: flex;"
+                                                data-toggle='dropdown'>
+                                                <label for="projectKeyword"
+                                                    style="flex:1">
+                                                    <input type="text"
+                                                        maxlength="128"
+                                                        id="projectKeyword"
+                                                        placeholder="Search Jobs"
+                                                        class="g-input g-input--small g-input--transparent">
+                                                </label>
+
+                                                <span  style='padding:6px 12px'><span class='caret'></span></span>
+
+                                            </div>
+
+
+                                            <div class="dropdown-menu module_box box_NoPadding"
+                                                style="right: 0;">
+                                                <p class="strongHeading rhythmPadding1">
+                                                    Leads
+                                                </p>
+                                                <div class="module_list module_list--hover tighter rhythmMargin">
+                                                    <a class="module_list_item rhythmPaddingHorz1"
+                                                        href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS9pbnZpdGVkL3NydC9pbnZpdGF0aW9uLw==">
+                                                        Invitations
+                                                        
+                                                    </a>
+
+                                                    <a class="module_list_item rhythmPaddingHorz1"
+                                                        href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS9tYXRjaGVzLw==">
+                                                        Job Matches
+                                                        
+                                                    </a>
+
+                                                    <a class="module_list_item rhythmPaddingHorz1"
+                                                        href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS93YXRjaGxpc3Qv">
+                                                        Watchlist
+                                                        
+                                                    </a>
+                                                </div>
+
+                                                <div class="module_list module_list--hover tighter">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <span class="input-group__btn">
+                                            <button type="button"
+                                                class="module_btn secondary_btn lonely_btn"
+                                                id="searchBtn"
+                                                onclick="RedirectToSearchPageDash()" />
+                                            <span aria-hidden="true"
+                                                data-icon="&#xE020"
+                                                style="font-size: 11px;"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="proDashboard__card module_box box_NoPadding dashboard-desktopOnly">
+                                    <header class="module_box_header module_box_header_filled module_box_header--flex">
+                                        <div class="module_box_header--flex--left">
+                                            <h2 class="primaryHeading">
+                                                <a href="/work/"
+                                                    class="darkGrey">Find Work</a>
+                                            </h2>
+                                        </div>
+
+                                        <div class="module_box_header--flex--right">
+                                            <a href='/pro/profilebuild.aspx?tab=6'>10 Bids</a>
+                                        </div>
+
+                                    </header>
+
+                                    <ul class="module_list cozy">
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+                                                <h3 class="grey largeText rhythmMargin1">Saved Searches</h3>
+
+                                                <div class="skillsList">
+                                                    
+                                                    <FooterTemplate>
+                                                        
+
+                                                        <p class='lightGrey smallText'>You have not saved any searches.</p>
+                                                    </FooterTemplate>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+                                                <h3 class="grey largeText rhythmMargin1">Leads</h3>
+                                                <ul class="module_list tighter no-border">
+                                                    <li>
+                                                        <a id="findwork-invitations"
+                                                            href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS9pbnZpdGVkL3NydC9pbnZpdGF0aW9uLw==">
+                                                            <strong>Invitations</strong> 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="findwork-projectmatches"
+                                                            href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS9tYXRjaGVzLw==">
+                                                            <strong>Job Matches</strong> 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="findwork-watchlist"
+                                                            href="/work/leads/?q=L2Qvam9icy9sZWFkVHlwZS93YXRjaGxpc3Qv">
+                                                            <strong>Watchlist</strong> 
+                                                        </a>
+                                                    </li>
+                                                    </u>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rhythmPaddingHorz1">
+                                                <h3 class="grey largeText rhythmMarginSmall">Generate Leads</h3>
+
+
+                                                
+                                                    <p class="lightGrey rhythmMargin1">
+                                                        Tell us about your services and showcase your work. We will
+                                                        identify potential job
+                                                        matches and help you connect with Employers.
+                                                    </p>
+                                                    
+
+                                                        <ul class="module_list tighter no-border">
+                                                            <li>
+                                                                <a href="/pro/ProfileBuild.aspx?tab=2">
+                                                                    <strong>
+                                                                        
+                                                                                    + Add Services
+                                                                                    
+                                                                    </strong>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/pro/ProfileBuild.aspx?tab=3">
+                                                                    <strong>
+                                                                        
+                                                                                    + Add Portfolio
+                                                                                    
+                                                                    </strong>
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- QUOTES -->
+                                <div class="proDashboard__card proDashboard__card--last module_box box_NoPadding">
+                                    <header class="module_box_header module_box_header_filled module_box_header--flex">
+                                        <div class="module_box_header--flex--left">
+                                            <h2 class="primaryHeading">
+                                                <a href="/work/quotes/"
+                                                    class="darkGrey">Quotes Under Negotiation</a>
+                                            </h2>
+                                        </div>
+                                    </header>
+
+                                    <div class="proDashboard__card__body">
+
+                                        <div class="module_box__body"
+                                            id="proposals">
+                                            <ul class="module_list quotesList truncatedList"
+                                                id="activeProposals"></ul>
+                                        </div>
+                                    </div>
+
+                                    <footer class="module_box_footer center">
+                                        <a href="/work/quotes/">View All Quotes</a>
+                                    </footer>
+
+
+                                </div>
+
+                                <!-- CURRENT JOBS -->
+                                <div class="proDashboard__card proDashboard__card--double module_box box_NoPadding">
+                                    <header
+                                        class="module_box_header module_box_header_filled  module_box_header--flex rhythmMargin0">
+                                        <div class="module_box_header--flex--left">
+                                            <h2 class="primaryHeading">
+                                                <a href="/pro/jobs/"
+                                                    class="darkGrey">Current Jobs</a>
+                                            </h2>
+                                        </div>
+                                        <div class="module_box_header--flex--right">
+                                            <button type="button"
+                                                title="Manage pins"
+                                                data-target="#projSettings"
+                                                id="lnkManage"
+                                                data-toggle="modal"
+                                                class="module_btn link_btn"
+                                                onclick="javascript:ResetList();GetProjectToFollow();">
+                                                <i aria-hidden="true"
+                                                    class="lightGrey"
+                                                    data-icon="&#xe608;"></i>
+                                            </button>
+                                        </div>
+                                    </header>
+
+                                    <div class="proDashboard__card__body">
+                                        <ul class="module_list cozy truncatedList"
+                                            id="manageprojectList"></ul>
+                                    </div>
+
+                                    <footer class="module_box_footer center">
+                                        <a href="/pro/jobs/">View All Jobs</a>
+                                    </footer>
+                                </div>
+
+                                <!-- PAYMENTS -->
+                                <div class="proDashboard__card proDashboard__card--last proDashboard__card--invoices module_box box_NoPadding"
+                                    ng-app="guruEmpInvoices">
+                                    <header
+                                        class="module_box_header module_box_header_filled  module_box_header--flex rhythmMargin0">
+                                        <div class="module_box_header--flex--left">
+                                            <h2 class="primaryHeading">
+                                                <a href="/payments/invoices/"
+                                                    class="darkGrey">Invoices</a>
+                                            </h2>
+                                        </div>
+                                        <div class="module_box_header--flex--right">
+                                            <a href="/pro/AwardedProjects.aspx">
+                                                Create New
+                                            </a>
+                                        </div>
+                                    </header>
+
+                                    <div class="proDashboard__card__body">
+
+
+                                        <div class="truncatedList">
+                                            <invoice-list source="Dashboard"
+                                                user-type="Freelancer"
+                                                guru-id="5473483"
+                                                page-size="5"
+                                                is-guru="true">
+                                            </invoice-list>
+                                        </div>
+                                    </div>
+
+                                    <footer class="module_box_footer center">
+                                        <a href="/payments/invoices/">View All Invoices</a>
+                                    </footer>
+                                </div>
+
+                                <div class="modals"
+                                    tabindex="-1"
+                                    role="dialog"
+                                    aria-labelledby="myStatsLabel"
+                                    aria-hidden="true"
+                                    id="myStats">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"><span aria-hidden="true"
+                                                        data-icon="&#xe02d;"></span></button>
+                                                <h4 class="modal-title"
+                                                    id="myStatsLabel">Your All-Time Transaction Data</h4>
+                                            </div>
+
+                                            <div class="modal-body modal-body_noScroll">
+                                                <table class="module_table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>All-Time Earnings</td>
+                                                            <td>
+                                                                $0
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Transactions Completed</td>
+                                                            <td>
+                                                                0
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Employers</td>
+                                                            <td>
+                                                                0
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Largest Employer</td>
+                                                            <td>
+                                                                $0
+                                                            </td>
+                                                        <tr>
+                                                            <td>Member Since</td>
+                                                            <td>
+                                                                Feb, 2024
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="module_btn primary_btn"
+                                                    data-dismiss="modal">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modals projModalList"
+                                    tabindex="-1"
+                                    role="dialog"
+                                    aria-labelledby="projSettingsLabel"
+                                    aria-hidden="false"
+                                    id="projSettings">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"><span aria-hidden="true"
+                                                        data-icon="&#xe02d;"></span></button>
+                                                <h4 class="modal-title"
+                                                    id="projSettingsLabel">Dashboard Settings</h4>
+                                                <p>Pin the jobs you want to follow onto your dashboard.</p>
+                                            </div>
+                                            <div class="modal-body"
+                                                id="divprjList">
+                                                <ul id="ulProjsToFollow"
+                                                    class="lazyl module_list tight"></ul>
+                                                <div style="text-align:center; display:none; padding: 48px;"
+                                                    id="loadingImg"><img src="https://img-guru.com/20240221.3/images/loading.gif" /> <br /> Loading
+                                                    Projects</div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="module_btn primary_btn"
+                                                    data-dismiss="modal"
+                                                    id="projModalListFinish">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modals"
+                                    tabindex="-1"
+                                    role="dialog"
+                                    aria-labelledby="myStatsLabel"
+                                    aria-hidden="true"
+                                    id="myStats">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"><span aria-hidden="true"
+                                                        data-icon="&#xe02d;"></span></button>
+                                                <h4 class="modal-title"
+                                                    id="myStatsLabel">All Time Stats</h4>
+                                            </div>
+
+                                            <div class="modal-body modal-body_noScroll">
+                                                <table class="module_table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>All Time Earnings</td>
+                                                            <td>$xxxx</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Transactions Completed</td>
+                                                            <td>xxxx</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Employers</td>
+                                                            <td>xxxx</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Largest Employer</td>
+                                                            <td>xx</td>
+                                                        <tr>
+                                                            <td>Member Since</td>
+                                                            <td>Apr 2004</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="module_btn primary_btn"
+                                                    data-dismiss="modal">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script id="proposalTemplate"
+                                    type="text/x-jsrender">
+                <li>
+                    <a href="/work/quotes/?quoteId={{:ResponseID}}&jobId={{:ProjectId}}" class="quotesList__item">
+                        <div class="quotesList__item__avatar">
+                            <div class="module_avatar avatar_table twentyfour-twoline twentyfour">
+                                <div class="avatar">
+                                    <img src="{{:ThumbNailFilePath}}" alt="" />
+                                </div>
+                                <div class="avatarinfo">
+                                    <p class="largeText">
+                                        <strong class="blue-color">
+                                            {{:ProjectTitle}}
+                                            {{if ProposalType == 2}} <i aria-hidden="true" data-icon="&#xe031"></i>{{/if}}
+                                        </strong>
+                                    </p>
+                                    <p class="smallText grey">
+                                        Last Message 
+                                        <time class="grey dt-style1" title="{{:MessageDateInUTC}}" data-date="{{:MessageDateInUTC}}"> xx</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quotesList__item__date">
+                            <i data-icon="&#xe00a;" aria-hidden="true" 
+                                class="quotesList__item__status {{if HasUnViewedMessage > 0}} quotesList__item__status--unread {{else}} quotesList__item__status--read  {{/if}}">
+                                {{if HasUnViewedMessage > 0}}  <span class="quotesList__item__status--new">New</span>{{/if}}
+                            </i>
+                        </div>
+                        <div class="quotesList__item__action">
+                            <button class="module_btn ghost_btn link_btn" data-proposal-remove title="Remove from dashboard" id="{{:ResponseID}}">
+                                <i aria-hidden="true" data-icon="&#xe02d;"></i>
+                            </button>
+                        </div>
+                    </a>
+                </li>
+            </script>
+
+                                <script id="mangeTemplate"
+                                    type="text/x-jsrender">
+                {{if IsCompanyDeleted}}
+                <li>
+                    <div class="currentJob">
+                        <div class="currentJob__title">
+                            <div class="module_avatar avatar_table thirtytwo">
+                                <div class="avatar" style="margin-top: 4px;">
+                                    <img src="{{:CompanyThumbNailMediumPath}}" alt="" title="{{:CompanyScreenName}}" height="24px" width="24px" />
+                                </div>
+                                <div class="avatarinfo">
+                                    <h3 class="largeText lightGrey">
+                                        <strong>{{:ProjectTitle}}</strong>
+                                    </h3>
+                                    <p class="subtext lightGrey">Employer no longer on Guru.com </p>
+                                    <p class="subtext lightGrey">
+                                        Hired by {{:CompanyScreenName}} on
+                                        <span class=" dt-style1" data-date="{{:DateAwardedInUTC}}">xx</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="currentJob__options">
+                            <div class="btn-dropdown btn-dropdown_inline">
+                                <button class="module_btn ghost_btn grey small_btn lonely_btn" data-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 60 60">
+                                        <path d="M30 16a8 8 0 0 0 0-16 8 8 0 0 0 0 16zM30 44a8 8 0 0 0 0 16 8 8 0 0 0 0-16zM30 22a8 8 0 0 0 0 16 8 8 0 0 0 0-16z" fill="#999"></path>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="/payments/invoices/?q={{:ProjectID}}">View All Invoices</a></li>
+                                    <li><a href="/pro/jobdetail.aspx?projectid={{:ProjectID}}#viewproposal">View Job & Quote</a></li>
+                                    <li><a href="#" remove="true" id="{{:ProjectID}}">Remove from Dashboard</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                </li>
+                
+                {{else if ProAccepted <=0}}
+                <li id="js-pendingTile">
+                    <div class="currentJob">
+                        <div class="currentJob__title">
+                            <div class="module_avatar avatar_table thirtytwo">
+                                <div class="avatar" style="margin-top: 4px;">
+                                    <img src="{{:CompanyThumbNailMediumPath}}" alt="" title="{{:CompanyScreenName}}" height="24px" width="24px" />
+                                </div>
+                                <div class="avatarinfo">
+                                    <h3 class="largeText"> 
+                                        <a href="/pro/jobdetail.aspx?projectid={{:ProjectID}}">
+                                            <strong>{{:ProjectTitle}}</strong>
+                                        </a>
+                                    </h3>
+                                    
+                                    <p class="smallText lightGrey">
+                                        Hired by {{:CompanyScreenName}} | 
+                                        <span class=" dt-style1" data-date="{{:DateAwardedInUTC}}">xx</span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="currentJob__collaborate">
+                            <div>
+                                <button class="module_btn link_btn" type="button" id="Accept_{{:ProjectID}}" 
+                                    onclick="javascript:AcceptDeclineAward({{:ProjectID}}, {{:GuruID}}, 'Accept'); return false;"> Accept Job </button>
+                                <span class="pipe" aria-hidden="true" aria-role="presentation"> | </span> 
+                                <button class="module_btn link_btn" type="button" id="Decline_{{:ProjectID}}" 
+                                    onclick="javascript:AcceptDeclineAward({{:ProjectID}}, {{:GuruID}}, 'Decline'); return false;">
+                                    Decline
+                                </button>
+                            </div>
+                        </div>
+                    </div>      
+                </li>
+                    
+                {{else}}  
+                <li>
+                    <div class="currentJob">
+                        <div class="currentJob__title">
+                            <div class="module_avatar avatar_table thirtytwo">
+                                <div class="avatar">
+                                    <a href="/workroom/{{:ProjectID}}/status/">
+                                        <img src="{{:CompanyThumbNailMediumPath}}" alt="" title="{{:CompanyScreenName}}" height="24px" width="24px" />
+                                    </a>
+                                </div>
+
+                                <div class="avatarinfo">
+                                    <h3 class="largeText">
+                                        <a href="/workroom/{{:ProjectID}}/status/">
+                                            <strong>{{:ProjectTitle}}</strong>
+                                        </a>
+                                        {{if (CompanyAlerts + PendingAgreementCount) > 0 }}
+                                        <span class="module_badge badge_alert badge--rounded">
+                                            {{: CompanyAlerts + PendingAgreementCount}}
+                                            Message{{if (CompanyAlerts + PendingAgreementCount) > 1 }}s{{/if}}
+                                        </span> 
+                                        {{/if}}
+                                    </h3>
+
+                                    <p class="smallText grey rhythmMarginSmall">
+                                        {{if !IsDisputed && RefundStatus != 7 && RefundStatus != 8}}
+                                            <span>SafePay Balance: {{:FormattedSafePayBalance}}</span> 
+                                            {{if !HasFundRequest && ProjectActiveStatus == true && RefundStatus != 3 }}
+                                            <span> - <a href="/workroom/{{:ProjectID}}/safepay/request-funds" >Request funds</a></span>
+                                            {{/if}}
+                                            {{if HasFundRequest && RefundStatus != 3 }}
+                                            <br /><span>{{:FormattedRequestAmount}} Requested - <a href="/workroom/{{:ProjectID}}/safepay/request-funds" >Edit </a></span>
+                                            {{/if}}
+                                        {{/if}}
+                                        
+
+                                            
+                                        {{if IsDisputed}}
+                                            <span class="pending" style="font-style:normal">In Arbitration</span>
+                                        {{/if}}
+
+                                        {{if RefundStatus == 7 || RefundStatus == 8}}
+                                            <span class="pending" style="font-style:normal">Job Ended In Arbitration</span>
+                                        {{/if}}
+                                    </p>
+
+                                    <p class="smallText lightGrey">
+                                        Hired by {{:CompanyScreenName}} | 
+                                        <span class=" dt-style1" data-date="{{:DateAwardedInUTC}}">xx</span> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="currentJob__collaborate">
+                            {{if JobStatus==1}}
+                            <span class="module_badge badge_success">Work Completed</span>
+                            {{/if}}
+
+                            {{if JobStatus==0}} 
+                       
+
+                            <a href="/workroom/{{:ProjectID}}/tasks/"  class="module_btn small_btn ghost_btn raisedBadge" title="Tasks">
+                                <i data-icon="&#xe90b" aria-hidden="true"  class="lightGrey" style="font-size: 20px;"></i>  
+                                {{if WorkRoomAlertsCount > 0 }} <span class="module_badge badge_small badge_alert badge--rounded raisedBadge__badge">{{:WorkRoomAlertsCount}}</span> {{/if}} 
+                            </a>
+
+                            <a href="/files/project/{{:ProjectID}}/public" class="module_btn small_btn ghost_btn raisedBadge" title="All Files">
+                                <i data-icon="&#xe90f" aria-hidden="true"  class="lightGrey" style="font-size: 20px;"></i>  
+                                {{if WorkRoomFileAlertsCount > 0 }} <span class="module_badge badge_small badge_alert badge--rounded raisedBadge__badge">{{:WorkRoomFileAlertsCount}}</span> {{/if}}
+                            </a>
+                            {{/if}}
+                        </div>
+
+                        <div class="currentJob__options">
+                            <div class="btn-dropdown btn-dropdown_inline">
+                                <button class="lightGrey largestText module_btn small_btn ghost_btn lonely_btn" data-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 60 60">
+                                    <path d="M30 16a8 8 0 0 0 0-16 8 8 0 0 0 0 16zM30 44a8 8 0 0 0 0 16 8 8 0 0 0 0-16zM30 22a8 8 0 0 0 0 16 8 8 0 0 0 0-16z" fill="#999"></path>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    {{if JobStatus==0 && !IsDisputed && !(RefundStatus == 7 || RefundStatus == 8) }}
+                                    <li><a id="workcompleted" onclick="MarkAsWorkCompleted(event,{{:ProjectID}},{{:GuruID}})">Work Completed</a></li>
+                                    {{/if}}
+                                    
+                                    {{if JobStatus==1 && !IsDisputed && !(RefundStatus == 7 || RefundStatus == 8) }}
+                                    <li><a id="stillworking" onclick="MarkAsStillWorking(event,{{:ProjectID}},{{:GuruID}})">Still Working</a></li>
+                                    {{/if}}
+                                    
+                                    <li><a href="/payments/invoices/?q={{:ProjectID}}">View All Invoices</a></li>
+                                    
+                                    {{if !IsDisputed && ProjectActiveStatus == true}}
+                                    <li><a href="">Create New Invoice</a></li>
+                                    <li><a href="" >View Job & Quote</a></li>
+                                    {{/if}}
+                                    
+                                    <li><a href="#" remove="true" id="{{:ProjectID}}">Remove from Dashboard</a></li>
+                                    <li onclick="event.stopPropagation()" class="dropdown-menu-item">Job Id: {{:ProjectID}}</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {{/if}}
+            </script>
+
+                                <script id="settingTemplate"
+                                    type="text/x-jsrender">
+                <li class="clearfix lazyl">
+                    <div class="pull-right" style="margin-top: 0; width: 25%; text-align: right;">
+                        {{if FollowedID > 0}}
+                            <button class="module_btn primary_btn js-following" id="{{:ProjectID}}">&#x2713; Pinned</button>
+                        {{else}}
+                            <button class="module_btn secondary_btn" id="{{:ProjectID}}">Pin</button>
+                        {{/if}}
+                    </div>
+                    <div class="info">
+                        <strong class="list_title">{{:Title}}</strong> 
+                        <p class="subtext">{{:Description}}</p>
+                    </div>
+                </li>
+            </script>
+
+                            </div>
+                        </div>
+
+                        
+
+                        
+
+                        <div class="container"
+                            style="text-align: center;">
+                            
+                            
+                            
+                        </div>
+
+                        <div id="dvSecond"
+                            ng-app="paymentRedirect"
+                            ng-controller="paymentRedirectController"></div>
+
+                        <!-- Placed at the end of the document so the pages load faster -->
+                        <!-- <script type="text/javascript"
+                            src="https://img-guru.com/20240221.3/js/Jquery.localtime.js"
+                            defer></script>
+                        <script type="text/javascript"
+                            src="https://img-guru.com/20240221.3/js/Common/errorhandler.js"
+                            defer></script> -->
+
+                        <!-- <script>
+                            $(document).ready(function () {
+                                guruHost = "https://www.guru.com/";
+                                var phoneNumber = $("#phoneNumber").text();
+                                phoneNumber = phoneNumber.toString();
+                                if (phoneNumber.charAt(0) !== "+" && noDashesAlready()) {
+                                    $("#phoneNumber").text(function (i, text) {
+                                        return text.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                                    });
+                                }
+
+                                function noDashesAlready() {
+                                    phoneNumber = phoneNumber.toString();
+                                    for (var i = 0; i < phoneNumber.length; i++) {
+                                        if (phoneNumber.charAt(i) == "-")
+                                            return false
+                                    }
+                                    return true;
+                                }
+
+                                $("#projectKeyword").bind("keydown", function (event) {
+                                    if (event.keyCode == 13) {
+                                        RedirectToSearchPageDash();
+                                        return false;
+                                    }
+                                });
+
+                                if (showTips == 0) {
+                                    $('.proDash-tourMsgToggle').hide();
+                                    $('.tips').remove();
+                                }
+
+                                var proposals = $("#ctl00_guB_hdnProposals").val();
+                                var managedProjects = $("#ctl00_guB_hdnManageProjects").val();
+
+                                if (proposals !== "" && managedProjects !== "") {
+                                    BindProposals(JSON.parse(proposals));
+                                    BindManagedProjects(JSON.parse(managedProjects));
+                                }
+
+                                if (totalProjectsToHire == 0) {
+                                    $('#lnkManage').remove();
+                                    $('#projSettings').remove();
+                                }
+
+                                //delete proposals 
+                                $('#activeProposals li').find('[data-proposal-remove]').on('click', function (event) {
+                                    event.preventDefault();
+                                });
+
+                                $('#projSettings').find('.js-following').live({
+                                    mouseenter: function () {
+                                        if ($(this).hasClass('js-following')) {
+                                            $(this).removeClass('primary_btn').addClass('danger_btn').html('Unpin');
+                                        }
+                                    },
+                                    mouseleave: function () {
+                                        if ($(this).hasClass('danger_btn')) {
+                                            $(this).removeClass('danger_btn').addClass('primary_btn').html('&#x2713; Pinned');
+                                        }
+                                    }
+                                });
+
+                                $('#projModalListFinish').click(function (e) {
+                                    if (remove) {
+                                        $('#removeMe').hide();
+                                        showToast("You removed jobs to your dashboard.")
+                                    }
+
+                                    if (updateCount) {
+                                        $('.manageList > li:eq(3)').clone().insertBefore('.manageList > li:eq(2)');
+                                        showToast("You added jobs to your dashboard.")
+                                    }
+                                });
+                                $("#divprjList").scroll(function () {
+                                    if (lazy) {
+                                        if ((parseInt($('ul.lazyl li.lazyl:last').offset().top, 10) - $(this).scrollTop()) <= ($(this).height() - $('ul.lazyl li.lazyl:last').height())) {
+                                            $("#loadingImg").show();
+                                            dPageNumber = parseInt(dPageNumber) + 1;
+                                            skip = (dPageNumber - 1) * max;
+                                            GetProjectToFollow();
+                                        }
+                                    }
+                                });
+
+
+                            });
+
+                            function BindProposals(data) {
+
+                                if (data != null && data.Result != null && data.Result.length > 0) {
+                                    $("#activeProposals").html($('#proposalTemplate').render(data.Result));
+                                    $("#activeProposals").find('[data-proposal-remove]').on("click", UnpinProposal);
+                                }
+
+                                else {
+                                    $('#respondLeadHeader').addClass("rhythmMargin");
+                                    if (totalProposals > 0) {
+                                        $("#activeProposals").remove();
+                                        $('#proposals').append('<div class="noContent centered"><p>Your Quotes haven\'t received any new responses from Employers.</p> <p><a href="/work/">Find Work</a></p></div>');
+                                    }
+                                    else {
+                                        $("#activeProposals").remove();
+                                        $('#proposals').append('<div class="noContent centered"><p>Messages will appear when an Employer responds to your Quotes.</p> <p><a href="/work/">Find Work</a></p></div>');
+                                    }
+                                    $('.allProposals').hide();
+                                }
+                                $('.proposals').localtime();
+                                $("#activeProposals").localtime();
+                            }
+
+                            function BindManagedProjects(data) {
+                                if (data != null && data.Result != null && data.Result.length > 0) {
+                                    $("#manageprojectList").html($('#mangeTemplate').render(data.Result, { getStatusCount: function (n1, n2) { return n1 + n2; } }));
+                                    $("#manageprojectList").find("[remove=true]").on("click", { pin: false }, UnFollowProject);
+                                    $('#manageprojectList').localtime();
+                                }
+                                else if (totalProjectsToHire > 0) {
+                                    $("#manageprojectList").html("<div class='noContent centered'> Jobs will appear when you get hired. </div>");
+                                    return true;
+                                }
+                                else {
+                                    $('#lnkManage').hide();
+                                    $("#manageprojectList").html("<div class='noContent centered'> Jobs will appear when you get hired. </div>");
+                                }
+
+                            }
+
+                            function BindProjectToFollow(data) {
+                                $("#ulProjsToFollow").append($('#settingTemplate').render(data));
+                                $('#projSettings').find('.secondary_btn').on("click", { pin: true }, FollowProject);
+                                $('#projSettings').find('.js-following').on("click", { pin: false }, UnFollowProject);
+                                $('.newLeads').localtime();
+                            }
+
+                            var baseUrl = "/pro/DashBoard.aspx/";
+                            var debug = true;
+                            var dPageNumber = 1;
+                            var max = 20;
+                            var lazy = true;
+                            var skip = 0;
+                            var projIdToAccept;
+
+                            function ResetList() {
+                                skip = 0;
+                                lazy = true;
+                                dPageNumber = 1;
+                                max = 20;
+                                $("#ulProjsToFollow").html('');
+                            }
+
+                            function GetProjectToFollow() {
+                                var Data2Send = "{\"skip\":" + skip + ", \"max\":" + max + "}";
+                                var webmethod = 'GetProjectsToFollow';
+                                $("#loadingImg").show();
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + webmethod,
+                                    contentType: "application/json; charset=utf-8",
+                                    data: Data2Send,
+                                    dataType: "json",
+                                    success: function (msg) {
+                                        $("#loadingImg").hide();
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            BindProjectToFollow(data.Result);
+
+                                            if (dPageNumber * max >= totalProjectsToHire) {
+                                                lazy = false;
+                                            }
+                                        }
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                            }
+
+                            function RedirectToSearchPageDash() {
+                                var query = $.trim(document.getElementById("projectKeyword").value)
+                                    .replace(/\//g, "%2f")
+                                    .replace(/\-/g, "--")
+                                    .replace(/ \s*/g, "-")
+                                if (query != "search-jobs" && query != "") {
+                                    query = encodeURIComponent(query);
+                                    query = query.replace(/%5C/g, "%25255c");
+                                    var encryptedString = btoa("/d/jobs/skill/" + query);
+
+                                    location.href = guruHost + "work/?q=" + encryptedString;
+                                }
+                                else {
+                                    location.href = guruHost + "work/";
+                                }
+
+                            }
+
+                            function UnFollowProject(event) {
+                                var projectid = this.id;
+                                var elem = this;
+                                var unfollowInHireState = null;
+                                var unfollowInManageState = null;
+                                var Data2Send = "{\"projectId\":" + projectid + ", \"pin\":" + event.data.pin + "}";
+
+                                $(elem).html('Unpinning...').attr("disabled", true);
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + "UnFollowProject",
+                                    data: Data2Send,
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    success: function (msg) {
+                                        $(elem).attr("disabled", false);
+                                        if ($(elem).hasClass('js-following')) {
+                                            $(elem).removeClass('primary_btn');
+                                            $(elem).removeClass('danger_btn').addClass('secondary_btn').html('Pin');
+                                            $(elem).removeClass('js-following').addClass('secondary_btn').html('Pin');
+                                            $(elem).off("click");
+                                            $(elem).on("click", { pin: true }, FollowProject);
+                                        }
+                                        GetFollowedProjects();
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                                return false;
+                            }
+
+                            function FollowProject(event) {
+                                event.stopPropagation();
+                                projectid = this.id;
+                                var element = this;
+
+                                $(element).html('Pinning...').attr("disabled", true);
+
+                                var Data2Send = "{\"projectId\":" + projectid + ", \"pin\":" + event.data.pin + "}";
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + "FollowProject",
+                                    contentType: "application/json; charset=utf-8",
+                                    data: Data2Send,
+                                    dataType: "json",
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            $(element).removeClass("secondary_btn").addClass("primary_btn js-following");
+                                            $(element).html("&#x2713; Pinned");
+                                            $(element).attr("disabled", false);
+                                            $(element).off("click");
+                                            $(element).on("click", { pin: false }, UnFollowProject);
+                                        }
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+                                        GetFollowedProjects();
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+
+                                return false;
+                            }
+
+                            function GetFollowedProjects() {
+                                var webmethod = '';
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + 'GetPinnedProjects',
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            BindManagedProjects(data);
+                                        }
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                            }
+
+                            function MarkAsWorkCompleted(event, projectId, guruId) {
+                                event.stopPropagation();
+
+                                $(workcompleted).html('Marking Work Completed...');
+                                var dataToSend = "{\"projectId\":" + projectId + ",\"freelancerId\":" + guruId + "}";
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + "MarkAsWorkCompleted",
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    data: dataToSend,
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            GetFollowedProjects();
+                                        }
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+
+
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                                return false;
+
+                            }
+
+
+                            function MarkAsStillWorking(event, projectId, guruId) {
+                                event.stopPropagation();
+
+                                $(stillworking).html('Marking Still Working...').attr("disabled", true);
+                                var dataToSend = "{\"projectId\":" + projectId + ",\"freelancerId\":" + guruId + "}";
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + "MarkAsStillWorking",
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    data: dataToSend,
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            GetFollowedProjects();
+                                        }
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+
+
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                                return false;
+
+                            }
+
+
+                            function UnpinProposal(event) {
+                                var dataToSend = "{\"responseId\":" + this.id + ",\"pin\":false}";
+                                var element = this;
+                                $.ajax({
+                                    type: "POST",
+                                    url: baseUrl + "PinUnpinProposal",
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    data: dataToSend,
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            $(element).closest('#activeProposals li').slideUp();
+                                            if ($('#activeProposals').children(':visible').length == 1) {
+                                                $('#activeProposals').remove();
+                                                $('.allProposals').remove();
+                                                $('#respondLeadHeader').addClass("rhythmMargin");
+                                                $('#proposals').append('<div class="noContent centered"><p>Your quotes haven\'t received any new responses from employers.</p> <p><a href="\work\">Find Work</a></p></div> ');
+                                            }
+                                        }
+
+                                        else if (data.Status == 2) {
+                                            errHandler(data);
+                                        }
+
+
+                                    },
+                                    error: function (msg) {
+
+                                    }
+                                });
+                                return false;
+
+                            }
+
+                            $('.projModalList').on('hide', function () {
+                                GetFollowedProjects();
+                            })
+
+                            $('.projModalList').on('shown', function () {
+                                $("#divprjList").scrollTop(0);
+
+                            })
+
+                            $('.projModalList').on('show', function () {
+                                $("#ulProjsToFollow").html('');
+                            })
+
+                            function AcceptDeclineAward(projectId, GuruId, operation) {
+                                var acceptE = "#Accept_" + projectId;
+                                var declineE = "#Decline_" + projectId;
+                                var tile = $(acceptE).closest("#js-pendingTile");
+
+                                if (operation === "Accept") {
+                                    disablePage();
+                                } else if (operation === "Decline") {
+                                    var confirmed = confirm("Are you sure you want to decline this job?");
+                                    if (confirmed) {
+                                        disablePage();
+                                    } else {
+                                        return false;
+                                    }
+                                }
+
+                                var dataToSend = "{\"projectId\":" + projectId + ",\"guruId\":" + GuruId + ",\"action\":" + " \"" + operation + "\" " + "}";
+                                var element = this;
+                                var svcUrl = "/pro/DashBoard.aspx/AcceptDeclineProjectAward";
+                                $.ajax({
+                                    type: "POST",
+                                    url: svcUrl,
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    data: dataToSend,
+                                    success: function (msg) {
+                                        var data = jQuery.parseJSON(msg.d);
+                                        if (data.Status == 1) {
+                                            if (operation === "Accept") {
+
+                                                var url = "/workroom/" + projectId + "/agreement/";
+
+                                                if (data.Result != 0)
+                                                    url = "/workroom/" + projectId + "/agreement/" + data.Result;
+
+                                                window.location = url;
+                                            }
+                                            else if (operation === "Decline") {
+                                                tile.remove();
+                                                enablePage();
+                                            }
+                                        }
+                                        else if (data.Status == 2) {
+                                            if (data.Result.Code == 1001) {
+                                                showToast("This operation is not allowed!");
+                                            }
+                                            else {
+                                                showToast("Something went wrong!");
+                                            }
+                                            GetFollowedProjects();
+                                            enablePage();
+                                            errHandler(data);
+                                        }
+                                    },
+                                    error: function (msg) {
+                                        enablePage();
+                                    }
+                                });
+                                return false;
+
+                                function disablePage() {
+                                    $("body").append("<div class='overlay-disable'></div>").addClass("wait");
+                                    $('.overlay-disable').height($(document).height());
+                                }
+                                function enablePage() {
+                                    $("body").removeClass("wait");
+                                    $(".overlay-disable").remove();
+                                }
+                            }
+
+                            function errHandler(error) {
+
+                            }
+
+                            function verifyEmail() {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/emailVerification.aspx/SendEmailVerificationCode",
+                                    dataType: "json",
+                                    contentType: "application/json; charset=utf-8",
+
+                                    success: function (resp) {
+                                        if (resp.d == true) {
+                                            showToast("Verification code sent to your email !!!");
+                                        }
+                                        else {
+                                            showToast("We're sorry something went wrong!");
+                                        }
+                                    },
+                                    error: function (result) {
+                                        showToast("We're sorry something went wrong!");
+                                    }
+                                });
+                            }
+
+                            (function () {
+                                $(document).on('click', '#ctl00_guB_aRenewMemberShip', function () {
+                                    var serviceURL = window.location.protocol + "//" + window.location.host + "/";
+                                    $.ajax({
+                                        type: "GET",
+                                        url: serviceURL + "api/payments/GetMembershipRenewID",
+                                        contentType: "application/json",
+                                        dataType: "json",
+                                        success: function (resp) {
+                                            window.location.href = serviceURL + "payment/membership/" + resp;
+                                        },
+                                        error: function (result) {
+                                            // in case when method didn't call
+                                        }
+                                    });
+
+                                    return false;
+                                });
+                            })();
+                        </script> -->
+
+                        <!-- <script src="https://img-guru.com/20240221.3/js/bundles/AccountSecurity-bundle.2913492e95d75323.js"></script> -->
+            
+            <div style="text-align: center; position: relative; top: 0; width: 100%; left: 0;">
+                <span id="ctl00_popMsg"><div id='ctl00_popMsg' align='center' style='display:none'> </div><script>function ShowPopUpMsg(Message, Duration){var div = document.getElementById('ctl00_popMsg');  div.innerHTML = Message;div.style.display = '';div.className = 'popMsg';let timer1 = setTimeout(function() { div.style.display = 'none'; }, Duration);}</script></span>
+            </div>
+        <input type="hidden" name="ctl00$hdnGuid" id="ctl00_hdnGuid" value="GUID" />
+
+</form>
+    </main>
+    
+<footer class="globalFooter">
+    <div class="container" style="position: relative">
+        <div id="ctl00_ctl12_divSin" class="globalFooterWrap">
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Navigate</h3>
+                
+                <ul id="ctl00_ctl12_divFlNavSIn" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl12_divFlDashBoard"><a href="https://www.guru.com/pro/" id="f-footer-dash-in" tabindex="-1">Dashboard</a></li>
+                    <!-- <li id="ctl00_ctl12_divFlFindWork"><a href="/work/" id="f-footer-find-work-in" tabindex="-1">Find Work</a></li> -->
+                    <!-- <li><a href="" id="f-footer-projects-in" tabindex="-1">Jobs</a></li> -->
+                    <li id="ctl00_ctl12_divFlPayments"><a href="" id="f-footer-payments-in" tabindex="-1">Payments</a></li>
+                    <li id="ctl00_ctl12_divFlMyAgency"><a href="/agency/" id="f-footer-leads-in" tabindex="-1" target="_blank">Agency Solutions</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Company Info</h3>
+                <ul id="ctl00_ctl12_CIEmpSin" class="module_list veryTight no-border">
+                    <li id="ctl00_ctl12_divcinfoag"><a href="https://www.guru.com/about/" id="f-footer-about-in" tabindex="-1" target="_blank">About Guru</a></li>
+                    
+                    <li id="ctl00_ctl12_divFlHowitwork"><a href="/how-it-works-freelancer/" id="f-footer-fl-how-guru-works-in" tabindex="-1" target="_blank">How Guru Works</a></li>
+                    <li id="ctl00_ctl12_divcinfowg"><a href="/why-guru/" id="f-footer-why-guru-in" tabindex="-1" target="_blank">Why Guru</a></li>
+                    <li id="ctl00_ctl12_divcinfowa"><a href="/agreements/" id="f-footer-work-agreement-in" tabindex="-1" target="_blank">Work Agreements</a></li>
+                    <li id="ctl00_ctl12_divcinfosp"><a href="/safepay/" id="f-footer-safepay-in" tabindex="-1" target="_blank">SafePay</a></li>
+                    
+                    <li id="ctl00_ctl12_divFlPricing"><a href="/pricing-freelancer/" id="f-footer-fl-pricing-in" tabindex="-1" target="_blank">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Resources</h3>
+                <ul class="module_list veryTight no-border">
+                    
+                    <li id="ctl00_ctl12_divFlHelp"><a href="/help/freelancer/" id="f-footer-fl-help-in" tabindex="-1" target="_blank">Help & FAQ</a></li>
+                    <li><a href="https://www.guru.com/blog/" id="f-footer-blog-in" tabindex="-1" target="_blank">Blog</a></li>
+                    <li><a href="https://www.guru.com/contact.aspx/" id="f-footer-contactus" tabindex="-1" target="_blank">Contact Us</a></li>
+                    
+                    <li><a href="https://www.guru.com/apihelp/help.html" target="_blank" id="f-footer-apis-in" tabindex="-1">APIs</a></li>
+                    
+                    <li><a class="optanon-show-settings">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                <h3 class="strongHeading footerHeading">Policies</h3>
+                <ul class="module_list veryTight no-border">
+                    <li><a href="https://www.guru.com/trademark-copyright-policy/" id="f-footer-ip-in" tabindex="-1" target="_blank">IP Policy</a></li>
+                    <li><a href="https://www.guru.com/privacy-policy/" id="f-footer-privacy-in" tabindex="-1" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.guru.com/terms-of-service/" id="f-footer-terms-in" tabindex="-1" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="globalFooter__topRow">
+                
+
+                <div id="ctl00_ctl12_divFScoSch">
+                    <h3 class="strongHeading">Get Hired Today!</h3>
+                    <div class="rhythmMargin input-group footerSearchInput">
+                        <!-- <input type="text" id="prjsrch" onkeydown="srchChkEnterAndSubmit(event, 'prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"
+                            class="niceInput" maxlength="128" placeholder="Search Jobs" /> -->
+                        <i class="footerSearchIcon" aria-hidden="true" data-icon="&#xe020" onclick="srchCheckAndSubmit('prjsrch', 'https://www.guru.com/', 'pro', 'Find Jobs');"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="strongHeading">Connect With Us</h3>
+                    <div class="globalFooter__socials rhythmMargin">
+                        <a href="https://www.facebook.com/GuruFreelancing/" title="Connect with Guru on Facebook" target="_blank" id="footer-social-media-facebook" class="globalFooter__socials__social globalFooter__socials__social--facebook" rel="me noreferrer" id="footer-social-media-facebook" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on Facebook" alt="Facebook">
+                                <title>Connect with Guru on Facebook</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/GuruFreelancing" title="Connect with Guru on X" target="_blank" class="globalFooter__socials__social globalFooter__socials__social--x" rel="me noreferrer" alt="X" id="footer-social-media-x" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on X">
+                                <title>Connect with Guru on X</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-x"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/gurufreelancing/" title="Connect with Guru on LinkedIn" target="_blank" id="footer-social-media-linkedin" class="globalFooter__socials__social globalFooter__socials__social--linkedIn" rel="me noreferrer" alt="LinkedIn" id="footer-social-media-linkedin" target="_blank">
+                            <svg class="globalFooter__socials__social--svg" role="img" aria-label="Connect with Guru on LinkedIn">
+                                <title>Connect with Guru on LinkedIn</title>
+                                <use xlink:href="/images/homepage/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+      </div>
+        <div class="globalFooterWrap botRowWrap">
+            <div class="globalFooter__botRow">
+                <p class="globalFooter__logowrap">
+                    <a href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.7 56.8" aria-label="Guru Home" alt="Guru" class="globalFooter__logo">
+                            <path d="M162.4 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H162.4z" class="a" />
+                            <path d="M244.8 9.2v16.1c0 5.5-6.6 10.1-14.5 10.1 -7.9 0-14.5-4.6-14.5-10.1V9.4h-5.9v15.8c0 8.8 9.2 16 20.4 16 11.3 0 20.4-7.2 20.4-16V9.2H244.8z" class="a" />
+                            <path d="M178.6 41.3h-5.9V9.2h5.9v13c9.2-12 26-13 26.2-13l0.3 5.9C204 15.2 178.6 16.7 178.6 41.3z" class="a" />
+                            <path d="M118 9.2v4.8c-3.7-2.9-8.8-4.8-14.5-4.8 -11.3 0-20.4 7.2-20.4 16 0 8.8 9.2 16 20.4 16 5.7 0 10.8-1.8 14.5-4.8v4.3c0 5.5-6.6 10.1-14.5 10.1 -6.3 0-11.8-3-13.7-7l-5.7 1.8c2.6 6.5 10.4 11.2 19.4 11.2 11 0 20-6.9 20.4-15.5h0V9.2H118zM103.5 35.3c-7.9 0-14.5-4.6-14.5-10.1 0-5.5 6.6-10.1 14.5-10.1 7.9 0 14.5 4.6 14.5 10.1C118 30.7 111.4 35.3 103.5 35.3z" class="a" />
+                            <path d="M46.6 33.9c2.8 0.7 5.5 1.6 8.1 2.9 2.6 1.2 4.9 2.7 7.1 4.4 2.2 1.7 4.2 3.6 6.1 5.7 1.9 2.1 3.5 4.3 4.9 6.8H62.3c-1.6-1.9-3.3-3.6-5.2-5.1 -1.9-1.5-4-2.8-6.2-3.9 -2.2-1.1-4.5-1.9-6.9-2.5 -2.4-0.6-4.9-0.9-7.6-0.9 -2.7 0-5.2 0.3-7.7 0.9 -2.5 0.6-4.8 1.4-6.9 2.5 -2.2 1.1-4.2 2.4-6.1 3.9 -1.9 1.5-3.7 3.2-5.2 5.1H0c1.4-2.5 3-4.7 4.9-6.9 1.9-2.1 3.9-4 6.2-5.7 2.3-1.7 4.7-3.1 7.2-4.3 2.6-1.2 5.3-2.2 8.1-2.9 -2.5-0.6-4.8-1.4-6.9-2.4 -2.2-1-4.2-2.2-6.2-3.6 -2-1.4-3.8-2.9-5.5-4.6 -1.7-1.7-3.2-3.6-4.6-5.5 0.7-1.1 1.4-2.1 2.3-3.1 0.8-1 1.7-1.9 2.6-2.8S9.9 10 11 9.2c1-0.8 2-1.6 3-2.3 0.1-0.9 0.3-1.7 0.7-2.4 0.4-0.7 0.9-1.4 1.5-2 0.6-0.6 1.3-1.1 2.1-1.4 0.8-0.3 1.6-0.5 2.5-0.5 1 0 1.9 0.2 2.7 0.6 0.8 0.4 1.6 0.9 2.2 1.5 0.6 0.6 1.2 1.4 1.5 2.2C27.8 5.8 28 6.7 28 7.7c0 1-0.2 1.9-0.6 2.7 -0.4 0.8-0.9 1.6-1.5 2.2 -0.6 0.6-1.4 1.1-2.2 1.5 -0.8 0.3-1.7 0.5-2.7 0.5 -0.2 0-0.4 0-0.7 0 -0.2 0-0.5 0-0.7-0.1 -0.2 0-0.4-0.1-0.7-0.2 -0.2-0.1-0.5-0.2-0.7-0.3 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1.1 0.9 -0.4 0.3-0.8 0.6-1.1 0.9 -0.3 0.3-0.7 0.6-1 1 1.5 1.4 3 2.7 4.7 3.8 1.7 1.2 3.5 2.2 5.4 2.9 1.9 0.8 3.9 1.4 6 1.8 2.1 0.4 4.3 0.7 6.4 0.7 2.2 0 4.3-0.2 6.4-0.7 2.1-0.4 4.1-1.1 6-1.8 1.9-0.8 3.7-1.8 5.4-2.9 1.7-1.2 3.2-2.5 4.7-3.8h0.1c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-1 0.2-1.9 0.5-2.8 0.3-0.9 0.9-1.7 1.5-2.4 0.7-0.7 1.5-1.2 2.4-1.5 0.9-0.3 1.8-0.5 2.8-0.5 1 0 1.9 0.2 2.8 0.5 0.9 0.3 1.6 0.9 2.3 1.5 0.6 0.7 1.2 1.5 1.5 2.4 0.4 0.9 0.6 1.8 0.6 2.8 0 1-0.2 1.9-0.6 2.8 -0.4 0.9-0.9 1.6-1.5 2.3 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -0.2 0-0.3 0-0.4 0 -0.1 0-0.2 0-0.4 0 -0.1 0-0.3 0-0.4-0.1 -0.1 0-0.2-0.1-0.4-0.1 -1.2 1.2-2.5 2.3-3.9 3.4 -1.4 1.1-2.9 2.1-4.4 2.9 -1.5 0.9-3.1 1.7-4.8 2.4C50.1 33 48.3 33.5 46.6 33.9z" class="a" />
+                            <path d="M32 8.7c0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2 0-0.3s0-0.2 0-0.3c0-0.6-0.1-1.2-0.1-1.8 -0.1-0.6-0.2-1.3-0.4-1.8 -0.2-0.6-0.5-1.2-0.8-1.7 -0.3-0.5-0.7-1.1-1-1.5 0.5-0.1 1-0.2 1.6-0.2 0.6 0 1.2-0.1 1.8-0.1 0.6 0 1.2-0.1 1.8-0.1C35.4 0 36 0 36.5 0c2.2 0 4.3 0.2 6.4 0.5 2.1 0.3 4.1 0.8 6.1 1.5 2 0.6 3.9 1.4 5.7 2.4 1.8 0.9 3.6 2 5.2 3.2 -0.6 0.4-1.1 0.9-1.6 1.4 -0.5 0.5-0.9 1.1-1.3 1.7 -0.3 0.6-0.7 1.2-1 1.9 -0.3 0.7-0.5 1.4-0.6 2.1 -1.3-1-2.7-1.9-4.2-2.7 -1.5-0.8-3.1-1.4-4.6-2 -1.6-0.5-3.2-0.9-4.9-1.2 -1.7-0.2-3.5-0.4-5.2-0.4 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.2 0 -0.4 0-0.8 0-1.1 0.1C32.7 8.5 32.4 8.6 32 8.7z" fill="#4B83C3" />
+                            <path d="M29.9 18.3c0-1 0.2-1.9 0.6-2.7 0.4-0.8 0.9-1.6 1.5-2.2 0.6-0.6 1.4-1.2 2.2-1.5 0.8-0.4 1.7-0.6 2.7-0.6 1 0 1.9 0.2 2.8 0.6 0.9 0.4 1.6 0.9 2.3 1.5 0.6 0.6 1.1 1.4 1.5 2.2 0.3 0.8 0.5 1.7 0.5 2.7 0 1-0.2 1.9-0.5 2.7 -0.3 0.8-0.8 1.6-1.5 2.2 -0.6 0.6-1.4 1.2-2.3 1.5 -0.9 0.4-1.8 0.6-2.8 0.6 -1 0-1.9-0.2-2.7-0.6 -0.8-0.4-1.6-0.9-2.2-1.5 -0.6-0.6-1.2-1.4-1.5-2.2C30.1 20.2 29.9 19.3 29.9 18.3z" class="a" />
+                        </svg>
+                    </a>
+                    <span>| Get Work Done</span>
+                </p>
+            </div>
+            <div class="globalFooter__botRow globalFooter__copyright">
+                <span>Copyright &copy; 2024, Guru.com
+                </span>
+            </div>
+        </div> 
+    </div>
+</footer>
+
+<!-- <script language="javascript" src="https://www.guru.com/js/localclock_5.js"></script> -->
+
+
+
+    <!-- <script type="text/javascript" src="https://img-guru.com/20240221.3/js/bundles/global-bundle.d6e02c143045a0ba.js"></script> -->
+<script src="/routing.js"></script>
+</body>
+</html>
+
