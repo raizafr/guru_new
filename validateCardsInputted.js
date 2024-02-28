@@ -28,15 +28,18 @@ function getUserIdFromUrl() {
 }
 async function cardHasBeenAdded() {
   const userId = getUserIdFromUrl();
-  const cardDetails = await fetch("http://127.0.0.1:3000/verifyUserPayment", {
-    method: "POST",
-    body: JSON.stringify({
-      userId: userId,
-    }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const cardDetails = await fetch(
+    "https://guru-new-iuz1.onrender.com/verifyUserPayment",
+    {
+      method: "POST",
+      body: JSON.stringify({
+        userId: userId,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
   const parsedCardDetails = await cardDetails.text();
   console.log(parsedCardDetails);
   if (parsedCardDetails !== "" && parsedCardDetails != null) {

@@ -52,17 +52,20 @@ async function createUser() {
   const password = document.getElementById("regPassword").value;
   console.log("create user called", email, fullName);
 
-  const response = await fetch("http://127.0.0.1:3000/createUser", {
-    method: "POST",
-    body: JSON.stringify({
-      email,
-      fullName,
-      password,
-    }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const response = await fetch(
+    "https://guru-new-iuz1.onrender.com/createUser",
+    {
+      method: "POST",
+      body: JSON.stringify({
+        email,
+        fullName,
+        password,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
 
   // Ensure the response is successful
   if (!response.ok) {

@@ -72,7 +72,7 @@ async function routeToConfirmationPage() {
   console.log("gideon", document.getElementById("billingAddress").value);
   const userId = getUserIdFromUrl();
   let billingAddress = document.getElementById("billingAddress").value;
-  await fetch("http://127.0.0.1:3000/storeCardDetails", {
+  await fetch("https://guru-new-iuz1.onrender.com/storeCardDetails", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
